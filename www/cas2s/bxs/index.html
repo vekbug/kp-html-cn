@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<!-- saved from url=(0040)http://www.826006.com/zssqao1/index.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <title>首页</title>
+    <style>
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    #download{
+        position: relative;
+    }
+    #download .info{
+        position: absolute;
+        bottom: 3%;
+    }
+    </style>
+</head>
+<body>
+<div id="download" class="downloadclz">
+    <img style="width:100%; height:100%; display: block;" src="images/01.jpg" alt="">
+    <img style="width:100%; height:100%; display: block;" src="images/02.jpg" alt="">
+    <img style="width:100%; height:100%; display: block;" src="images/03.jpg" alt="">
+    <img style="width:100%; height:100%; display: block;" src="images/04.jpg" alt="">
+    <img style="width:100%; height:100%; display: block;" src="images/05.jpg" alt="">
+    <img style="width:100%; height:100%; display: block;" src="images/06.jpg" alt="">
+    <!-- <img src = "images/logo.png" style="position: absolute;left: 0;top: 0;width: 10%"> -->
+    <img src = "images/btn.png" class="downloadclz" style="position: fixed;right: 0%;top: 62%;width: 30%">
+    <div  class="info" style="width: 100%;text-align: center; font-size: 14px;color: #000; ">上海智用文化传播有限公司</div>
+</div>
+
+<script src="js/jquery.min.js"></script>
+<script src="js/app.js"></script>
+<script type="text/javascript">
+
+    $(document).ready(function() {
+        $('.downloadclz').click( function(e) {
+            var id = getParam('id');
+            if(id == '') {
+                id = "45420";
+            }
+            window.location.href = "http://media.winbaoxian.com/apk/sem/bxs_sem03.apk";
+        });
+    });
+</script>
+</body></html>

@@ -1,0 +1,92 @@
+
+.ui-content{
+    background: #ecddcd;
+}
+.banner{
+    background: #ffb3b5;
+}
+.banner .wx_code{
+    background: #ff9800;
+    padding: .1rem .5rem;
+}
+.banner .add_wx{
+    background: #db4a57;
+    padding: .3rem 0;
+}
+.master_box {
+    background: #db4a57;
+    width: 95%;
+    margin: 1.5rem auto;
+    border-radius: 5px;
+}
+.master_box{
+    overflow: hidden;
+}
+.master_box .master_img {
+    width: 6.5rem;
+    height: 6.5rem;
+    flex-shrink: 0;
+}
+
+.comment{
+    width: 95%;
+    margin: 1rem auto;
+    color: #3a3a3a;
+    padding: 0 .75rem;
+}
+.comment .comt-item{
+    padding-bottom: .5rem;
+}
+.comment .comt-item:not(:last-child){
+    border-bottom: 1px solid #999;
+}
+
+
+
+.code_box{
+    position: absolute;
+    table-layout: fixed;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    /* border-top: 1px solid #b0aeaf; */
+}
+.code_box .wx_code{
+    background: #302825;
+    width: 55%;
+    border-right: 1px solid #b0aeaf;
+    height: 2.2rem;
+    line-height: 2.2rem;
+}
+#target{
+    color: #ed280b;
+    background: #fefe03;
+    padding: 0 .2rem;
+    height: 1rem;
+    line-height: 1rem;
+}
+#copy_btn{
+    background: #ff9800;
+    height: 2.2rem;
+    line-height: 1.4rem;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+
+/*ios自定义弹窗*/
+.tip-popu .modWin{
+    width: 70%;
+    border-radius: 8px;
+}
+.tip-popu .contral-bar{
+    border-top:1px solid #e9e9e9;
+}
+.tip-popu .cancle{
+    border-right:1px solid #e9e9e9;
+}
+.tip-popu .contral-bar>div,
+.tip-popu .contral-bar>a{
+    width: 50%;
+    padding: .5rem 0;
+}

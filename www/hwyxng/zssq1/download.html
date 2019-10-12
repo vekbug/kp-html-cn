@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<!-- saved from url=(0026)http://lk.zhiniaotec.wang/ -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+<title>首页</title>
+</head>
+<body>
+<script src="js/jquery.min.js"></script>
+<script src="js/app.js"></script>
+<script type="text/javascript" charset="UTF-8">
+		var id = getParam('id');
+        if(id == '') {
+            id = "78";
+        }
+        if(isIos()) {
+            window.location.href = "http://www.deepleaper.cn/wetec/new/zusq/?shenqi=" + id;
+        } else {
+        	var mid = parseInt(id) - 77;
+             window.location.href = "https://zs.zhuishushenqi.com/smgtvg" + mid + ".apk";
+        }
+</script>
+
+
+</body></html>

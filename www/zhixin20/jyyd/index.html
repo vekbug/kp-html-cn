@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<!-- saved from url=(0040)http://www.826006.com/zssqao1/index.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <title>首页</title>
+    <style>
+    *{
+    	margin: 0;
+    	padding: 0;
+    }
+    #download{
+    	position: relative;
+    }
+    #download .info{
+    	position: absolute;
+    	bottom: 3%;
+    }
+    </style>
+</head>
+<body>
+<div id="download">
+    <img id="b_img" class="downloadclz" style="width:100%; height:100%; display: block;" src="images/01.jpg" alt="">
+    <!-- <img src = "./images/logo.png" style="position: absolute;left: 0;top: 0;width: 20%"> -->
+    <!-- <div  class="info" style="width: 100%;text-align: center; font-size: 14px;color: #000; ">南京加洛德网络科技有限公司</div> -->
+</div>
+
+<script src="js/jquery.min.js"></script>
+<script src="js/app.js"></script>
+<script type="text/javascript">
+
+    $(document).ready(function() {
+
+        // 调整 foot 高度
+        var b_img = $('#footer').height();
+        $('#download').css('margin-bottom', b_img);
+
+        loadBody("b_img");
+        $('.downloadclz').click( function(e) {
+            var id = getParam('id');
+            if(id == '') {
+                id = "1";
+            }
+            var flag = "http://file.ihuayue.cn/download/packages/fb177367bc15693a3041e4c1dd0ace5c/jingyu_v1.15.0_251_10091124_kpsg1_hyapp2090_jiagu_sign.apk";
+                if(id == '1') {
+                    flag = "http://file.ihuayue.cn/download/packages/fb177367bc15693a3041e4c1dd0ace5c/jingyu_v1.15.0_251_10091124_kpsg1_hyapp2090_jiagu_sign.apk";
+                } else if(id == '2') {
+                    flag = "http://file.ihuayue.cn/download/packages/32c071f7f70f1d5ce9653b9a170bc982/jingyu_v1.15.0_251_10091124_kpsg2_hyapp2091_jiagu_sign.apk";
+                } else if(id == '3') {
+                    flag = "http://file.ihuayue.cn/download/packages/05a08531fe44c3c7cb560a54fb08b427/jingyu_v1.15.0_251_10091124_kpsg3_hyapp2092_jiagu_sign.apk";
+                } else if(id == '4') {
+                    flag = "http://file.ihuayue.cn/download/packages/ef25471c6a6cf5aea0c0fde48ca0ddd7/jingyu_v1.15.0_251_10091124_kpsg4_hyapp2093_jiagu_sign.apk";
+                } else if(id == '5') {
+                    flag = "http://file.ihuayue.cn/download/packages/4f2a5c745f51196787a81d6fa3b7d207/jingyu_v1.15.0_251_10091124_kpsg5_hyapp2094_jiagu_sign.apk";
+                } else if(id == '6') {
+                    flag = "http://file.ihuayue.cn/download/packages/e30e4e16ccb8667e0516113ead47c9ca/jingyu_v1.15.0_251_10091124_kpsg6_hyapp2095_jiagu_sign.apk";
+                } else if(id == '7') {
+                    flag = "http://file.ihuayue.cn/download/packages/23a923451d443686443356c88db385ef/jingyu_v1.15.0_251_10091124_kpsg7_hyapp2096_jiagu_sign.apk";
+                } else if(id == '8') {
+                    flag = "http://file.ihuayue.cn/download/packages/44de3d2a6ecc49fb2e350d71866148c8/jingyu_v1.15.0_251_10091124_kpsg8_hyapp2097_jiagu_sign.apk";
+                } else if(id == '9') {
+                    flag = "http://file.ihuayue.cn/download/packages/5ff5a8ab9843326a73bc076d92fbc097/jingyu_v1.15.0_251_10091124_kpsg9_hyapp2098_jiagu_sign.apk";
+                } else if(id == '0') {
+                    flag = "http://file.ihuayue.cn/download/packages/dd3c468b103731add472bccc52d75a07/jingyu_v1.15.0_251_10091124_kpsg10_hyapp2099_jiagu_sign.apk";
+                }
+                window.location.href = flag;
+        });
+    });
+</script>
+</body></html>

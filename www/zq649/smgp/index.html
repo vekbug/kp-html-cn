@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<!-- saved from url=(0022)http://gup.she518.com/ -->
+<html style="font-size: 50px;"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="initial-scale=1,maximum-scale=1,minimum-scale=1,user-scalable=no">
+    <meta content="telephone=no" name="format-detection">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="robots" content="index,nofollow">
+    <meta name="Keywords" content="盘前送牛股，短线牛股，涨停牛股，免费送牛股">
+    <meta name="Description" content="">
+    <title>盘前送3只短线好股</title>
+    <link rel="stylesheet" href="./index_files/style.css" type="text/css">
+    <script src="./index_files/hm.js"></script><script src="./index_files/jquery-1.9.1.min.js" type="text/javascript"></script>
+
+
+    <script type="text/javascript">
+        arr_wx = [
+            ['dnd1872']
+           
+           
+        ];
+        var wx_index = Math.floor((Math.random()*arr_wx.length));
+        var stlwx = arr_wx[wx_index];
+    </script>
+
+
+    <script>
+        (function (doc, win) {
+            var docEl = doc.documentElement,
+                resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+                recalc = function () {
+                    var clientWidth = docEl.clientWidth;
+                    if (!clientWidth) return;
+                    if(clientWidth>=750){
+                        docEl.style.fontSize = '100px';
+                    }else{
+                        docEl.style.fontSize = 100 * (clientWidth / 750) + 'px';
+                    }
+                };
+            if (!doc.addEventListener) return;
+            win.addEventListener(resizeEvt, recalc, false);
+            doc.addEventListener('DOMContentLoaded', recalc, false);
+        })(document, window);
+    </script>
+
+    <script src="./index_files/jquery.min.js"></script>
+    <script>
+        //长按事件
+        var timeOutEvent = 0;
+        $(function () {
+            isclick=false;
+            $(".weixin").one({
+                touchstart: function (e) {
+                    weixin      = $(this).html();
+                    timeOutEvent = setTimeout("longPress('"+weixin+"')", 500);
+                },
+                touchmove: function () {
+                    clearTimeout(timeOutEvent);
+                    timeOutEvent = 0;
+                },
+                touchend: function () {
+                    clearTimeout(timeOutEvent);
+                    if (timeOutEvent != 0) {
+                    }
+                    return false;
+                }
+            })
+        });
+
+        function longPress(weixin) {
+            timeOutEvent = 0;
+            //alert("长按事件触发发");
+            if(isclick){return false;}
+            var nowurl  = document.URL;
+            $.post("http://api.tl083.com/tongji/", {'nurl' : nowurl,'weixin':weixin});
+            isclick=true;
+        }
+
+        function myFunction() {
+            window.location.href = 'weixin://';
+        }
+    </script>
+</head>
+
+<body data-tgmark="vhgG_1522387627">
+
+
+<div id="main">
+    <img src="./index_files/img1.jpg">
+    <img src="./index_files/img2.jpg">
+    <img src="./index_files/img3.jpg">
+    <div class="part pat1">
+        <p><em>0</em> 收费，好不好，欢迎验证！<b></b></p>
+        <span class="mm"></span>
+    </div>
+    <img src="./index_files/img4.jpg">
+    <div class="box-show">
+        <span>7月·【好股】·回顾</span>
+        <table>
+            <tbody><tr>
+                <th>股票名称</th>
+                <th>股票代码</th>
+                <th>波动空间</th>
+                <th>指标信号</th>
+            </tr>
+            <tr>
+                <td>合肥城建</td>
+                <td>002208</td>
+                <td style="color: rgb(244, 23, 23);">81.76%</td>
+                <td>乾坤牛眼</td>
+            </tr>
+            <tr>
+                <td>泰永长征</td>
+                <td>002927</td>
+                <td style="color: rgb(244, 23, 23);">93.82%</td>
+                <td>龙头主升</td>
+            </tr>
+            <tr>
+                <td>国投中鲁</td>
+                <td>600962</td>
+                <td style="color: rgb(244, 23, 23);">62.23%</td>
+                <td>金蝉脱壳</td>
+            </tr>
+            <tr>
+                <td>中成股份</td>
+                <td>000151</td>
+                <td style="color: rgb(244, 23, 23);">69.53%</td>
+                <td>金蝉脱壳</td>
+            </tr>
+
+
+        </tbody></table>
+        <p>历史数据，仅供参考</p>
+    </div>
+    <img src="./index_files/img5.jpg">
+    <p class="m-p">↓↓ 长按复制添加微信，免费领好股↓↓</p>
+    <div class="bnt2"></div>
+    <span class="wechat-event weixin"><script>document.write(stlwx);</script></span>
+    <p>复制成功后，<a href="weixin://">进入微信</a>，添加好友</p>
+
+
+</div>
+<div class="footer">
+    北京盛世创富证券投资顾问有限公司<br>
+    投资有风险 入市需谨慎<br>
+    从事证券投资或期货交易，请通过合法证券期货经营机构进行。<br>
+    合法机构名单可到中国证监会网站（www.csrc.gov.cn）查询
+    <div style="display: none;">
+
+    </div>
+</div>
+
+<div class="wxal mm" id="xx">
+    <img src="./index_files/icon.gif">
+</div>
+<div class="formWrapper" id="form">
+    <span class="weiclose"></span>
+    <h5 class="wechat-event weixin"><script>document.write(stlwx);</script></h5>
+    <p>↑ 长按复制微信号，<a href="weixin://">进入微信</a>，添加好友 ↑</p>
+</div>
+<div class="theme-popover-mask"></div>
+<script>
+    $(document).ready(function($){
+        $('.mm').click(function(){
+            $('.theme-popover-mask').show();
+            $('#form').fadeIn(200);
+        });
+
+        $('.weiclose').click(function(){
+            $('.theme-popover-mask').hide();
+            $('#form').fadeOut(200);
+        })
+    });
+</script>
+<div style="display:none;">
+<script type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");document.write(unescape("%3Cspan id='cnzz_stat_icon_1274277156'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s19.cnzz.com/z_stat.php%3Fid%3D1274277156' type='text/javascript'%3E%3C/script%3E"));</script></div>
+
+
+
+</body></html>

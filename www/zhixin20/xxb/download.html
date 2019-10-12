@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<!-- saved from url=(0026)http://lk.zhiniaotec.wang/ -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+<title>首页</title>
+</head>
+<body>
+<script src="./js/jquery.min.js"></script>
+<script type="text/javascript" charset="UTF-8">
+		function getParam(name) {
+		    var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)");
+		    var r = window.location.search.substr(1).match(reg);
+		    if (r != null)
+		        return decodeURI(r[2]);
+		    return '';
+		}
+			var id = getParam('id');
+            if(id == '') {
+                id = "1";
+            }
+            if(id == '1') {
+                window.location.href = "https://file.haojiazhang123.com/static/201909/app-release_51110_1_sogousem_01_kp_sign.apk";
+            } else if (id == '2') {     
+                window.location.href = "https://file.haojiazhang123.com/static/201909/app-release_51110_2_sogousem_02_kp_sign.apk";
+            } else if (id == '3') {
+                window.location.href = "https://file.haojiazhang123.com/static/201909/app-release_51110_3_sogousem_03_kp_sign.apk";
+            } else if (id == '4') {
+                window.location.href = "https://file.haojiazhang123.com/static/201909/app-release_51110_4_sogousem_04_kp_sign.apk";
+            } else if (id == '5') {
+				window.location.href = "https://file.haojiazhang123.com/static/201909/app-release_51110_5_sogousem_05_kp_sign.apk";
+            } else if (id == '6') {
+                window.location.href = "https://file.haojiazhang123.com/static/201909/app-release_51110_6_sogousem_06_kp_sign.apk";
+            }
+</script>
+
+
+</body></html>

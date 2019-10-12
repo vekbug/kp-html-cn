@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<!-- saved from url=(0040)http://www.826006.com/zssqao1/index.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <title>首页</title>
+    <style>
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    #download{
+        position: relative;
+    }
+    #download .info{
+        position: absolute;
+        bottom: 3%;
+    }
+
+        /* 缩放动画*/
+        
+        @-webkit-keyframes slipUp {
+            0% {
+                transform: scale(1);
+            }
+            50% {
+                transform: scale(1.1);
+            }
+            100% {
+                transform: scale(1);
+            }
+        }
+
+    .btn_down1 {
+            width: 76%;
+            position: absolute;
+            bottom: 2.6%;
+            right: 1%;
+            /* margin: 0 auto; */
+            z-index: 1;
+            animation: slipUp 1s infinite;
+            -webkit-animation: slipUp 1s linear infinite alternate;
+            /* height: 10%; */
+            /* border: 1px solid red; */
+            left: 0%;
+            right: 0%;
+            margin: 0 auto;
+            /* top: 26%; */
+        }
+    </style>
+</head>
+<body>
+<div id="download" class="downloadclz">
+    <img id="b_img" style="width:100%; height:100%; display: block;" src="images/01.jpg" alt="">
+    <!-- <img src = "images/logo.png" style="position: absolute;left: 0;top: 0;width: 10%"> -->
+    <img src = "images/btn01.png" id="b_btn" class="btn_down1">
+    <!-- <div  class="info" style="width: 100%;text-align: center; font-size: 14px;color: #000; ">南京加洛德网络科技有限公司苏ICP备16048733号 南京市六合区长芦街道宁六路525号2243室 </div> -->
+</div>
+
+<script src="js/jquery.min.js"></script>
+<script src="js/app.js"></script>
+<script type="text/javascript">
+
+    $(document).ready(function() {
+
+        var mid = getParam('mid');
+        if(mid == '') {
+            mid = "01";
+        }
+        // $('#b_img').attr('src', 'images/' + mid + '.jpg')
+
+        // 调整 foot 高度
+        var b_img = $('#footer').height();
+        $('#download').css('margin-bottom', b_img);
+
+        loadBody("b_img");
+        $('.downloadclz').click( function(e) {
+            var id = getParam('id');
+            if(id == '') {
+                id = "01";
+            }
+            var aid = '';
+            if(id == '01') {
+                aid = 'VzM36f';
+            } else if(id == '02') {
+                aid = '7ZBzmy';
+            } else if(id == '03') {
+                aid = 'ZviMRv';
+            } else if(id == '04') {
+                aid = 'JnAfQb';
+            } else if(id == '05') {
+                aid = 'RBRnQn';
+            } else if(id == '06') {
+                aid = '6Znyem';
+            } else if(id == '07') {
+                aid = 'MrqqUb';
+            } else if(id == '08') {
+                aid = 'eEnMJj';
+            } else if(id == '09') {
+                aid = 'AJBvme';
+            } else if(id == '10') {
+                aid = 'zaMfAr';
+            }
+            window.location.href = "https://ksjgs.com/" + aid;
+
+        });
+    });
+</script>
+</body></html>

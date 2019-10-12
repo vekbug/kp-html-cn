@@ -1,0 +1,164 @@
+.theme_color{
+    color: #734811;
+}
+.search_bar{
+    position: absolute;
+    bottom: .5rem;
+    left: 50%;
+    transform: translateX(-50%);
+    -o-transform:translateX(-50%); 
+    -ms-transform:translateX(-50%); 	
+    -moz-transform:translateX(-50%); 	
+    -webkit-transform:translateX(-50%);
+    width: 95%;
+    border: 1px solid #e9e9e9;
+    border-radius: 5px;
+    overflow: hidden;
+    height: 1.8rem;
+    line-height: 1.8rem;
+    background: #bba58a;
+}
+.search_bar .search_input{
+    border-radius: 5px 0 0 5px;
+    padding: 0 .5rem;
+}
+.search_bar .search_btn{
+    padding: .3rem .75rem;
+    background: #bba58a;
+    height: 1.8rem;
+    line-height: 1.6;
+    right: -1px;
+    position: relative;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+.hot_dream .reload{
+    position: absolute;
+    top: .5rem;
+    right: .5rem;
+}
+.hot_dream .hot_item{
+    width: 28%;
+    border-radius: 5px;
+    border: 1px dotted #734811;
+    text-align: center;
+    padding: .2rem 0;
+    margin-bottom: .75rem;
+}
+.dream_classify .cls_item{
+    width: 25%;
+    margin-bottom: .5rem;
+}
+.dream_classify .cls_item img{
+    margin: 0 auto .2rem;
+}
+/*分类列表页*/
+.act_banner .master{
+    position: absolute;
+    bottom: .5rem;
+    left: 1rem;
+}
+.act_banner .ecode{
+    position: absolute;
+    bottom: 1rem;
+    right: .8rem;
+    width: 19%;
+}
+
+.act_banner .price{
+    position: absolute;
+    top: 1.2rem;
+    left: 50%;
+    transform: translateX(-50%);
+    -o-transform:translateX(-50%); 
+    -ms-transform:translateX(-50%); 	
+    -moz-transform:translateX(-50%); 	
+    -webkit-transform:translateX(-50%);
+    line-height: 1.3;
+}
+.price .exp_font{
+    font-family: cursive;
+    color:#203b4e;
+    font-weight: bold;
+    background: #ffda96;
+    border-radius: 5px 0 0 5px;
+    padding: 0 .5rem;
+}
+.price .p_nmu{
+    color:#ffda96;
+    font-weight: bold;
+    background: #203b4e;
+    border-radius: 0 5px 5px 0;
+    padding: 0 .3rem;
+}
+.act_banner .wx_code{
+    position: absolute;
+    bottom: 1rem;
+    left: 50%;
+    transform: translateX(-50%);
+    -o-transform:translateX(-50%); 
+    -ms-transform:translateX(-50%); 	
+    -moz-transform:translateX(-50%); 	
+    -webkit-transform:translateX(-50%);
+}
+
+.they_test .tools_box {
+    background:#7b5546;
+}
+.they_test .see_more {
+    display: block;
+    line-height: 2rem;
+    width: 100%;
+	background: transparent;
+	font-size: 0.9rem;
+    margin-bottom: 0;
+    margin-top: 0;
+    color: #ffd9a8 !important;
+    text-align: center;
+}
+/*搜索页面*/
+.search_list .list_item{
+    padding: .5rem;
+}
+.search_list .list_item:not(:last-child){
+    border-bottom: 1px solid #e9e9e9;
+}
+.search_list .key_word{
+    color: #734811;
+    font-weight: bold;
+}
+.search_box .empty_data{
+    display: none;
+    min-height: 10rem;
+    padding: 2rem .5rem 0;
+}
+.search_box.emptydata .empty_data{
+    display: block;
+}
+.search_box.emptydata .has_data{
+    display: none;
+}
+
+/*新增返回先机策按钮*/
+/*换肤原则：背景：.ui-content的背景色 | 文字颜色：.set_info的背景色 | 边框：一般为#fff  */
+.back_first{
+	position: fixed;
+	top: 1rem;
+	right: 0;
+	width: 2.5rem;
+	height: 1.5rem;
+	line-height: 1.4rem;
+	padding-left: .2rem;
+	border-radius: 1rem 0 0 1rem;
+	border: 2px solid #fffbf3 !important;
+	border-right: 0 !important;
+	background: #bba58a; 
+	color: #e5e1da !important;
+	font-size: 15px;
+	font-weight: bold;
+	text-align: center;
+	z-index: 150;
+}
+.android .back_first{
+	padding-top: 1px;
+}

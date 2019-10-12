@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<!-- saved from url=(0026)http://lk.zhiniaotec.wang/ -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+<title>首页</title>
+</head>
+<body>
+<script src="./js/jquery.min.js"></script>
+<script type="text/javascript" charset="UTF-8">
+		function getParam(name) {
+		    var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)");
+		    var r = window.location.search.substr(1).match(reg);
+		    if (r != null)
+		        return decodeURI(r[2]);
+		    return '';
+		}
+			var id = getParam('c');
+			if(id == '') {
+				id = "jingpin";
+			}
+            window.location.href = encodeURI("https://app.appsflyer.com/com.redwolfama.peonylespark?c="+ id +"&af_channel={keywordid}&pid=smsearch_int&af_click_lookback=7d&clickid={clickid}&idfa={deviceid}&imei={deviceid}&af_r=http://7xia4c.com1.z0.glb.clouddn.com/LesPark-debug_baidu.apk");
+</script>
+</body></html>

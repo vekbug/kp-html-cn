@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<!-- saved from url=(0050)http://lk.myushan.cc/nlp-v1/demo/index.html?id=bd3 -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <title>首页</title>
+    <style>
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    #download{
+        position: relative;
+    }
+    #download .info{
+        position: absolute;
+        bottom: 3%;
+    }
+
+           body {
+            width: 100%;
+        }
+        .footer {
+            position: fixed;
+            display: block;
+            height: 140px;
+            line-height: 100px;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background-color: rgba(0, 0, 0, 0.7);
+            z-index: 999999999999;
+            -webkit-transform: translateZ(0);
+        }
+
+        .footer .info-wrap {
+            padding-left: 80px;
+        }
+
+        .footer .info-wrap .icon {
+            position: absolute;
+            left: 30px;;
+            top: 50px;
+            margin-top: -25px;
+            width: 100px;
+            height: 100px;
+        }
+
+        .footer .info-wrap .info2 {
+            color: #fff;
+            line-height: 45px;
+            padding-top: 40px;
+            padding-left: 100px;
+        }
+
+        .footer .info-wrap .info2 .title {
+            color: #ee5778;
+            font-size: 50px;
+            font-weight: 10;
+        }
+
+        .footer .info-wrap .info2 .desc {
+            font-size: 30px;;
+            font-weight: 100;
+        }
+
+        .btn {
+            position: absolute;
+            right: 40px;
+            top: 45px;
+            height: 60px;
+            line-height: 50px;
+            width: 200px;
+            background-color: #ee5778;
+            color: #fff;
+            border-radius: 5px;
+            -webkit-border-radius: 5px;
+            text-align: center;
+            font-size: 25px;
+        }
+    </style>
+</head>
+<body>
+<div id="download" style="margin-bottom: 140px;" class="download">
+    <img id="b_img" style="width:100%; height:100%; display: block;" src="./liaoke_files/01.jpg" alt="">
+  <!--  <img src="./liaoke_files/logo.png" style="position: absolute;left: 0;top: 0;width: 15%">
+        <div class="info" style="width: 100%;text-align: center; font-size: 14px;color: #000; ">北京智鸟科技有限公司版权所有</div>
+-->
+</div>
+<div id="footer" class="footer">
+        <div class="info-wrap">
+            <img class="icon" alt="" src="./liaoke_files/logo1.png">
+            <div class="info2">
+                <div class="title">聊客</div>
+                <div class="desc">寻觅对的人，聊开心的事</div>
+            </div>
+        </div>
+    <a id="down_button" class="btn btn-download download" style="text-decoration:none; font-family:verdana">开启聊客之旅</a>
+</div>
+
+<script src="./liaoke_files/jquery.min.js"></script>
+<script type="text/javascript" charset="UTF-8">
+	    var b_img = $('#footer').height();
+        $('#download').css('margin-bottom', b_img);
+
+		function getParam(name) {
+		    var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)");
+		    var r = window.location.search.substr(1).match(reg);
+		    if (r != null)
+		        return decodeURI(r[2]);
+		    return '';
+		}
+        $(".download").click( function() {
+       // document.getElementById("down_button").addEventListener("click", function(){
+			var id = getParam('id');
+			if(id == '') {
+				id = "bd1";
+			}
+            window.location.href = "https://static.liaoke.tv/chatapk/channel/liaoke_" + id + ".apk";
+        });
+</script>
+
+
+</body></html>

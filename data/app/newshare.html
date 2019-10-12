@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<!-- saved from url=(0060)http://activity.wallstreetcn.com/app/newshare.html?ngsem=110 -->
+<html lang="zh"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title></title>
+    
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <style>
+    body{
+      padding: 0px;
+      margin: 0px;
+    }
+    .share-wrapper{
+      position: relative;
+      width: 100%;
+    }
+    .back-img{
+      display: block;
+      width: 100%;
+    }
+    .share-container{
+      position: absolute;
+      top: 11%;
+      width: 100%;
+      height: 89%;
+      left:0px;
+    }
+    .logo {
+      display: block;
+      width: 30%;
+      margin: 0px auto;
+    }
+    .jump-wrapper{
+      width: 60%;
+      margin: 40px auto;
+      display: -webkit-box;
+	    display: -ms-flexbox;
+	    display: flex;
+      -webkit-box-pack: justify;-ms-flex-pack: justify;justify-content: space-between;
+      height: 74px;
+    }
+    .item{
+      display: block;
+      width: 50px;
+      display: inline-block;
+    }
+    .share-btn{
+      position: absolute;
+      width: 52%;
+      margin: 0 24%;
+      /* margin-top: 270px; */
+      bottom: 200px;
+    }
+    @media (min-width:660px){
+      .share-btn{
+      position: absolute;
+      width: 52%;
+      margin: 0 24%;
+      /* margin-top: 270px; */
+      bottom: 450px;
+    }
+    }
+    .share-btn.foot-btn {
+      position: absolute;
+      top: 78%;
+      left: 15%;
+      width: 70%;
+      margin: 0px;
+    }
+    .hide {
+      display: none
+    }
+    .right-wrapper{
+      position: absolute;
+      top: 75%;
+      width: 100%;
+      left: 0px;
+      text-align: center;
+      color: #999;
+      font-size: 12px;
+      line-height: 1.5;
+    }
+    .right-wrapper.foot{
+      top: 90%;
+    }
+  </style>
+  <link href="./newshare_files/download.css" rel="stylesheet" type="text/css" />
+  </head>
+  
+  <body>
+    <div class="share-wrapper">
+      <img id="back-wscn" src="./newshare_files/e2ead4c0-9733-4ee6-89ee-bfaaa51db264.jpg" class="back-img" alt="">
+      <img id="back-foot" src="./newshare_files/0e7ce01c-b851-4271-aed3-fbcb0250c690.png" class="back-img hide" alt="">
+      <div class="share-container">
+        <img class="logo hide" id="wscn-logo" src="./newshare_files/855a8cca-460b-460b-aa05-43e46d866783.png">
+
+        <div class="jump-wrapper hide" id="jump-wscn">
+          <img class="item" src="./newshare_files/e88cb83d-4534-4698-b739-a36507b110ec.png">
+          <img class="item" src="./newshare_files/bef5e519-c256-42f4-a8b4-957513dfae7a.png">
+          <img class="item" src="./newshare_files/01e33e92-1a97-44e5-a08f-1d828230cfce.png">
+        </div>
+
+        <div class="jump-wrapper hide" id="jump-foot">
+          <img class="item" src="./newshare_files/1f396cf1-34f3-43bf-bb59-dabba31159fe.png">
+          <img class="item" src="./newshare_files/26ffd25b-ba9f-4dda-b342-4c6d1fa5b2a2.png">
+          <img class="item" src="./newshare_files/676c01a1-cf25-4f21-bd69-9c601473e4bc.png">
+        </div>
+
+        <a href="http://dl.wallstreetcn.com/wallstreetcn_94.apk" id="share-a">
+          <img class="share-btn" id="share-btn" onclick="xs()" src="./newshare_files/ab22e9c0-93b3-4556-a2e2-1ea30e83f0c1.png">
+        </a>
+
+        <div id="box" style="display:none">
+                <div class="title">
+                    <h1 class="space1">下载提示</h1>
+                    <h1 class="space2" onclick="CloseDiv('box')"><img src="./newshare_files/btn_05.gif" /></h1>
+                </div>
+                <div class="con">
+                    <p>请点击右上角，在浏览器中打开链接下载</p>
+                </div>
+         </div>
+            
+        <div class="right-wrapper hide" id="right-wrapper">
+          © 2010 - 2017 华尔街见闻-上海阿牛信息科技有限公司<br> wallstreetcn.com 沪ICP备13019121号
+        </div>
+      </div>
+    </div>
+    <script>
+    var m = 0;
+      document.addEventListener('DOMContentLoaded', function() {
+        initShareBtn()
+      });
+      function initShareBtn() {
+        var $a = document.getElementById('share-a')
+        var v = getVersion()
+        if (v <= 98 && v >= 94) {
+          document.getElementById('right-wrapper').textContent = '北京智鸟科技有限公司'
+        }
+        if (v == 92) {
+          document.getElementById('right-wrapper').classList.add('foot')
+          document.getElementById('share-btn').classList.add('foot-btn')
+          document.getElementById('share-btn').src = 'https://wpimg.wallstcn.com/5f423985-baea-4b23-8c8d-a0b79ef9f241.png'
+          document.getElementById('wscn-logo').classList.add('hide')
+          document.getElementById('back-wscn').classList.add('hide')
+          document.getElementById('back-foot').classList.remove('hide')
+          document.getElementById('jump-wscn').classList.add('hide')
+          // document.getElementById('jump-foot').classList.remove('hide')
+        }
+        if (/MicroMessenger/i.test(navigator.userAgent)) {
+        	  m=1;
+          $a.href= '#'
+        } else if (/iPhone|iPad|iPod/i.test(navigator.userAgent)) {
+          $a.href = linkTable['share_' + v].ios
+        } else if (/Android/i.test(navigator.userAgent)) {
+          $a.href = linkTable['share_' + v].android
+        } else {
+          $a.href = linkTable['share_' + v].android
+        }
+        function getVersion() {
+          var params = location.search.slice(1).split('&');
+          var version
+          params.forEach(function (param) {
+            param = param.split('=')
+            if (param[0] === 'ngsem' && param[1]) {
+              version = param[1]
+            }
+          })
+          return version ? version : 94
+        }
+      }
+      var linkTable = {
+        "share_94": {
+          "android": "http://dl.wallstreetcn.com/wallstreetcn_94.apk",
+          "ios": "https://at.umeng.com/mm8nau"
+        },
+        "share_95": {
+          "android": "http://dl.wallstreetcn.com/wallstreetcn_95.apk",
+          "ios": "https://at.umeng.com/aqueay"
+        },
+        "share_96": {
+          "android": "http://dl.wallstreetcn.com/wallstreetcn_96.apk",
+          "ios": "https://at.umeng.com/1j01fe"
+        },
+        "share_97": {
+          "android": "http://dl.wallstreetcn.com/wallstreetcn_97.apk",
+          "ios": "https://at.umeng.com/m4111v"
+        },
+        "share_105": {
+          "android": "http://dl.wallstreetcn.com/wallstreetcn_105.apk",
+          "ios": "https://at.umeng.com/Wriu4r"
+        },
+        "share_106": {
+          "android": "http://dl.wallstreetcn.com/wallstreetcn_106.apk",
+          "ios": "https://at.umeng.com/LvqWXr"
+        },
+        "share_107": {
+          "android": "http://dl.wallstreetcn.com/wallstreetcn_107.apk",
+          "ios": "https://at.umeng.com/8nqiSr"
+        },
+        "share_108": {
+          "android": "http://dl.wallstreetcn.com/wallstreetcn_108.apk",
+          "ios": "https://at.umeng.com/1j85ra"
+        },
+        "share_109": {
+          "android": "http://dl.wallstreetcn.com/wallstreetcn_109.apk",
+          "ios": "https://at.umeng.com/m8DWfe"
+        },
+        "share_110": {
+          "android": "http://dl.wallstreetcn.com/wallstreetcn_110.apk",
+          "ios": "https://at.umeng.com/PvKjuy"
+        }
+      }
+      
+    function xs(){
+    	  if(m==1) {
+    	    document.getElementById('box').style.display="block";
+    	  }
+    	}
+    	function CloseDiv(box) {
+    	    document.getElementById('box').style.display='none';
+    	}
+    </script>
+  
+
+</body></html>

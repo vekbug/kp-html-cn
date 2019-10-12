@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title></title>
+    <link href="//ldyfile.oss-cn-beijing.aliyuncs.com/css/jm/css.css" rel="stylesheet" type="text/css">
+    <script src="//ldyfile.oss-cn-beijing.aliyuncs.com/js/jm/jquery.js" type="text/javascript" charset="utf-8"></script>
+    <script language="javascript" src="//ldyfile.oss-cn-beijing.aliyuncs.com/js/jm/c.js"></script>
+    <script type="text/javascript">
+        var browser = {
+            versions: function() {
+                var u = navigator.userAgent, app = navigator.appVersion;
+                return {
+                    trident: u.indexOf('Trident') > -1,
+                    presto: u.indexOf('Presto') > -1,
+                    webKit: u.indexOf('AppleWebKit') > -1,
+                    gecko: u.indexOf('Gecko') > -1 && u.indexOf('KHTML') == -1,
+                    mobile: !!u.match(/AppleWebKit.*Mobile.*/) || !!u.match(/AppleWebKit/),
+                    ios: !!u.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/),
+                    android: u.indexOf('Android') > -1 || u.indexOf('Linux') > -1,
+                    iPhone: u.indexOf('iPhone') > -1 || u.indexOf('Mac') > -1,
+                    iPad: u.indexOf('iPad') > -1,
+                    webApp: u.indexOf('Safari') == -1,
+                    wechat: u.indexOf('MicroMessenger') > -1,
+                    qq: u.indexOf('Mobile MQQBrowser')>-1 || u.indexOf('QQ/')>-1
+                };
+            }(),
+            language: (navigator.browserLanguage || navigator.language).toLowerCase()
+        };
+    </script>
+</head>
+<body><div> <figure><figcaption><div class="boxPic"><img src="//ldyfile.oss-cn-beijing.aliyuncs.com/image/root/ym.png"></div><div class="boxPic1"><img src="//ldyfile.oss-cn-beijing.aliyuncs.com/image/root/ym1.png"></div><div class="boxPic2"><img src="//ldyfile.oss-cn-beijing.aliyuncs.com/image/root/ym2.png"></div></figcaption></figure><div class="centre_img"><img src="//ldyfile.oss-cn-beijing.aliyuncs.com/image/root/sysd_bg.jpg" style="width:100%"><div class="centre_btn"><div><a class="g" href="javascript:;" onclick="javascrpt:void(0);"><img src="//ldyfile.oss-cn-beijing.aliyuncs.com/image/root/tongcehngmoyuehui_banner.jpg" style="width: 100%;"></a></div></div><div class="bottom_fd"><div><a class="g" href="javascript:;" onclick="javascrpt:void(0);"><img style="width: 100%;height: 100%;" src="//ldyfile.oss-cn-beijing.aliyuncs.com/image/root/tongchengmoyuehui_btn.jpg"></a></div></div></div>
+    <div><a href="http://www.sysd1.cn/company.htm"><img src="images/a1.png" style="width: 10%; position: fixed; bottom: 7%; right: 40px;">
+        <img src="images/a2.png" style="width: 10%; position: fixed; bottom: 7%; right: 100px;"></a></div>
+</div>
+<script type="text/javascript">
+    var app = request("app");
+    $(document).ready(function(){
+        $(".boxPic").click(function() {
+            $(".boxPic").css({
+                display : "none"
+            });
+        });
+        $(".boxPic1").click(function() {
+            $(".boxPic1").css({
+                display : "none"
+            });
+        });
+        $(".boxPic2").click(function() {
+            $(".boxPic2").css({
+                display : "none"
+            });
+        });
+        $('.g').bind("click",function(event){
+            downLoad();
+        });
+    });
+    function downLoad(){
+        if (browser.versions.ios || browser.versions.iPhone || browser.versions.iPad) {
+            if (browser.versions.wechat) {
+                shouwDiv2();
+                return false;
+            } else if (browser.versions.qq){
+                shouwDiv2();
+                return false;
+            } else {
+                if(app !=null && app !=""){
+                    getiprecord("http://bd.yuehuiba521.cn/jm",app);
+                    window.location.href = "https://itunes.apple.com/cn/app/%E5%A4%9C%E5%A4%9C%E4%BA%A4%E5%8F%8B%E7%A4%BE%E5%8C%BA-%E5%90%8C%E5%9F%8E%E5%8D%95%E8%BA%AB%E4%BA%A4%E5%8F%8B%E7%BA%A6%E4%BC%9A%E4%BF%B1%E4%B9%90%E9%83%A8/id1369675219?mt=8";
+                }
+            }
+        } else {
+            if (browser.versions.wechat) {
+                shouwDiv();
+                return false;
+            } else if (browser.versions.qq){
+                shouwDiv();
+                return false;
+            } else {
+                if(app !=null && app !=""){
+                    window.location.href ="https://yuehui1.cn/market/"+app+".apk";
+                }
+            }
+        }
+    }
+</script>
+
+
+</body></html>

@@ -1,0 +1,105 @@
+﻿<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0">
+    <title></title>
+    <style>
+        fieldset,img{border:0}
+        a{text-decoration:none;color:#000;outline:none}
+        li{list-style:none}
+        h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:normal}
+        input,button,textarea,select,optgroup,option{font-family:inherit;font-size:inherit;font-style:inherit;font-weight:inherit}
+        input,button,textarea,select{*font-size:100%}
+        .clear:after{
+            display:block;
+            content:"clear";
+            height:0;
+            clear:both;
+            visibility:hidden;
+        }
+        .clear{zoom:1;}
+        /************************rewrite******************************************/
+        html,body{
+            padding: 0;
+            margin: 0;
+            width: 100%;
+            height:100%;
+            position: relative;
+            min-width: 320px;
+            max-width: 840px;
+            margin:0 auto;
+            /*height: 100%;*/
+        }
+        .all{
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            -webkit-overflow-scrolling : touch;
+            position: relative;
+        }
+        .box {
+            width:100%;
+            position: relative;
+        }
+        .a2{
+            display: table;
+            width: 100%;
+            height: auto;
+
+            /*height: 100%;*/
+        }
+        .btn_down {
+            width: 100%;
+            position: absolute;
+            bottom: 0%;
+            right: 0%;
+            left: 0;
+            margin: 0 auto;
+            z-index: 1;
+        }
+        .banben{
+            width:100%;
+            color:#000;
+            position: absolute;
+            text-align: center;
+            bottom: 0%;
+            font-size: .4rem;
+            /*-webkit-transform: scale(0.5);*/
+        }
+    </style>
+
+
+
+</head>
+<body>
+
+<div class="all">
+    <div class="box">
+            <img src="test/weipaitang/weipaitang0927001.jpg" class="a2 down" alt="" id="down1" onclick="return false"/>
+        <div class="banben down">和真科技（大连）有限公司版权所有</div>
+    </div>
+</div>
+<img src="test/weipaitang/weipaitang0927002.png" alt="" class="btn_down" id="down2">
+<script src="apps/libs/jquery/2.1.4/jquery.min.js"></script>
+<!--<script src="http://cdn.bootcss.com/jquery_lazyload/1.9.6/jquery.lazyload.min.js"></script>-->
+<script src="javascripts/next_ys_1.2.1.js"></script>
+<script>
+    var dlserver = 'http://'+location.hostname+(location.port?':'+location.port:'')+'/dc'
+    new _yushan.dl_info({
+        url : 'http://www.weipaitang.com/res/app/app-sogou02-release.apk',
+        iosurl : 'https://itunes.apple.com/app/apple-store/id1138166755?pt=118288830&ct=sogou02&mt=8',
+        dlserver : dlserver,
+        autoDownload: true,
+        autoDownloadDelayTime:1,
+        dlbutton: ['img'],
+        trace_tag: [0, 0]
+    });
+
+
+</script>
+</body>
+
+<!-- Mirrored from wpt.zjzhidao.com/weipaitang3/lp1 by HTTrack Website Copier/3.x [XR&CO'2010], Thu, 02 Nov 2017 05:35:05 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8"><!-- /Added by HTTrack -->
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<!-- saved from url=(0040)http://www.826006.com/zssqao1/index.html -->
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <title>首页</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        #download {
+            position: relative;
+        }
+
+        #download .info {
+            position: absolute;
+            bottom: 1%;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="download" class="downloadclz">
+        <img id="b_img" style="width:100%; height:100%; display: block;" src="#" alt="">
+        <!-- <img src = "images/logo.png" style="position: absolute;left: 0;top: 0;width: 10%"> -->
+        <!-- <img src = "images/btn.png" class="downloadclz" style="position: absolute;left: 20%;bottom: 2%;width: 60%"> -->
+        <div class="info" style="width: 100%;text-align: center; font-size: 14px;color: #000; ">广州盈纳信息科技有限公司</div>
+    </div>
+    <!-- <img class="downloadclz" id="footer" style="position: fixed;width:100%;bottom:0;left:0;" src="./images/foot.png"> -->
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/app.js"></script>
+    <script type="text/javascript">
+
+        $(document).ready(function () {
+
+            var mid = getParam('mid');
+            if (mid == '') {
+                mid = "01";
+            }
+            $('#b_img').attr('src', 'images/' + mid + '.jpg')
+            // 调整 foot 高度
+            var b_img = $('#footer').height();
+            $('#download').css('margin-bottom', b_img);
+
+            // loadBody("b_img");
+            $('.downloadclz').click(function (e) {
+                var id = getParam('id');
+                if (id == '') {
+                    id = "1";
+                }
+                if (id == '1') { window.location.href = "https://store-g1.seewo.com/seewo-report_d976e21a66cb4e04890398caccf8570d?attname=EasiCare_3.0.6_shenma_search1.apk"; }
+                if (id == '2') { window.location.href = "https://store-g1.seewo.com/seewo-report_2269ab9b6bce42639168076254e391f9?attname=EasiCare_3.0.6_shenma_search2.apk"; }
+                if (id == '3') { window.location.href = "https://store-g1.seewo.com/seewo-report_9d4e2d5f1aed43dc83f2f926e7020f3f?attname=EasiCare_3.0.6_shenma_search3.apk"; }
+                if (id == '4') { window.location.href = "https://store-g1.seewo.com/seewo-report_f69115a7747f460bbc9b41ffbfa5dc09?attname=EasiCare_3.0.6_shenma_search4.apk"; }
+                if (id == '5') { window.location.href = "https://store-g1.seewo.com/seewo-report_dcbce7a0df9d48f5b0a54ebf64eed297?attname=EasiCare_3.0.6_shenma_search5.apk"; }
+            });
+        });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,177 @@
+
+<!doctype html>
+<html lang="zh-Hans">
+<head>
+  <meta charset="utf-8">
+  <title>微易保险师</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no" />
+  <meta http-equiv="Cache-Control" content="no-siteapp">
+  <meta name="keywords" content="微易 微易保险师 微易保险 计划书 代资考 保险展业 保险产品 保险资讯 保险工具">
+  <meta name="description" content="微易保险师 微易保险师是一款涵盖展业、增员、客户新增等功能的保险行业应用，致力于为全国300余万保险人提供全方位的贴心服务">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <link rel="stylesheet" type="text/css" href="./index_files/jquery.fullpage.min_c397710fd5227e7.css" />
+  <style media="screen">
+  * {
+    padding:0;
+    margin:0;
+  }
+  body>a:first-child>img{
+    /* hide baidu statistic ad logo */
+    display: none;
+  }
+  body {
+    font-family:'Hiragino Sans GB',冬青黑体, 'Microsoft YaHei', Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    background: #fff;
+  }
+  #fullpage {
+    display: none;
+  }
+  .section {
+    background-color: #fff;
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: 100% auto;
+    padding-top: 7px;
+    text-align: center;
+  }
+  .downBtn {
+    position: fixed;
+    top: 60.5%;
+    right: 0;
+    z-index: 100;
+    width: 110px;
+    height: 44px;
+    background: url("https://img.winbaoxian.com/autoUpload/activity/md5__1259c03b5b8c9a4bbdf4.png") no-repeat;
+    background-size: 100% 100%;
+  }
+  .copyright {
+    color: #2e638b;
+    font-size: 9px;
+  }
+  #up-indicator {
+    position: fixed;
+    width: 30px;
+    height: 30px;
+    left: 50%;
+    margin-left: -15px;
+    -webkit-animation: up-indicator 1.4s 0s infinite;
+    animation: up-indicator 1.4s 0s infinite;
+  }
+  @-webkit-keyframes up-indicator {
+    0%{bottom:10px}
+    50%{bottom:0px}
+    100%{bottom:10px}
+  }
+  @keyframes up-indicator {
+    0%{bottom:10px}
+    50%{bottom:0px}
+    100%{bottom:10px}
+  }
+  </style>
+
+</head>
+<script type="text/javascript">
+    var _hmt = _hmt || [];
+    (function() {
+        var hm = document.createElement("script");
+        hm.src = "https://hm.baidu.com/hm.js?9136117c63d81d460b23af2fab4f9680";
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(hm, s);}
+    )();
+</script>
+<body>
+
+  <div id="fullpage"></div>
+  <a class="downBtn"></a>
+  <img id="up-indicator" src="./index_files/mhUpArrorow_3dd236d61d.png">
+  <div  class="copyright" style="position: fixed;width: 100%;text-align: center; bottom: 1%; font-size: 8px;color: #5282F1; ">北京融通万向科技发展有限公司</div>
+  <script src="./index_files/jquery.min_4f252523d4af0b4.js"></script>
+  <script type="text/javascript" src="./index_files/jquery.fullPage.min_6a3ba3441100ce5.js"></script>
+  <script>
+  function getUrlParam(name) {
+    name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+    var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+    results = regex.exec(location.search);
+
+    return results === null ? "" : decodeURIComponent(results[1].replace(/\+/g, " "));
+  }
+  function isAndroid(){
+    return navigator.userAgent.indexOf("Android") > 0;
+  }
+  function isIos(){
+    return /iP(ad|hone|od)/.test(navigator.userAgent);
+  }
+  function isWechat(){
+    var ua = navigator.userAgent.toLowerCase();
+    return ua.match(/MicroMessenger/i) == "micromessenger";
+  }
+  function isQQ() {
+    var ua = navigator.userAgent.toLowerCase();
+    return ua.match(/QQ/i) == "qq";
+  }
+  function addId() {
+    var code = window.location.hostname;
+    var downId = getUrlParam('id');
+    if(code == 'mobile.winbaoxian.com' && ['','00','06'].indexOf(downId) !== -1){
+      if(isIos()){
+        $('.downBtn').attr("id", 'phone-download');
+      }else if(isAndroid()){
+        $('.downBtn').attr("id", 'android-download');
+      }
+    }
+  }
+  addId();
+  var channelId = getUrlParam('id') || '00';
+  var DownloadUrls = {
+    uIos: 'https://itunes.apple.com/us/app/apple-store/id981360164?pt=117738342&ct=baidulzcs&mt=8',
+    uAndroid: 'https://media.winbaoxian.com/apk/sem/bxs_sem' + channelId + '.apk',
+    uQQ: 'https://a.app.qq.com/o/simple.jsp?pkgname=com.winbaoxian.wybx'
+  };
+  function updateDownloadUrl() {
+    var w_downloadBtn = $('.downBtn');
+    if (isIos()&&isWechat()) {
+      w_downloadBtn.attr('href',DownloadUrls.uQQ);
+    }else if(isIos()){
+      w_downloadBtn.attr('href',DownloadUrls.uIos);
+    }else if(isAndroid()&&isWechat()){
+      w_downloadBtn.attr('href',DownloadUrls.uQQ);
+    }else if(isAndroid()){
+      w_downloadBtn.attr('href',DownloadUrls.uAndroid);
+    }
+  }
+  var backgrounds = [
+    'https://img.winbaoxian.com/autoUpload/activity/mobilebg1_d5552d0516.jpg',
+    'https://img.winbaoxian.com/autoUpload/activity/mobilebg2_02833b3d67.jpg',
+    'https://img.winbaoxian.com/autoUpload/activity/mobilebg3_c0fae60bf3.jpg',
+    'https://img.winbaoxian.com/autoUpload/activity/mobilebg4_9ebaf5e1ce.jpg',
+    'https://img.winbaoxian.com/autoUpload/common/mobilebg5_6be954c795.jpg',
+    'https://img.winbaoxian.com/autoUpload/activity/mobilebg6_036b311ee7.jpg',
+  ];
+  function initSlides() {
+    var dSecContainer = $('#fullpage');
+    backgrounds.forEach(function(it) {
+      $('<div class="section"></div>').css('background-image', 'url(' + it + ')').appendTo(dSecContainer);
+
+    });
+    dSecContainer.show().fullpage({
+      verticalCentered: false,
+      onLeave: function(sectionIdx, nextIdx, direction) {
+        var dUpIndicator = $('#up-indicator');
+        if (sectionIdx === backgrounds.length && direction === 'up') {
+          dUpIndicator.show();
+        } else if (sectionIdx === backgrounds.length - 1 && direction === 'down') {
+          dUpIndicator.hide();
+        }
+      }
+    });
+  }
+  $(function() {
+    updateDownloadUrl();
+    initSlides();
+  });
+  </script>
+</body>
+</html>

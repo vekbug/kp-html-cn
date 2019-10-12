@@ -1,0 +1,25 @@
+﻿.funnyNewsTicker{width:100%; overflow:hidden; height:7rem; position:relative; padding:0 5px; box-sizing:border-box; margin:0 auto;}
+.funnyNewsTicker>ul{padding:0; margin:0; list-style-type:none; position:relative;}
+.funnyNewsTicker>ul>li{display:none; width:100%; height:100px; position:absolute;  overflow:hidden}
+.funnyNewsTicker>ul>li>.fnt-content{position:absolute; top:0; bottom:30px; left:0; right:0; box-sizing:border-box; padding:5%; overflow:hidden;}
+.funnyNewsTicker>ul>li>.fnt-content a{text-decoration:none;}
+.funnyNewsTicker>ul>li>.fnt-content a:hover{text-decoration:underline;}
+.funnyNewsTicker>ul>li>.fnt-info{position:absolute; bottom:0; left:0; right:0; height:20px; padding:5px; border-top:solid 1px #DDD;}
+.funnyNewsTicker>ul>li>.fnt-info a{display:inline-block; width:20px; height:20px; background:#0F0; opacity:0.2; cursor:pointer;}
+.funnyNewsTicker>ul>li>.fnt-info a:hover{opacity:1;}
+.funnyNewsTicker>ul>li img{width:100%;}
+.funnyNewsTicker>ul>li>.fnt-info span{position:absolute; left:80px; right:30px; text-align:center; opacity:0.4; z-index:0; font-size:13px; cursor:default;}
+.funnyNewsTicker>div{width:50px; height:30px; cursor:pointer; position:absolute; opacity:0.3;}
+.funnyNewsTicker>div:hover{opacity:1;}
+
+.funnyNewsTicker .fnt-top0{-ms-transform: scale(0.80); -webkit-transform: scale(0.85); transform: scale(0.85); opacity:0.85; top:0; z-index:1; display:block;height:4.51rem;}
+.funnyNewsTicker .fnt-top1{-ms-transform: scale(0.87); -webkit-transform: scale(0.9); transform: scale(0.9); opacity:0.9; top:0.6rem; z-index:2; display:block;height:4.51rem;}
+.funnyNewsTicker .fnt-top2{-ms-transform: scale(0.95); -webkit-transform: scale(0.95); transform: scale(0.95); opacity:0.95; top:-0.6rem; z-index:3; display:block;height:4.51rem;}
+.funnyNewsTicker .fnt-active{-ms-transform: scale(1); -webkit-transform: scale(1); transform: scale(1); opacity:1; top:1.6rem; z-index:10; display:block;height:4.51rem;}
+.funnyNewsTicker .fnt-bottom2{-ms-transform: scale(0.95); -webkit-transform: scale(0.95); transform: scale(0.95); opacity:0.95; top:0.6rem; z-index:6; display:block;height:4.51rem;}
+.funnyNewsTicker .fnt-bottom1{-ms-transform: scale(0.87); -webkit-transform: scale(0.90); transform: scale(0.90); opacity:0.9; top:-0.3rem; z-index:5; display:block;height:4.51rem;}
+.funnyNewsTicker .fnt-bottom0{-ms-transform: scale(0.80); -webkit-transform: scale(0.85); transform: scale(0.85); opacity:0.85; top:-0.6rem; z-index:4; display:block;height:4.51rem;}
+
+.fnt-easing2{transition:.120s linear; -moz-transition:.120s linear; -webkit-transition:.120s linear;}
+.fnt-easing li{transition:.120s ease-out; -moz-transition:.3s ease-out; -webkit-transition:.3s ease-out;}
+

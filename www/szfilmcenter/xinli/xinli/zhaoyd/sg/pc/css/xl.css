@@ -1,0 +1,1033 @@
+@charset "utf-8";
+/* CSS Document */
+
+/* 全局 */
+
+body, div, p, ul, ol, dl, dt, dd, li, form, input, table, img, h1, h2, h3, h4, h5, h6, form, fieldest, input, textarea, blockquote, th, td
+{
+	padding-top: 0px;
+	padding-right: 0px;
+	padding-bottom: 0px;
+	padding-left: 0px;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	margin-left: 0px;
+}
+a{ cursor:pointer;}
+a:hover { color:#eee; text-decoration:underline; }
+ul, li { margin:0; padding:0; list-style-type:none; }
+img { border:0; vertical-align:middle; }
+h1, h2, h3, h4, h5, h6 { font-size:12px; margin:0px; padding:0px; }
+h1 img, h2 img, h3 img, h4 img, h5 img, h6 img { margin:0; }
+table, th, td { vertical-align:middle; }
+th { font-weight:bold; }
+input, textarea, select { color:#6c6c6c; }
+textarea { font-size:12px;}
+font { font-size:12px; color:#cc3265; font-weight:bold; }
+
+body {
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	padding: 0;
+	font-family: "Tahoma", "Helvetica Neue", Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #fff;
+	line-height: 22px;
+	background: #fff;
+}
+img { border: 0 none; vertical-align: top; }
+ul, li { list-style-type: none; }
+h1, h2, h3, h4, h5, h6 { font-size: 14px; }
+body, input, select, button, textarea { font-size: 12px; font-family:"Microsoft YaHei",微软雅黑; }
+button { cursor: pointer; }
+i, em, cite { font-style: normal; }
+body { background: #fff; color: #363636; line-height: 1.2; }
+a, a:link {  text-decoration: none; cursor:pointer;}
+a:visited {  }
+a:active, a:hover { text-decoration: none; }
+a:focus { outline: none; }
+ 
+.fixed:after { content: "."; display: block; clear: both; height: 0; visibility: hidden; }
+.fixed { display: block; min-height: 1%; }
+*html .fixed { height: 1%; }
+.clear { diplay: block!important; float: none!important; clear: both; overflow: hidden; width: auto!important; height: 0!important; margin: 0 auto!important; padding: 0!important; font-size: 0; line-height: 0; }
+.more { float: right; }
+       .more a { font-weight: normal; font-size: 12px; }
+.fl, .fr { display: inline; float: left; }
+.fr { float: right; }
+
+
+.shizi a:hover{background:url("../images/shizi.png"/*tpa=http://www.lbxueyuan.com/bj_sogou/xinli/images/shizi.png*/)/*tpa=http://akg.byqadu.cn/xl/xl-bj-bd2-pc/images/shizi.png*/;}
+
+
+
+
+
+
+
+
+.w1000{
+	width:1000px;
+	margin:0 auto;
+}
+
+.header{
+	width:100%;
+	background:#FFF;
+	border-bottom:1px solid #c8c8c8;}
+
+#scroll_nav{
+	width:100%;
+	height:77px;
+	background:url("../images/scroll_nav_bg.png"/*tpa=http://www.lbxueyuan.com/bj_sogou/xinli/images/scroll_nav_bg.png*/)/*tpa=http://akg.byqadu.cn/xl/xl-bj-bd2-pc/images/scroll_nav_bg.png*/ left top repeat-x;
+	position:fixed;
+	top:0px;
+	z-index:999;
+	display:none;
+}
+
+.header {
+	background: #f4f4f4;
+	height: 80px;
+}
+
+.header-left {
+	width: 20%;
+	float: left;
+}
+
+.logo {
+	width: 51px;
+	line-height: 80px;
+}
+
+.header-right {
+	width: 80%;
+	float: right;
+}
+
+.nav {
+	font-size: 16px;
+	color: #515151;
+}
+
+.nav>ul>li {
+	list-style: none;
+	float: right;
+	line-height: 80px;
+}
+
+.nav>ul>li>a {
+	color: #515151;
+	display: block;
+	cursor: pointer;
+	padding: 0 18px;
+}
+
+.nav>ul>li.active {
+	background: #f55d30;
+	transform: skew(-14deg);
+}
+
+.nav>ul>li.active>a {
+	transform: skew(14deg);
+	color: #fff;
+}
+
+.nav>ul>li:hover {
+	background: #f55d30;
+	transform: skew(-14deg);
+}
+
+.nav>ul>li:hover>a {
+	transform: skew(14deg);
+	color: #fff;
+}
+
+
+
+
+.container{padding-right:15px;padding-left:15px;margin-right:auto;margin-left:auto;}
+
+
+/* banenr */
+.bannerWrap{width: 100%;height: 666px;background:#000;}
+.banner01{ height:327px; margin:0 auto;background:url("../images/xl_banner_01.png"/*tpa=http://www.lbxueyuan.com/bj_sogou/xinli/images/xl_banner_01.png*/)/*tpa=http://akg.byqadu.cn/xl/xl-bj-bd2-pc/images/xl_banner_01.png*/ no-repeat center center;}
+.banner02{ height:339px; margin:0 auto;background:url("../images/xl_banner_02.png"/*tpa=http://www.lbxueyuan.com/bj_sogou/xinli/images/xl_banner_02.png*/)/*tpa=http://akg.byqadu.cn/xl/xl-bj-bd2-pc/images/xl_banner_02.png*/ no-repeat center center;}
+.banner02 .w1000{width: 1000px;height: 339px;margin:0 auto;position: relative;}
+.banner02 a{display:block; height:60px; width:220px; border:1px solid #ffba26; background:none; margin:0 auto; color:#ffba26; line-height:60px; font-size:20px; text-align:center; font-weight:bold; border-radius:3px;position: absolute;bottom:60px;left:390px;}
+.banner02 a:hover{ background:#ffba26; color:#000; transition:all 0.3s linear;}
+
+
+
+/*3屏*/
+
+.sanpin04{ height:100px; width:100%; background:url("../images/form_tit.png"/*tpa=http://www.lbxueyuan.com/bj_sogou/xinli/images/form_tit.png*/)/*tpa=http://akg.byqadu.cn/xl/xl-bj-bd2-pc/images/form_tit.png*/ no-repeat center 30px #122438; padding-top:120px;}
+
+.use_info{
+    width: 900px;
+    font-size: 18px;
+    margin: 0px auto;
+	}
+
+
+.info_panel{
+   
+    text-align: left;
+   
+}
+
+.info_panel_hide{
+    display: none;
+    background-color: white;
+    text-align: center;
+    padding: 15px 20px;
+}
+
+.info_panel_hide p{
+    color: #333;}
+
+
+.info_panel  input{
+    padding: 8px 12px;
+    margin: 10px 10px;
+    width: 210px;
+    height: 26px;
+	background:#FFF;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+	border:none;
+    outline-style: none;
+    font-size: 14px;
+	float:left;
+	color:#000;
+	font-family:"Microsoft YaHei","微软雅黑";
+}
+.info_panel select{
+    margin: 10px 10px;
+	padding-left:10px;
+    width: 170px;
+    height: 40px;
+	background:#FFF;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+	border:none;
+    outline-style: none;
+    font-size: 14px;
+	font-family:"Microsoft YaHei","微软雅黑";
+	float:left;
+	color:#767676;}
+
+.info_panel .submit{
+    background-color:#ffba26;
+    border-radius: 2px;
+    width: 180px;
+    height: 40px;
+    margin-top:10px;
+	margin-left:8px;
+    color: #000;
+    font-size: 18px;
+    border: 0px;
+	font-weight:bold;
+    outline-style: none;
+	text-align:center;
+	font-family:"Microsoft YaHei","微软雅黑";
+}
+.info_panel .submit:hover{ color:#000; background-color:#ffba26; transition:all 0.3s linear;}
+.info_panel .submit:active{
+    background-color: #5bc0de;}
+
+	
+/*时间*/	
+.time{ width:100%; height:500px; background:url("../images/time_bj.png"/*tpa=http://www.lbxueyuan.com/bj_sogou/xinli/images/time_bj.png*/)/*tpa=http://akg.byqadu.cn/xl/xl-bj-bd2-pc/images/time_bj.png*/ repeat-x; margin-top:20px;}
+.time_con{ width:840px; height:420px; margin:0 auto; background:url("../images/time.png"/*tpa=http://www.lbxueyuan.com/bj_sogou/xinli/images/time.png*/)/*tpa=http://akg.byqadu.cn/xl/xl-bj-bd2-pc/images/time.png*/ no-repeat; position:relative;}
+.time_con .mon{ font-size:80px; color:#122438; position:absolute; top:200px; left:440px;}
+.time_con .day{ font-size:80px; color:#122438; position:absolute; top:200px; left:630px;}
+.time_con .mon:hover,.time_con .day:hover{ color:#ea421f; cursor:pointer;}
+
+
+.timebtn{display:block; width:212px; height:52px; border:1px #eb3d01 solid; border-radius:3px; line-height:52px; color:#fff; font-size:16px; float:left; text-align:center; margin:0 25px; background:#eb3d01; }
+.timebtn:hover{ background:#122438; transition:all 0.3s linear; border:1px #122438 solid;  }
+
+
+/*第三屏*/	
+.xl03{ width:1000px; height:520px; text-align:center; margin:20px auto;}
+.xl03 img{ margin:20px auto;}
+.xl03 .xl03_1{ display:block; width:287px; height:336px; background:url("../images/xl03_01.png"/*tpa=http://www.lbxueyuan.com/bj_sogou/xinli/images/xl03_01.png*/)/*tpa=http://akg.byqadu.cn/xl/xl-bj-bd2-pc/images/xl03_01.png*/; float:left; margin:0 15px;}
+.xl03 .xl03_1:hover{background:url("../images/xl03_01_hover.png"/*tpa=http://www.lbxueyuan.com/bj_sogou/xinli/images/xl03_01_hover.png*/)/*tpa=http://akg.byqadu.cn/xl/xl-bj-bd2-pc/images/xl03_01_hover.png*/;}
+
+.xl03 .xl03_2{ display:block; width:287px; height:336px; background:url("../images/xl03_02.png"/*tpa=http://www.lbxueyuan.com/bj_sogou/xinli/images/xl03_02.png*/)/*tpa=http://akg.byqadu.cn/xl/xl-bj-bd2-pc/images/xl03_02.png*/;  float:left; margin:0 15px;}
+.xl03 .xl03_2:hover{background:url("../images/xl03_02_hover.png"/*tpa=http://www.lbxueyuan.com/bj_sogou/xinli/images/xl03_02_hover.png*/)/*tpa=http://akg.byqadu.cn/xl/xl-bj-bd2-pc/images/xl03_02_hover.png*/;}
+
+.xl03 .xl03_3{ display:block; width:287px; height:336px; background:url("../images/xl03_03.png"/*tpa=http://www.lbxueyuan.com/bj_sogou/xinli/images/xl03_03.png*/)/*tpa=http://akg.byqadu.cn/xl/xl-bj-bd2-pc/images/xl03_03.png*/;  float:left; margin:0 15px;}
+.xl03 .xl03_3:hover{background:url("../images/xl03_03_hover.png"/*tpa=http://www.lbxueyuan.com/bj_sogou/xinli/images/xl03_03_hover.png*/)/*tpa=http://akg.byqadu.cn/xl/xl-bj-bd2-pc/images/xl03_03_hover.png*/;}
+
+
+/*第4屏*/	
+
+.xl04{ width:100%; height:800px; }
+.xl0401{ width:100%; height:80px; background:url("../images/xl_04_bj1.png"/*tpa=http://www.lbxueyuan.com/bj_sogou/xinli/images/xl_04_bj1.png*/)/*tpa=http://akg.byqadu.cn/xl/xl-bj-bd2-pc/images/xl_04_bj1.png*/ no-repeat center; padding-top:355px;}
+.xl0402{ width:100%; height:276px; background:url("../images/xl_04_bj2.png"/*tpa=http://www.lbxueyuan.com/bj_sogou/xinli/images/xl_04_bj2.png*/)/*tpa=http://akg.byqadu.cn/xl/xl-bj-bd2-pc/images/xl_04_bj2.png*/ no-repeat center; padding-top:90px;}
+
+
+.xl0401_con{ width:800px; margin:0 auto;}
+.xl0401_con a{display:block; width:145px; height:38px; background:url("../images/xl04_btn.png"/*tpa=http://www.lbxueyuan.com/bj_sogou/xinli/images/xl04_btn.png*/)/*tpa=http://akg.byqadu.cn/xl/xl-bj-bd2-pc/images/xl04_btn.png*/ no-repeat; float:left; margin:0 30px; font-size:16px; color:#fff; line-height:38px; text-align:center;}
+.xl0401_con a:hover{ background:url("../images/xl04_btnhover.png"/*tpa=http://www.lbxueyuan.com/bj_sogou/xinli/images/xl04_btnhover.png*/)/*tpa=http://akg.byqadu.cn/xl/xl-bj-bd2-pc/images/xl04_btnhover.png*/;}
+
+
+.xl0402_con{ width:800px; margin:0 auto;}
+.xl0402_con ul{ height:180px;}
+.xl0402_con li{ width:200px; text-align:center; float:left;}
+.xl0402_con .xx01{display:block; width:97px; height:97px; background:url("../images/xl0402_01.png"/*tpa=http://www.lbxueyuan.com/bj_sogou/xinli/images/xl0402_01.png*/)/*tpa=http://akg.byqadu.cn/xl/xl-bj-bd2-pc/images/xl0402_01.png*/ no-repeat center; margin:0 auto;}
+
+.xl0402_con .xx02{display:block; width:97px; height:97px; background:url("../images/xl0402_02.png"/*tpa=http://www.lbxueyuan.com/bj_sogou/xinli/images/xl0402_02.png*/)/*tpa=http://akg.byqadu.cn/xl/xl-bj-bd2-pc/images/xl0402_02.png*/ no-repeat center; margin:0 auto;}
+
+.xl0402_con .xx03{display:block; width:97px; height:97px; background:url("../images/xl0402_03.png"/*tpa=http://www.lbxueyuan.com/bj_sogou/xinli/images/xl0402_03.png*/)/*tpa=http://akg.byqadu.cn/xl/xl-bj-bd2-pc/images/xl0402_03.png*/ no-repeat center; margin:0 auto;}
+
+.xl0402_con .xx04{display:block; width:97px; height:97px; background:url("../images/xl0402_04.png"/*tpa=http://www.lbxueyuan.com/bj_sogou/xinli/images/xl0402_04.png*/)/*tpa=http://akg.byqadu.cn/xl/xl-bj-bd2-pc/images/xl0402_04.png*/ no-repeat center; margin:0 auto;}
+
+.xl0402_con li:hover{ transition:all 1s;transform:rotateY(360deg);cursor: pointer;}
+
+.xl0402_con .xx05{display:block; width:212px; height:52px; border:1px #fff solid; border-radius:3px; line-height:52px; color:#fff; font-size:16px; float:left; text-align:center; margin:0 25px; }
+.xl0402_con .xx06{display:block; width:212px; height:52px; border:1px #fff solid; border-radius:3px; line-height:52px; color:#fff; font-size:16px; float:left; text-align:center; margin:0 25px;}
+.xl0402_con .xx05:hover,.xl0402_con .xx06:hover{ background:#eb3d01; transition:all 0.3s linear; }
+
+
+/*问题*/
+.wcaonr{width:1040px;margin:0 auto; height:700px;}
+.wcaonr .img{ width:824px; margin:50px auto;}
+.mx_div{width:208px; height:148px;position:relative;overflow:hidden; float:left; margin-bottom:12px;}
+.mx_div.bo1{background:url("../images/hv2_01.png"/*tpa=http://www.lbxueyuan.com/bj_sogou/xinli/images/hv2_01.png*/)/*tpa=http://akg.byqadu.cn/xl/xl-bj-bd2-pc/images/hv2_01.png*/ no-repeat;}
+.mx_div.bo2{background:url("../images/hv2_02.png"/*tpa=http://www.lbxueyuan.com/bj_sogou/xinli/images/hv2_02.png*/)/*tpa=http://akg.byqadu.cn/xl/xl-bj-bd2-pc/images/hv2_02.png*/ no-repeat;}
+.mx_div.bo3{background:url("../images/hv2_03.png"/*tpa=http://www.lbxueyuan.com/bj_sogou/xinli/images/hv2_03.png*/)/*tpa=http://akg.byqadu.cn/xl/xl-bj-bd2-pc/images/hv2_03.png*/ no-repeat;}
+.mx_div.bo4{background:url("../images/hv2_04.png"/*tpa=http://www.lbxueyuan.com/bj_sogou/xinli/images/hv2_04.png*/)/*tpa=http://akg.byqadu.cn/xl/xl-bj-bd2-pc/images/hv2_04.png*/ no-repeat;}
+.mx_div.bo5{background:url("../images/hv2_05.png"/*tpa=http://www.lbxueyuan.com/bj_sogou/xinli/images/hv2_05.png*/)/*tpa=http://akg.byqadu.cn/xl/xl-bj-bd2-pc/images/hv2_05.png*/ no-repeat;}
+.mx_div.bo6{background:url("../images/hv2_06.png"/*tpa=http://www.lbxueyuan.com/bj_sogou/xinli/images/hv2_06.png*/)/*tpa=http://akg.byqadu.cn/xl/xl-bj-bd2-pc/images/hv2_06.png*/ no-repeat;}
+.mx_div.bo7{background:url("../images/hv2_07.png"/*tpa=http://www.lbxueyuan.com/bj_sogou/xinli/images/hv2_07.png*/)/*tpa=http://akg.byqadu.cn/xl/xl-bj-bd2-pc/images/hv2_07.png*/ no-repeat;}
+.mx_div.bo8{background:url("../images/hv2_08.png"/*tpa=http://www.lbxueyuan.com/bj_sogou/xinli/images/hv2_08.png*/)/*tpa=http://akg.byqadu.cn/xl/xl-bj-bd2-pc/images/hv2_08.png*/ no-repeat;}
+.mx_div.bo9{background:url("../images/hv2_09.png"/*tpa=http://www.lbxueyuan.com/bj_sogou/xinli/images/hv2_09.png*/)/*tpa=http://akg.byqadu.cn/xl/xl-bj-bd2-pc/images/hv2_09.png*/ no-repeat;}
+.mx_div.bo10{background:url("../images/hv2_10.png"/*tpa=http://www.lbxueyuan.com/bj_sogou/xinli/images/hv2_10.png*/)/*tpa=http://akg.byqadu.cn/xl/xl-bj-bd2-pc/images/hv2_10.png*/ no-repeat;}
+.mx_div.bo11{background:url("../images/hv2_11.png"/*tpa=http://www.lbxueyuan.com/bj_sogou/xinli/images/hv2_11.png*/)/*tpa=http://akg.byqadu.cn/xl/xl-bj-bd2-pc/images/hv2_11.png*/ no-repeat;}
+.mx_div.bo12{background:url("../images/hv2_12.png"/*tpa=http://www.lbxueyuan.com/bj_sogou/xinli/images/hv2_12.png*/)/*tpa=http://akg.byqadu.cn/xl/xl-bj-bd2-pc/images/hv2_12.png*/ no-repeat;}
+.mx_div.bo13{background:url("../images/hv2_13.png"/*tpa=http://www.lbxueyuan.com/bj_sogou/xinli/images/hv2_13.png*/)/*tpa=http://akg.byqadu.cn/xl/xl-bj-bd2-pc/images/hv2_13.png*/ no-repeat;}
+.mx_div.bo14{background:url("../images/hv2_14.png"/*tpa=http://www.lbxueyuan.com/bj_sogou/xinli/images/hv2_14.png*/)/*tpa=http://akg.byqadu.cn/xl/xl-bj-bd2-pc/images/hv2_14.png*/ no-repeat;}
+.mx_div.bo15{background:url("../images/hv2_15.png"/*tpa=http://www.lbxueyuan.com/bj_sogou/xinli/images/hv2_15.png*/)/*tpa=http://akg.byqadu.cn/xl/xl-bj-bd2-pc/images/hv2_15.png*/ no-repeat;}
+
+
+.jg{ width:200px; height:148px;background:url("../images/bbbb.png"/*tpa=http://www.lbxueyuan.com/bj_sogou/xinli/images/bbbb.png*/)/*tpa=http://akg.byqadu.cn/xl/xl-bj-bd2-pc/images/bbbb.png*/ repeat;border-radius: 5px;position:absolute;top:160px;left:0;}
+#jgan{ width:150px; height:46px; background:#eb3d01;border-radius:2px; display:block; color:#FFF; text-align:center; line-height:46px; font-size:15px; margin:0 auto; margin-top:50px;}
+#jgan:hover{ text-decoration:underline; background:#ed501a;}
+
+
+
+/*为什么学*/
+.zhengce01{ height:306px; width:100%; background:url("../images/xl05_01.png"/*tpa=http://www.lbxueyuan.com/bj_sogou/xinli/images/xl05_01.png*/)/*tpa=http://akg.byqadu.cn/xl/xl-bj-bd2-pc/images/xl05_01.png*/ no-repeat center; margin-top:60px;}
+.zhengce02{ height:188px; width:100%; background:url("../images/xl05_02.png"/*tpa=http://www.lbxueyuan.com/bj_sogou/xinli/images/xl05_02.png*/)/*tpa=http://akg.byqadu.cn/xl/xl-bj-bd2-pc/images/xl05_02.png*/ no-repeat center;}
+
+/*薪资*/
+.xinzi01{ height:280px; width:100%; background:url("../images/xinzi_01.png"/*tpa=http://www.lbxueyuan.com/bj_sogou/xinli/images/xinzi_01.png*/)/*tpa=http://akg.byqadu.cn/xl/xl-bj-bd2-pc/images/xinzi_01.png*/ no-repeat center; margin-top:60px;}
+.xinzi02{ height:40px; width:100%; background:url("../images/xinzi_02.png"/*tpa=http://www.lbxueyuan.com/bj_sogou/xinli/images/xinzi_02.png*/)/*tpa=http://akg.byqadu.cn/xl/xl-bj-bd2-pc/images/xinzi_02.png*/ no-repeat top center; padding-top:340px;}
+.xinzi02_btn{ display:block; float:left; width:196px; height:60px; line-height:60px; color:#fff; background:#f32a4b; font-size:15px; text-align:center; border-radius:3px; border:1px solid #FFF; margin:0px 55px 0px 55px;}
+.xinzi02_btn:hover{ background-color:#222; color:#FFF; transition:all 0.3s linear;}
+
+	
+/* banenr */
+.xl0501{ height:180px; width:100%; background:url("../images/xl05_01.jpg"/*tpa=http://www.lbxueyuan.com/bj_sogou/xinli/images/xl05_01.jpg*/)/*tpa=http://akg.byqadu.cn/xl/xl-bj-bd2-pc/images/xl05_01.jpg*/ no-repeat center ;}
+.xl0502{ height:216px; width:100%; background:url("../images/xl05_02.jpg"/*tpa=http://www.lbxueyuan.com/bj_sogou/xinli/images/xl05_02.jpg*/)/*tpa=http://akg.byqadu.cn/xl/xl-bj-bd2-pc/images/xl05_02.jpg*/ no-repeat center ;}
+
+.xl0503{ height:98px; width:100%; background:url("../images/xl05_03.jpg"/*tpa=http://www.lbxueyuan.com/bj_sogou/xinli/images/xl05_03.jpg*/)/*tpa=http://akg.byqadu.cn/xl/xl-bj-bd2-pc/images/xl05_03.jpg*/ no-repeat center; padding-top:1px;}
+.xl0503 .xl0503_btn{display:block; height:60px; width:240px; border:1px solid #ffba26; background:none; margin:0 auto; color:#ffba26; line-height:60px; font-size:20px; text-align:center; font-weight:bold; border-radius:30px;}
+.xl0503 .xl0503_btn:hover{ background:#ffba26; color:#000; transition:all 0.3s linear;}
+
+
+
+
+
+/*5屏*/
+.xl0601{ height:194px; width:100%; background:url("../images/xl06_01.png"/*tpa=http://www.lbxueyuan.com/bj_sogou/xinli/images/xl06_01.png*/)/*tpa=http://akg.byqadu.cn/xl/xl-bj-bd2-pc/images/xl06_01.png*/ no-repeat center; }
+
+.xl0603{ height:513px; width:100%; background:url("../images/xl06_03.jpg"/*tpa=http://www.lbxueyuan.com/bj_sogou/xinli/images/xl06_03.jpg*/)/*tpa=http://akg.byqadu.cn/xl/xl-bj-bd2-pc/images/xl06_03.jpg*/ no-repeat center; }
+.xl0603 a{ display:block; float:left; width:232px; height:323px; margin:5px 10px 0px 5px; float:left;}
+.xl0603_btn01{ background:url("../images/xl06btn01.png"/*tpa=http://www.lbxueyuan.com/bj_sogou/xinli/images/xl06btn01.png*/)/*tpa=http://akg.byqadu.cn/xl/xl-bj-bd2-pc/images/xl06btn01.png*/ no-repeat;}
+.xl0603_btn01:hover{ background:url("../images/xl06btn01_hover.png"/*tpa=http://www.lbxueyuan.com/bj_sogou/xinli/images/xl06btn01_hover.png*/)/*tpa=http://akg.byqadu.cn/xl/xl-bj-bd2-pc/images/xl06btn01_hover.png*/ no-repeat;}
+
+.xl0603_btn02{ background:url("../images/xl06btn02.png"/*tpa=http://www.lbxueyuan.com/bj_sogou/xinli/images/xl06btn02.png*/)/*tpa=http://akg.byqadu.cn/xl/xl-bj-bd2-pc/images/xl06btn02.png*/ no-repeat;}
+.xl0603_btn02:hover{ background:url("../images/xl06btn02_hover.png"/*tpa=http://www.lbxueyuan.com/bj_sogou/xinli/images/xl06btn02_hover.png*/)/*tpa=http://akg.byqadu.cn/xl/xl-bj-bd2-pc/images/xl06btn02_hover.png*/ no-repeat;}
+
+.xl0603_btn03{ background:url("../images/xl06btn03.png"/*tpa=http://www.lbxueyuan.com/bj_sogou/xinli/images/xl06btn03.png*/)/*tpa=http://akg.byqadu.cn/xl/xl-bj-bd2-pc/images/xl06btn03.png*/ no-repeat;}
+.xl0603_btn03:hover{ background:url("../images/xl06btn03_hover.png"/*tpa=http://www.lbxueyuan.com/bj_sogou/xinli/images/xl06btn03_hover.png*/)/*tpa=http://akg.byqadu.cn/xl/xl-bj-bd2-pc/images/xl06btn03_hover.png*/ no-repeat;}
+
+.xl0603_btn04{ background:url("../images/xl06btn04.png"/*tpa=http://www.lbxueyuan.com/bj_sogou/xinli/images/xl06btn04.png*/)/*tpa=http://akg.byqadu.cn/xl/xl-bj-bd2-pc/images/xl06btn04.png*/ no-repeat;}
+.xl0603_btn04:hover{ background:url("../images/xl06btn04_hover.png"/*tpa=http://www.lbxueyuan.com/bj_sogou/xinli/images/xl06btn04_hover.png*/)/*tpa=http://akg.byqadu.cn/xl/xl-bj-bd2-pc/images/xl06btn04_hover.png*/ no-repeat;}
+
+
+.xl0604{ height:192px; width:100%; background:url("../images/xl06_04.png"/*tpa=http://www.lbxueyuan.com/bj_sogou/xinli/images/xl06_04.png*/)/*tpa=http://akg.byqadu.cn/xl/xl-bj-bd2-pc/images/xl06_04.png*/ no-repeat center; }
+.xl0605{ height:234px; width:100%; background:url("../images/xl06_05.jpg"/*tpa=http://www.lbxueyuan.com/bj_sogou/xinli/images/xl06_05.jpg*/)/*tpa=http://akg.byqadu.cn/xl/xl-bj-bd2-pc/images/xl06_05.jpg*/ no-repeat center; }
+
+.xl0606{ height:110px; width:100%; background:url("../images/xl06_06.png"/*tpa=http://www.lbxueyuan.com/bj_sogou/xinli/images/xl06_06.png*/)/*tpa=http://akg.byqadu.cn/xl/xl-bj-bd2-pc/images/xl06_06.png*/ no-repeat center; padding-top:145px; }
+.xl0606_btn{ display:block; float:left; width:180px; height:40px; line-height:40px;  font-size:20px; text-align:center;  border-radius:none; margin:5px 110px 0px 60px; background:#fff; color:#122438; border:1px solid #9097a5; }
+
+.xl0606_btn:hover{ background:#f5bb30; color:#fff; border:1px solid #ffbe45; transition:all 0.3s linear;}
+
+/*教材*/
+.jiaocai{ width:1052px; height:820px; background:url("../images/jiaocaibj.png"/*tpa=http://www.lbxueyuan.com/bj_sogou/xinli/images/jiaocaibj.png*/)/*tpa=http://akg.byqadu.cn/xl/xl-bj-bd2-pc/images/jiaocaibj.png*/ no-repeat center; margin:50px auto 30px; position:relative;}
+.jiaocai a{ position:absolute;display:block; height:186px; width:211px;}
+.jiaocai .jc01{ top:67px; left:840px; }
+.jiaocai .jc02{ top:255px; left:840px; }
+.jiaocai .jc03{ top:442px; left:2px; }
+.jiaocai .jc04{ top:442px; left:212px; }
+.jiaocai .jc05{ top:442px; left:422px; }
+.jiaocai .jc06{ top:442px; left:632px; }
+.jiaocai .jc07{ top:442px; left:840px; }
+.jiaocai .jc08{ top:630px; left:2px; }
+.jiaocai .jc09{ top:630px; left:212px; }
+.jiaocai .jc10{ top:630px; left:422px; }
+.jiaocai .jc11{ top:630px; left:632px; }
+.jiaocai .jc12{ top:630px; left:840px; }
+
+
+.jiaocai a:hover{ background:url("../images/jchover.png"/*tpa=http://www.lbxueyuan.com/bj_sogou/xinli/images/jchover.png*/)/*tpa=http://akg.byqadu.cn/xl/xl-bj-bd2-pc/images/jchover.png*/ no-repeat;}
+
+
+/*6屏*/
+.huodong01{ height:234px; width:100%; background:url("../images/huodong_01.png"/*tpa=http://www.lbxueyuan.com/bj_sogou/xinli/images/huodong_01.png*/)/*tpa=http://akg.byqadu.cn/xl/xl-bj-bd2-pc/images/huodong_01.png*/ no-repeat center;}
+.huodong02{ height:150px; width:100%; background:url("../images/huodong_02.png"/*tpa=http://www.lbxueyuan.com/bj_sogou/xinli/images/huodong_02.png*/)/*tpa=http://akg.byqadu.cn/xl/xl-bj-bd2-pc/images/huodong_02.png*/ no-repeat center;}
+.huodong03{ height:100px; width:100%; background:url("../images/huodong_03.png"/*tpa=http://www.lbxueyuan.com/bj_sogou/xinli/images/huodong_03.png*/)/*tpa=http://akg.byqadu.cn/xl/xl-bj-bd2-pc/images/huodong_03.png*/ no-repeat center; padding-top:146px;}
+.huodong03_btn{ display:block; float:left; width:196px; height:60px; line-height:60px; color:#fff; background:none; font-size:15px; text-align:center; border-radius:3px; border:1px solid #FFF; margin:0px 30px 0px 30px;}
+.huodong03_btn:hover{ background-color:#ed3654; color:#FFF; transition:all 0.3s linear;}
+
+
+
+
+/*8屏*/
+.xue01{ height:350px; width:100%; background:url("../images/xue_01.png"/*tpa=http://www.lbxueyuan.com/bj_sogou/xinli/images/xue_01.png*/)/*tpa=http://akg.byqadu.cn/xl/xl-bj-bd2-pc/images/xue_01.png*/ no-repeat center; margin-top:60px;}
+.xue02{ height:384px; width:100%; background:url("../images/xue_02.png"/*tpa=http://www.lbxueyuan.com/bj_sogou/xinli/images/xue_02.png*/)/*tpa=http://akg.byqadu.cn/xl/xl-bj-bd2-pc/images/xue_02.png*/ no-repeat center;}
+.xue03{ height:372px; width:100%; background:url("../images/xue_03.png"/*tpa=http://www.lbxueyuan.com/bj_sogou/xinli/images/xue_03.png*/)/*tpa=http://akg.byqadu.cn/xl/xl-bj-bd2-pc/images/xue_03.png*/ no-repeat center;}
+.xue04{ height:202px; width:100%; background:url("../images/xue_04.png"/*tpa=http://www.lbxueyuan.com/bj_sogou/xinli/images/xue_04.png*/)/*tpa=http://akg.byqadu.cn/xl/xl-bj-bd2-pc/images/xue_04.png*/ no-repeat center;}
+
+
+
+/**/
+.expand {
+	background: url("../images/expand-bg.jpg"/*tpa=http://www.lbxueyuan.com/bj_sogou/xinli/images/expand-bg.jpg*/)/*tpa=http://akg.byqadu.cn/xl/xl-bj-bd2-pc/images/expand-bg.jpg*/ no-repeat center ;
+	height: 650px;
+	text-align:center;
+
+}
+.container{height:650px;}
+.expand-con{ height:650px;}
+
+.expand-all {
+	width: 1000px;
+	position: relative;
+	margin: 0 auto;
+}
+
+.expand1 {
+	background: url("../images/expand1.png"/*tpa=http://www.lbxueyuan.com/bj_sogou/xinli/images/expand1.png*/)/*tpa=http://akg.byqadu.cn/xl/xl-bj-bd2-pc/images/expand1.png*/ no-repeat 0 0;
+	width: 164px;
+	height: 166px;
+	position: absolute;
+	top: 87px;
+	left: 32px;
+}
+
+.expand1:hover {
+	background: url("../images/expand1.png"/*tpa=http://www.lbxueyuan.com/bj_sogou/xinli/images/expand1.png*/)/*tpa=http://akg.byqadu.cn/xl/xl-bj-bd2-pc/images/expand1.png*/ no-repeat 0 -170px;
+}
+
+.expand2 {
+	background: url("../images/expand2.png"/*tpa=http://www.lbxueyuan.com/bj_sogou/xinli/images/expand2.png*/)/*tpa=http://akg.byqadu.cn/xl/xl-bj-bd2-pc/images/expand2.png*/ no-repeat 0 0;
+	width: 173px;
+	height: 166px;
+	position: absolute;
+	top: 296px;
+	left: 0;
+}
+
+.expand2:hover {
+	background: url("../images/expand2.png"/*tpa=http://www.lbxueyuan.com/bj_sogou/xinli/images/expand2.png*/)/*tpa=http://akg.byqadu.cn/xl/xl-bj-bd2-pc/images/expand2.png*/ no-repeat 0 -170px;
+}
+
+.expand3 {
+	background: url("../images/expand3.png"/*tpa=http://www.lbxueyuan.com/bj_sogou/xinli/images/expand3.png*/)/*tpa=http://akg.byqadu.cn/xl/xl-bj-bd2-pc/images/expand3.png*/ no-repeat 0 0;
+	width: 164px;
+	height: 166px;
+	position: absolute;
+	top: 505px;
+	left: 32px;
+}
+
+.expand3:hover {
+	background: url("../images/expand3.png"/*tpa=http://www.lbxueyuan.com/bj_sogou/xinli/images/expand3.png*/)/*tpa=http://akg.byqadu.cn/xl/xl-bj-bd2-pc/images/expand3.png*/ no-repeat 0 -170px;
+}
+
+.expand4 {
+	background: url("../images/expand4.png"/*tpa=http://www.lbxueyuan.com/bj_sogou/xinli/images/expand4.png*/)/*tpa=http://akg.byqadu.cn/xl/xl-bj-bd2-pc/images/expand4.png*/ no-repeat 0 0;
+	width: 164px;
+	height: 166px;
+	position: absolute;
+	top: 87px;
+	right: 32px;
+}
+
+.expand4:hover {
+	background: url("../images/expand4.png"/*tpa=http://www.lbxueyuan.com/bj_sogou/xinli/images/expand4.png*/)/*tpa=http://akg.byqadu.cn/xl/xl-bj-bd2-pc/images/expand4.png*/ no-repeat 0 -170px;
+}
+
+.expand5 {
+	background: url("../images/expand5.png"/*tpa=http://www.lbxueyuan.com/bj_sogou/xinli/images/expand5.png*/)/*tpa=http://akg.byqadu.cn/xl/xl-bj-bd2-pc/images/expand5.png*/ no-repeat 0 0;
+	width: 173px;
+	height: 166px;
+	position: absolute;
+	top: 296px;
+	right: 0;
+}
+
+.expand5:hover {
+	background: url("../images/expand5.png"/*tpa=http://www.lbxueyuan.com/bj_sogou/xinli/images/expand5.png*/)/*tpa=http://akg.byqadu.cn/xl/xl-bj-bd2-pc/images/expand5.png*/ no-repeat 0 -170px;
+}
+
+.expand6 {
+	background: url("../images/expand6.png"/*tpa=http://www.lbxueyuan.com/bj_sogou/xinli/images/expand6.png*/)/*tpa=http://akg.byqadu.cn/xl/xl-bj-bd2-pc/images/expand6.png*/ no-repeat 0 0;
+	width: 164px;
+	height: 166px;
+	position: absolute;
+	top: 505px;
+	right: 32px;
+}
+
+.expand6:hover {
+	background: url("../images/expand6.png"/*tpa=http://www.lbxueyuan.com/bj_sogou/xinli/images/expand6.png*/)/*tpa=http://akg.byqadu.cn/xl/xl-bj-bd2-pc/images/expand6.png*/ no-repeat 0 -170px;
+}
+.expand1:hover .expand-h2,.expand2:hover .expand-h2,.expand3:hover .expand-h2,.expand4:hover .expand-h2,.expand5:hover .expand-h2,.expand6:hover .expand-h2{
+	color: #fff;
+}
+.expand-h2 {
+	margin: 57px 0;
+	font-size: 20px;
+	font-weight: bold;
+	color: #30304a;
+	line-height: 26px;
+}
+
+.expand-mar {
+	margin: 0;
+	line-height: 170px;
+}
+
+.expand-con {
+	display: none;
+}
+
+.expand-title {
+	font-size: 52px;
+	color: #fff;
+	font-weight: bold;
+	padding: 150px 0 0 0;
+	margin: 0;
+}
+
+.expand-stitle {
+	font-size: 52px;
+	color: #f55d30;
+	font-weight: bold;
+	margin: 0;
+}
+
+.expand-p1 {
+	margin: 15px 0 0 0;
+	font-size: 18px;
+	color: #adacb2;
+	line-height: 24px;
+}
+
+.expand-p {
+	margin-top: 0;
+	line-height: 106px;
+	height: 106px;
+	font-size: 22px;
+	color: #fff;
+	font-weight: bold;
+}
+
+.expand-p21 {
+	background: url("../images/expand1-con.png"/*tpa=http://www.lbxueyuan.com/bj_sogou/xinli/images/expand1-con.png*/)/*tpa=http://akg.byqadu.cn/xl/xl-bj-bd2-pc/images/expand1-con.png*/ no-repeat center;
+}
+
+.expand-p22 {
+	background: url("../images/expand2-con.png"/*tpa=http://www.lbxueyuan.com/bj_sogou/xinli/images/expand2-con.png*/)/*tpa=http://akg.byqadu.cn/xl/xl-bj-bd2-pc/images/expand2-con.png*/ no-repeat center;
+}
+
+.expand-p23 {
+	background: url("../images/expand3-con.png"/*tpa=http://www.lbxueyuan.com/bj_sogou/xinli/images/expand3-con.png*/)/*tpa=http://akg.byqadu.cn/xl/xl-bj-bd2-pc/images/expand3-con.png*/ no-repeat center;
+}
+
+.expand-p24 {
+	background: url("../images/expand4-con.png"/*tpa=http://www.lbxueyuan.com/bj_sogou/xinli/images/expand4-con.png*/)/*tpa=http://akg.byqadu.cn/xl/xl-bj-bd2-pc/images/expand4-con.png*/ no-repeat center;
+}
+
+.expand-p25 {
+	background: url("../images/expand5-con.png"/*tpa=http://www.lbxueyuan.com/bj_sogou/xinli/images/expand5-con.png*/)/*tpa=http://akg.byqadu.cn/xl/xl-bj-bd2-pc/images/expand5-con.png*/ no-repeat center;
+}
+
+.expand-p26 {
+	background: url("../images/expand6-con.png"/*tpa=http://www.lbxueyuan.com/bj_sogou/xinli/images/expand6-con.png*/)/*tpa=http://akg.byqadu.cn/xl/xl-bj-bd2-pc/images/expand6-con.png*/ no-repeat center;
+}
+
+.expand-p3 {
+	font-size: 16px;
+	color: #dedee0;
+	line-height: 26px;
+}
+
+.btn-expand {
+	width: 230px;
+	margin: 40px auto 0;
+	height: 58px;
+	line-height: 58px;
+	display: block;
+	background: transparent url("../images/btn-expand-arrow.png"/*tpa=http://www.lbxueyuan.com/bj_sogou/xinli/images/btn-expand-arrow.png*/)/*tpa=http://akg.byqadu.cn/xl/xl-bj-bd2-pc/images/btn-expand-arrow.png*/ no-repeat 166px center;
+	border: #f55d30 1px solid;
+	border-radius: 60px;
+	font-size: 16px;
+	color: #f55d30;
+	cursor: pointer;}
+
+.btn-expand:hover {
+	color: #f55d30;
+}
+
+.expand-common {
+	cursor: pointer;
+}
+
+
+
+/**/
+
+.need{ width:100%; height:600px; background:#dfe3e7 url("../images/need_top.png"/*tpa=http://www.lbxueyuan.com/bj_sogou/xinli/images/need_top.png*/)/*tpa=http://akg.byqadu.cn/xl/xl-bj-bd2-pc/images/need_top.png*/ no-repeat  center 70px; padding-top:200px;}
+.need .w1000{ width:980px;}
+.need a{  display:block; width:214px; height:254px; float:left; margin:15px;} 
+.need01{ background:url("../images/need01.png"/*tpa=http://www.lbxueyuan.com/bj_sogou/xinli/images/need01.png*/)/*tpa=http://akg.byqadu.cn/xl/xl-bj-bd2-pc/images/need01.png*/ no-repeat;}
+.need02{ background:url("../images/need02.png"/*tpa=http://www.lbxueyuan.com/bj_sogou/xinli/images/need02.png*/)/*tpa=http://akg.byqadu.cn/xl/xl-bj-bd2-pc/images/need02.png*/ no-repeat;}
+.need03{ background:url("../images/need03.png"/*tpa=http://www.lbxueyuan.com/bj_sogou/xinli/images/need03.png*/)/*tpa=http://akg.byqadu.cn/xl/xl-bj-bd2-pc/images/need03.png*/ no-repeat;}
+.need04{ background:url("../images/need04.png"/*tpa=http://www.lbxueyuan.com/bj_sogou/xinli/images/need04.png*/)/*tpa=http://akg.byqadu.cn/xl/xl-bj-bd2-pc/images/need04.png*/ no-repeat;}
+.need05{ background:url("../images/need05.png"/*tpa=http://www.lbxueyuan.com/bj_sogou/xinli/images/need05.png*/)/*tpa=http://akg.byqadu.cn/xl/xl-bj-bd2-pc/images/need05.png*/ no-repeat;}
+.need06{ background:url("../images/need06.png"/*tpa=http://www.lbxueyuan.com/bj_sogou/xinli/images/need06.png*/)/*tpa=http://akg.byqadu.cn/xl/xl-bj-bd2-pc/images/need06.png*/ no-repeat;}
+.need07{ background:url("../images/need07.png"/*tpa=http://www.lbxueyuan.com/bj_sogou/xinli/images/need07.png*/)/*tpa=http://akg.byqadu.cn/xl/xl-bj-bd2-pc/images/need07.png*/ no-repeat;}
+.need08{ background:url("../images/need08.png"/*tpa=http://www.lbxueyuan.com/bj_sogou/xinli/images/need08.png*/)/*tpa=http://akg.byqadu.cn/xl/xl-bj-bd2-pc/images/need08.png*/ no-repeat;}
+.need a:hover{ box-shadow: 0 0 10px #333;  transform: translateY(-5px); -webkit-transform: translateY(-5px); transition:all 0.3s linear;} 
+
+
+
+
+
+
+
+
+
+
+
+
+/*9屏*/
+.jineng01{ height:470px; width:100%; background:url("../images/jineng.png"/*tpa=http://www.lbxueyuan.com/bj_sogou/xinli/images/jineng.png*/)/*tpa=http://akg.byqadu.cn/xl/xl-bj-bd2-pc/images/jineng.png*/ no-repeat center; margin:60px 0;}
+
+/*10屏*/
+.tixi{ width:100%; height:110px; background:url("../images/tixi.jpg"/*tpa=http://www.lbxueyuan.com/bj_sogou/xinli/images/tixi.jpg*/)/*tpa=http://akg.byqadu.cn/xl/xl-bj-bd2-pc/images/tixi.jpg*/ no-repeat center top; text-align:center; padding-top:460px; }
+
+.tixi a.one1{ display:block; float:left; width:142px; margin:8px 73px 0 102px; height:30px;  border-radius:2px; text-align:center; line-height:30px;  font-size:14px;  color:#FFF; background:#eeeeee; border:#999 1px solid; color:#333;}
+.tixi a.one1:hover { background:#f32a4b; border:#f95856 1px solid; color:#FFF; transition:all 0.3s linear;}
+.tixi a.tixi_btn{ display:block; width:222px; height:56px; line-height:56px; font-size:16px;background:#ed3654;  border-radius:3px; margin:190px auto 0px;}
+.tixi a.tixi_btn:hover{ background:#d01a43; transition:all 0.3s linear;}
+
+
+/*11屏*/
+.kecheng{background:url("../images/kecheng.png"/*tpa=http://www.lbxueyuan.com/bj_sogou/xinli/images/kecheng.png*/)/*tpa=http://akg.byqadu.cn/xl/xl-bj-bd2-pc/images/kecheng.png*/ no-repeat center 30px; width:100%; height:90px; text-align:center; padding-top:580px;}
+.kecheng .w1000{width:520px;}
+.kecheng .kecheng_btn{display:block; width:180px; height:40px; line-height:40px; font-size:16px;background:#ed3654; color:#fff;  border-radius:3px; float:left; margin:0px 40px 0px 40px;}
+.kecheng .kecheng_btn:hover{ background:#222;}
+/*12屏*/
+.tuandui01{ height:590px; width:100%; background:url("../images/tuandui.png"/*tpa=http://www.lbxueyuan.com/bj_sogou/xinli/images/tuandui.png*/)/*tpa=http://akg.byqadu.cn/xl/xl-bj-bd2-pc/images/tuandui.png*/ no-repeat center; margin:0;}
+
+
+/*13 学员*/
+.xueyuan{ width:100%; height:850px; padding:50px 0px 20px; background:url("../images/xuyuan_bg.png"/*tpa=http://www.lbxueyuan.com/bj_sogou/xinli/images/xuyuan_bg.png*/)/*tpa=http://akg.byqadu.cn/xl/xl-bj-bd2-pc/images/xuyuan_bg.png*/ no-repeat center /*60px*/;}
+
+.list_lh{ height:520px; width:830px; margin:260px auto 0; overflow:hidden;}
+.list_lh li div{ height:92px; line-height:92px;}
+
+
+
+
+/*14*/
+.yiwen{background:url("../images/yiwen.png"/*tpa=http://www.lbxueyuan.com/bj_sogou/xinli/images/yiwen.png*/)/*tpa=http://akg.byqadu.cn/xl/xl-bj-bd2-pc/images/yiwen.png*/ no-repeat center ; width:100%; height:560px; text-align:center; }
+.yiwen .w1000{ position:relative;}
+.yiwen_btn1{ display:block; color:#db2042; background:#FFF;  border:1px #fff solid; border-radius:5px;  width:160px; height:40px; line-height:36px; font-size:18px; position:absolute; top:330px; left:5px;} 
+
+.yiwen_btn2{ display:block; color:#db2042;  border:1px #db2042 solid; border-radius:5px;  width:160px; height:40px; line-height:40px; font-size:18px; position:absolute; top:330px; left:270px; } 
+
+.yiwen_btn3{ display:block; color:#db2042;  background:#FFF; border:1px #db2042 solid; border-radius:5px;  width:160px; height:40px;line-height:40px; font-size:18px; position:absolute; top:330px; left:560px;  } 
+
+.yiwen_btn4{ display:block; color:#fff; background:#222;  border:1px #db2042 solid; border-radius:5px;  width:160px; height:40px; line-height:40px; font-size:18px; position:absolute; top:480px; left:294px; } 
+
+.yiwen_btn5{ display:block; color:#fff;  background:#db2042;  border:1px #db2042 solid; border-radius:5px;  width:160px; height:40px; line-height:40px; font-size:18px; position:absolute; top:470px; left:836px; } 
+
+.yiwen_btn2:hover,.yiwen_btn3:hover,.yiwen_btn4:hover,.yiwen_btn5:hover{ border:1px #ed3654 solid; background:#ed3654; color:#fff; transition:all 0.3s linear;}
+.yiwen_btn1:hover{ border:1px #ed3654 solid; background:#222; color:#fff; transition:all 0.3s linear;}
+.yiwen_btn4:hover{ border:1px #ed3654 solid; background:#fff; color:#db2042; transition:all 0.3s linear;}
+
+/*15屏 简章*/
+.jianzhang01{ height:393px; width:100%; background:url("../images/jianzhang_01.png"/*tpa=http://www.lbxueyuan.com/bj_sogou/xinli/images/jianzhang_01.png*/)/*tpa=http://akg.byqadu.cn/xl/xl-bj-bd2-pc/images/jianzhang_01.png*/ no-repeat  center ; margin-top:60px;}
+.jianzhang02{ height:554px; width:100%; background:url("../images/jianzhang_02.png"/*tpa=http://www.lbxueyuan.com/bj_sogou/xinli/images/jianzhang_02.png*/)/*tpa=http://akg.byqadu.cn/xl/xl-bj-bd2-pc/images/jianzhang_02.png*/ no-repeat center;}
+.jianzhang03{ height:453px; width:100%; background:url("../images/jianzhang_03.png"/*tpa=http://www.lbxueyuan.com/bj_sogou/xinli/images/jianzhang_03.png*/)/*tpa=http://akg.byqadu.cn/xl/xl-bj-bd2-pc/images/jianzhang_03.png*/ no-repeat center;}
+
+
+
+/*助学*/
+.zhuxue{ height:666px; width:100%; background:url("../images/zhuxuejin_bj.jpg"/*tpa=http://www.lbxueyuan.com/bj_sogou/xinli/images/zhuxuejin_bj.jpg*/)/*tpa=http://akg.byqadu.cn/xl/xl-bj-bd2-pc/images/zhuxuejin_bj.jpg*/ no-repeat center;}
+
+.zhuxue_btn1{ display:block; float:left; width:200px; height:50px; line-height:50px; color:#FFF;  font-size:14px; text-align:center; border-radius:3px; margin:560px 0px 0px 260px; border:1px solid #f5786d; }
+.zhuxuebj{ background:#0eb88b;}
+.zhuxuebj1{background:#333;}
+.zhuxue_btn1:hover{ border:1px solid #FFF; transition:all 0.3s linear; background:none;}
+
+
+
+
+
+
+/*准备四步*/
+.zhunbei .w1000{ position:relative;}
+.zhunbei .btn01{ width:100px; height:30px; position:absolute; background:#ed3654; line-height:30px; color:#FFF; font-size:13px; border-radius:30px; left:560px; top:300px;}
+.zhunbei .btn02{ width:100px; height:30px; position:absolute; background:#ed3654; line-height:30px; color:#FFF; font-size:13px; border-radius:30px; left:340px; top:425px;}
+.zhunbei .btn03{ width:100px; height:30px; position:absolute; background:#ed3654; line-height:30px; color:#FFF; font-size:13px; border-radius:30px;left:560px; top:555px;}
+.zhunbei .btn04{ width:100px; height:30px; position:absolute; background:#ed3654; line-height:30px; color:#FFF; font-size:13px; border-radius:30px;left:340px; top:670px;}
+.zhunbei a:hover{ background-color:#222; transition:all 0.3s linear;}	
+
+/*六边形*/
+.liubianxing1{background:url("../images/liubian_bj1.png"/*tpa=http://www.lbxueyuan.com/bj_sogou/xinli/images/liubian_bj1.png*/)/*tpa=http://akg.byqadu.cn/xl/xl-bj-bd2-pc/images/liubian_bj1.png*/ no-repeat center ; width:100%; height:640px; text-align:center; padding-top:30px; border-top:#d5d5d5 1px solid; margin-top:10px;}
+.liubianxing1 .w1000{ position:relative;}
+.liubianxing1 .btn01{ width:116px; height:30px; position:absolute; background:#ed3654; line-height:30px; color:#FFF; font-size:14px; border-radius:30px; left:220px; top:415px;}
+.liubianxing1 .btn02{ width:116px; height:30px; position:absolute; background:#ed3654; line-height:30px; color:#FFF; font-size:14px; border-radius:30px; left:450px; top:565px;}
+.liubianxing1 .btn03{ width:116px; height:30px; position:absolute; background:#ed3654; line-height:30px; color:#FFF; font-size:14px; border-radius:30px;left:675px; top:415px;}
+	
+.liubianxing2{background:url("../images/liubian_bj2.png"/*tpa=http://www.lbxueyuan.com/bj_sogou/xinli/images/liubian_bj2.png*/)/*tpa=http://akg.byqadu.cn/xl/xl-bj-bd2-pc/images/liubian_bj2.png*/ no-repeat center ; width:100%; height:740px; text-align:center; margin-top:20px;}
+.liubianxing2 .w1000{ position:relative;}
+.liubianxing2 .btn01{ width:116px; height:30px; position:absolute; background:#ed3654; line-height:30px; color:#FFF; font-size:14px; border-radius:30px; left:220px; top:445px;}
+.liubianxing2 .btn02{ width:116px; height:30px; position:absolute; background:#ed3654; line-height:30px; color:#FFF; font-size:14px; border-radius:30px; left:450px; top:595px;}
+.liubianxing2 .btn03{ width:116px; height:30px; position:absolute; background:#ed3654; line-height:30px; color:#FFF; font-size:14px; border-radius:30px;left:675px; top:455px;}
+.liubianxing1 a:hover{ background-color:#333; transition:all 0.3s linear;}	
+.liubianxing2 a:hover{ background-color:#333; transition:all 0.3s linear;}	
+
+
+
+/*老师*/
+.teachers{ background:url("../images/shizi_bj.png"/*tpa=http://www.lbxueyuan.com/bj_sogou/xinli/images/shizi_bj.png*/)/*tpa=http://akg.byqadu.cn/xl/xl-bj-bd2-pc/images/shizi_bj.png*/ no-repeat center ; width:100%; height:860px; text-align:center; margin-top:20px;}
+.teachers .w1000{ position:relative;}
+.teachers .btn01{ width:150px; height:40px; position:absolute; background:#fafafa; line-height:40px; color:#e62f4d; font-size:14px; border:1px solid #bdbdbd; border-radius:5px; left:80px; top:750px;}
+.teachers .btn02{ width:150px; height:40px; position:absolute; background:#fafafa;  line-height:40px;  color:#e62f4d; font-size:14px; border:1px solid #bdbdbd; border-radius:5px;left:430px; top:750px;}
+.teachers .btn03{ width:150px; height:40px; position:absolute;background:#fafafa;  line-height:40px; color:#e62f4d; font-size:14px; border:1px solid #bdbdbd; border-radius:5px; left:770px; top:750px;}
+.teachers a:hover{ background-color:#e62f4d; color:#FFF; transition:all 0.3s linear;}	
+
+
+
+
+
+/*校区*/
+.xiaoqu{ width:100%; background:#2c303b; height:750px; padding:50px 0px; text-align:center;}	
+.xiaoqu_con{ width:1000px; margin:0 auto; text-align:center; background:url("../images/dizhi.jpg"/*tpa=http://www.lbxueyuan.com/bj_sogou/xinli/images/dizhi.jpg*/)/*tpa=http://akg.byqadu.cn/xl/xl-bj-bd2-pc/images/dizhi.jpg*/ no-repeat center; height:760px; position:relative;}
+
+
+
+.xiaoqu_btn1{ display:block; color:#FFF;  border:1px #fff solid;  width:128px; height:36px; line-height:36px; font-size:18px; position:absolute; top:380px; left:155px;} 
+
+.xiaoqu_btn2{ display:block; color:#FFF;  border:1px #fff solid;  width:128px; height:36px; line-height:36px; font-size:18px; position:absolute; top:380px; left:436px; } 
+
+.xiaoqu_btn3{ display:block; color:#FFF;  border:1px #fff solid;  width:128px; height:36px; line-height:36px; font-size:18px; position:absolute; top:380px; left:722px;  } 
+
+.xiaoqu_btn4{ display:block; color:#FFF;  border:1px #fff solid;  width:128px; height:36px; line-height:36px; font-size:18px; position:absolute; top:620px; left:294px; } 
+
+.xiaoqu_btn5{ display:block; color:#FFF;  border:1px #fff solid;  width:128px; height:36px; line-height:36px; font-size:18px; position:absolute; top:620px; left:576px; } 
+
+.xiaoqu_btn1:hover,.xiaoqu_btn2:hover,.xiaoqu_btn3:hover,.xiaoqu_btn4:hover,.xiaoqu_btn5:hover{ border:1px #ed3654 solid; background:#ed3654; color:#fff; transition:all 0.3s linear;}
+
+
+<!--jiesha2-->
+.jiesha_time1{  font-size:90px;  height:70px; line-height:70px; text-align:center; color:#a80f2d; float:left; position:absolute; top:314px; left:0px; }
+
+
+/*底部*/
+.footerWrap{width:100%;height:30px;background:#141515;}.footer{width:1100px;height:30px;margin:0 auto;color:#fff;text-align:center;font-size:12px;line-height:30px}
+
+
+
+
+/*右侧*/
+.right{width:131px;height:519px;background: url("../images/right.png"/*tpa=http://www.lbxueyuan.com/bj_sogou/xinli/images/right.png*/)/*tpa=http://akg.byqadu.cn/xl/xl-bj-bd2-pc/images/right.png*/ no-repeat;position: fixed;right:0;top:11%;padding-top: 64px;z-index:99;}
+.right p{font-size: 16px;cursor: pointer;position: absolute;top:0;right:4px;color:#fff;font-family:"微软雅黑" }
+
+.right ul.uls li{height:30px;line-height: 30px;background: url("../images/right_heng.png"/*tpa=http://www.lbxueyuan.com/bj_sogou/xinli/images/right_heng.png*/)/*tpa=http://akg.byqadu.cn/xl/xl-bj-bd2-pc/images/right_heng.png*/ no-repeat center bottom;position: relative;}
+.right ul.uls li a{display:block;height:30px;text-align: center;font-size: 14px;color:#fab4b4;}
+.right ul.uls li a:hover{background: url("../images/right_li.png"/*tpa=http://www.lbxueyuan.com/bj_sogou/xinli/images/right_li.png*/)/*tpa=http://akg.byqadu.cn/xl/xl-bj-bd2-pc/images/right_li.png*/ no-repeat center;}
+#rights{width:150px;height:335px;position: absolute;top:-6px;left:-131px;padding-top: 10px;display:none;}
+.tops{background: url("../images/rights1.png"/*tpa=http://www.lbxueyuan.com/bj_sogou/xinli/images/rights1.png*/)/*tpa=http://akg.byqadu.cn/xl/xl-bj-bd2-pc/images/rights1.png*/ no-repeat;}
+.bottoms{background: url("../images/rights.png"/*tpa=http://www.lbxueyuan.com/bj_sogou/xinli/images/rights.png*/)/*tpa=http://akg.byqadu.cn/xl/xl-bj-bd2-pc/images/rights.png*/ no-repeat;}
+#rights li{width:128px;height:32px;line-height: 32px;background: url("../images/right_hengs.png"/*tpa=http://www.lbxueyuan.com/bj_sogou/xinli/images/right_hengs.png*/)/*tpa=http://akg.byqadu.cn/xl/xl-bj-bd2-pc/images/right_hengs.png*/ no-repeat center bottom;}
+#rights li a{display:block;height:32px;text-align: center;font-size: 14px;color:#fab4b4;}
+#rights li a:hover{background: url("../images/right_li.png"/*tpa=http://www.lbxueyuan.com/bj_sogou/xinli/images/right_li.png*/)/*tpa=http://akg.byqadu.cn/xl/xl-bj-bd2-pc/images/right_li.png*/ no-repeat center;}
+#scool{width: 20px;height:110px;background:#b00522;color:#fff;font-family: "微软雅黑";
+          font-size: 14px;position: fixed;right:0px; top:30%;padding:10px 0 0 4px;
+         cursor: pointer;display: none}
+
+
+
+
+.contList2 { text-align: center; width:1045px;margin: 0 auto;}
+
+
+
+
+
+.menu {
+	font-family:verdana,arial,sans-serif;
+	width:770px;
+	position:relative;
+	height:36px;
+	font-size:12px;
+	margin:0 auto;
+	background:#fefb00;
+	z-index:9999
+}
+.menu ul li a,.menu ul li a:visited {
+	display:block;
+	text-decoration:none;
+	width:144px;
+	height:36px;
+	text-align:center;
+	color:#000;
+	padding-left:9px;
+	border:1px solid #000;
+	border-width:0 1px 1px 0;
+	line-height:36px;
+	font-size:12px;
+	font-family:"微软雅黑"
+}
+.menu ul {
+	padding:0;
+	margin:0;
+	list-style-type:none
+}
+.menu ul li {
+	float:left;
+	position:relative
+}
+.menu ul li ul {
+	display:none
+}
+.menu ul li:hover a {
+	color:#fff;
+	background:#000;
+	font-family:"微软雅黑";
+	font-size:12px
+}
+.menu ul li:hover ul {
+	display:block;
+	position:absolute;
+	bottom:34px;
+	left:0
+}
+.menu ul li:hover ul li a.hide {
+	background:#454545;
+	color:#fff
+}
+.menu ul li:hover ul li {
+	display:block;
+	background:#fff;
+	color:#000;
+	width:210px;
+	clear:both
+}
+.menu ul li:hover ul li:hover a.hide {
+	background:#858585;
+	color:#000;
+	font-family:"微软雅黑";
+	font-size:11px
+}
+.menu ul li:hover ul li:hover a.hide:hover {
+	background:#fefb00;
+	color:#000
+}
+.menu ul li:hover ul li ul {
+	display:none
+}
+.menu ul li:hover ul li a {
+	display:block;
+	background:#454545;
+	color:#fff;
+	width:100%;
+	padding-left:10px
+}
+.menu ul li:hover ul li a:hover {
+	background:#fefb00;
+	color:#000
+}
+.menu ul li:hover ul li:hover ul {
+	display:block;
+	position:absolute;
+	left:210px;
+	bottom:0
+}
+.menu ul li:hover ul li:hover ul li a {
+	background:#dfc184;
+	color:#000
+}
+.menu ul li:hover ul li:hover ul li a:hover {
+	background:#fefb00;
+	color:#000
+}
+.menu ul li:hover ul.left {
+	left:-67px
+}
+.menu ul li:hover ul li:hover ul.left {
+	left:-210px;
+	width:209px
+}
+
+
+
+
+
+
+.shenhai{width:100%;margin:0 auto;height:406px;text-align:center;background:#f6f8fa}
+
+
+
+
+
+
+
+.aaaaaaab{width:100%; height:288px; margin:0 auto;background:url("../images/622.jpg"/*tpa=http://www.lbxueyuan.com/bj_sogou/xinli/images/622.jpg*/)/*tpa=http://akg.byqadu.cn/xl/xl-bj-bd2-pc/images/622.jpg*/ no-repeat center 0;}
+
+
+
+
+
+#aa1{background:url("../images/jz-150423-herderBg3.jpg"/*tpa=http://www.lbxueyuan.com/bj_sogou/xinli/images/jz-150423-herderBg3.jpg*/)/*tpa=http://akg.byqadu.cn/xl/xl-bj-bd2-pc/images/jz-150423-herderBg3.jpg*/ no-repeat center 0;}
+#aa2{background:url("../images/jz-150423-herderBg2.jpg"/*tpa=http://www.lbxueyuan.com/bj_sogou/xinli/images/jz-150423-herderBg2.jpg*/)/*tpa=http://akg.byqadu.cn/xl/xl-bj-bd2-pc/images/jz-150423-herderBg2.jpg*/ no-repeat center 0;}
+#aa3{background:url("../images/jz-141030header1.jpg"/*tpa=http://www.lbxueyuan.com/bj_sogou/xinli/images/jz-141030header1.jpg*/)/*tpa=http://akg.byqadu.cn/xl/xl-bj-bd2-pc/images/jz-141030header1.jpg*/ no-repeat center 0;}
+#aa4{background:url("../images/add1_bg.jpg"/*tpa=http://www.lbxueyuan.com/bj_sogou/xinli/images/add1_bg.jpg*/)/*tpa=http://akg.byqadu.cn/xl/xl-bj-bd2-pc/images/add1_bg.jpg*/ no-repeat center 0;}
+#aa5{background:url("../images/add2_bg.jpg"/*tpa=http://www.lbxueyuan.com/bj_sogou/xinli/images/add2_bg.jpg*/)/*tpa=http://akg.byqadu.cn/xl/xl-bj-bd2-pc/images/add2_bg.jpg*/ no-repeat center 0;}
+
+
+
+a.zixun {
+width: 312px;
+height: 58px;
+line-height: 58px;
+text-align: center;
+font-size: 19px;
+font-family: "微软雅黑";
+color: #5c281a;
+display: block;
+position: absolute;
+border: 1px solid #5c281a;
+border-radius: 5px;
+}
+
+
+a.shijuan{ width:64px; height:64px; position:absolute; background:url("../images/jz13-140728mages_03.png"/*tpa=http://www.lbxueyuan.com/bj_sogou/xinli/images/jz13-140728mages_03.png*/)/*tpa=http://akg.byqadu.cn/xl/xl-bj-bd2-pc/images/jz13-140728mages_03.png*/}
+a.shijuan:hover{ width:64px; height:64px; position:absolute; background:url("../images/jz13-140728mages1_03.png"/*tpa=http://www.lbxueyuan.com/bj_sogou/xinli/images/jz13-140728mages1_03.png*/)/*tpa=http://akg.byqadu.cn/xl/xl-bj-bd2-pc/images/jz13-140728mages1_03.png*/}
+a.yinpin{ width:64px; height:64px; position:absolute; background:url("../images/jz13-140728mages_05.png"/*tpa=http://www.lbxueyuan.com/bj_sogou/xinli/images/jz13-140728mages_05.png*/)/*tpa=http://akg.byqadu.cn/xl/xl-bj-bd2-pc/images/jz13-140728mages_05.png*/}
+a.yinpin:hover{ width:64px; height:64px; position:absolute; background:url("../images/jz13-140728mages1_05.png"/*tpa=http://www.lbxueyuan.com/bj_sogou/xinli/images/jz13-140728mages1_05.png*/)/*tpa=http://akg.byqadu.cn/xl/xl-bj-bd2-pc/images/jz13-140728mages1_05.png*/}
+a.jiangyi{ width:64px; height:64px; position:absolute; background:url("../images/jz13-140728mages_07.png"/*tpa=http://www.lbxueyuan.com/bj_sogou/xinli/images/jz13-140728mages_07.png*/)/*tpa=http://akg.byqadu.cn/xl/xl-bj-bd2-pc/images/jz13-140728mages_07.png*/}
+a.jiangyi:hover{ width:64px; height:64px; position:absolute; background:url("../images/jz13-140728mages1_07.png"/*tpa=http://www.lbxueyuan.com/bj_sogou/xinli/images/jz13-140728mages1_07.png*/)/*tpa=http://akg.byqadu.cn/xl/xl-bj-bd2-pc/images/jz13-140728mages1_07.png*/}
+a.shouce{ width:64px; height:64px; position:absolute; background:url("../images/jz13-140728mages_09.png"/*tpa=http://www.lbxueyuan.com/bj_sogou/xinli/images/jz13-140728mages_09.png*/)/*tpa=http://akg.byqadu.cn/xl/xl-bj-bd2-pc/images/jz13-140728mages_09.png*/}
+a.shouce:hover{ width:64px; height:64px; position:absolute; background:url("../images/jz13-140728mages1_09.png"/*tpa=http://www.lbxueyuan.com/bj_sogou/xinli/images/jz13-140728mages1_09.png*/)/*tpa=http://akg.byqadu.cn/xl/xl-bj-bd2-pc/images/jz13-140728mages1_09.png*/}
+a.zhibo{ width:64px; height:64px; position:absolute; background:url("../images/jz13-140728mages_11.png"/*tpa=http://www.lbxueyuan.com/bj_sogou/xinli/images/jz13-140728mages_11.png*/)/*tpa=http://akg.byqadu.cn/xl/xl-bj-bd2-pc/images/jz13-140728mages_11.png*/}
+a.zhibo:hover{ width:64px; height:64px; position:absolute; background:url("../images/jz13-140728mages1_11.png"/*tpa=http://www.lbxueyuan.com/bj_sogou/xinli/images/jz13-140728mages1_11.png*/)/*tpa=http://akg.byqadu.cn/xl/xl-bj-bd2-pc/images/jz13-140728mages1_11.png*/}
+
+a.jingji{ width:136px; height:40px; position:absolute; background:url("../images/jz-140725button2_05.jpg"/*tpa=http://www.lbxueyuan.com/bj_sogou/xinli/images/jz-140725button2_05.jpg*/)/*tpa=http://akg.byqadu.cn/xl/xl-bj-bd2-pc/images/jz-140725button2_05.jpg*/}
+a.jingji:hover{ width:136px; height:40px; position:absolute; background:url("../images/jz-140725button2_03.png"/*tpa=http://www.lbxueyuan.com/bj_sogou/xinli/images/jz-140725button2_03.png*/)/*tpa=http://akg.byqadu.cn/xl/xl-bj-bd2-pc/images/jz-140725button2_03.png*/}
+
+.sunbm table {
+	border-top: 1px solid #CCC;
+	border-right: 1px solid #CCC;
+}
+.sunbm table td {
+	border-bottom: 1px solid #CCC;
+	border-left: 1px solid #CCC;
+}
+.sun_a{ font-family:"微软雅黑"; font-weight:bold; font-size:36px; color:#fff;}
+.sun_b{font-family:"微软雅黑"; font-size:12px; color:#545454;}
+.sun_c{font-family:"微软雅黑"; font-size:16px; font-weight:bold;color:#464646}
+.sun_d{font-family:"微软雅黑"; font-size:14px; font-weight:bold;color:#464646}
+.sun_e{font-family:"微软雅黑"; font-size:16px; font-weight:bold;color:#fa2c52}
+
+.white{
+	background:#FFF;
+}
+.pink{
+	background:#cf1232;
+}
+
+.map{ position:relative;width:856px; margin:0 auto;}
+.map a{ color:#5b5a5a; font-size:14px; text-decoration:none;}
+.map a:hover{ color:#fff;}
+.citybg{ position:absolute; display:none; z-index:3; }
+.city a.active .citybg{ display:block; z-index:3;}
+
+
+
+.left_like{ width:100%; padding-left:78px; height:66px; position:fixed; bottom:0px; left:0px; background:url("../images/like_bg.png"/*tpa=http://www.lbxueyuan.com/bj_sogou/xinli/images/like_bg.png*/)/*tpa=http://akg.byqadu.cn/xl/xl-bj-bd2-pc/images/like_bg.png*/ no-repeat left bottom #e6e6e6;}
+
+
+
+/*新增*/
+.keMu{ width:260px; height:252px; position:absolute; top:84px; left:61px; font-size:14px; font-family:"微软雅黑"; text-align:left; padding-top:10px; overflow:hidden;}
+.guanZhu{ width:260px; height:150px; position:absolute; top:185px; left:61px; font-size:14px; font-family:"微软雅黑"; text-align:left; padding-top:10px; overflow:hidden;}
+.reMen{ width:222px; position:absolute; top:63px; left:62px; font-size:14px; font-family:"微软雅黑"; overflow:hidden;}
+.keMu li,.guanZhu li{ line-height:26px;}
+.reMen li{ float:left; width:66px; height:31px; border:1px solid #dcdcdc; background:#f4f4f4; text-align:center; line-height:31px; margin:0 0 4px 6px;}
+.reMen .nomagin{ margin-right:0;}
+.keMu li a,.guanZhu li a,.reMen li a{ color:#000000; text-decoration:none;}
+.keMu li a:hover,.guanZhu li a:hover,.reMen li a:hover{ color:#cf3a3a; text-decoration:underline;}
+.keMumore{ position:absolute; color:#696969; font-size:12px; top:49px; left:241px;}
+.guanZhumore{ position:absolute; color:#696969; font-size:12px; top:18px; left:241px;}
+.kaoShengmore{ position:absolute; color:#696969; font-size:12px; top:157px; left:241px;}
+.keMumore:hover,.guanZhumore:hover,.kaoShengmore:hover{color:#cf3a3a;}
+.docxWrap{ width:720px; height:290px; padding:63px 0 0 33px; position:absolute; top:0; left:322px;}
+.docxWrap li,.zipWrap li{ width:170px; float:left; text-align:center; margin-right:10px;}
+.docxWrap .nomagin{ margin-right:0;}
+.docxWrap li dt{ width:170px; height:170px; margin-bottom:10px;}
+.docxWrap li dt a{ width:170px; height:170px; display:block; background:url("../images/jz-150521docx_bg01.jpg"/*tpa=http://www.lbxueyuan.com/bj_sogou/xinli/images/jz-150521docx_bg01.jpg*/)/*tpa=http://akg.byqadu.cn/xl/xl-bj-bd2-pc/images/jz-150521docx_bg01.jpg*/ no-repeat center;}
+.docxWrap li dt a:hover{ width:170px; height:170px; background:url("../images/jz-150521docx_hoverbg01.jpg"/*tpa=http://www.lbxueyuan.com/bj_sogou/xinli/images/jz-150521docx_hoverbg01.jpg*/)/*tpa=http://akg.byqadu.cn/xl/xl-bj-bd2-pc/images/jz-150521docx_hoverbg01.jpg*/ no-repeat center}
+.docxWrap li dd,.zipWrap li dd{ color:#6b6b6b;}
+.docxWrap li dd h2,.zipWrap li dd h2{ font-size:13px; font-family:"微软雅黑"; font-weight:normal; margin-bottom:12px;}
+.docxWrap li dd em,.zipWrap li dd em{ font-style:normal; display:block; margin-bottom:8px;}
+.docxWrap li dd a,.zipWrap li dd a{ color:#000;}
+.docxWrap li dd a:hover,.zipWrap li dd a:hover{ color:#cf3a3a;}
+.docxWrap li dd span,.zipWrap li dd span{ display:block; width:170px; height:30px;}
+.docxWrap li dd span a{ display:block; width:170px; height:30px; background:url("../images/jz-150923btn_bg01.jpg"/*tpa=http://www.lbxueyuan.com/bj_sogou/xinli/images/jz-150923btn_bg01.jpg*/)/*tpa=http://akg.byqadu.cn/xl/xl-bj-bd2-pc/images/jz-150923btn_bg01.jpg*/ no-repeat center}
+.docxWrap li dd span a:hover{ display:block; width:170px; height:30px; background:url("../images/jz-150923btn_hoverbg01.jpg"/*tpa=http://www.lbxueyuan.com/bj_sogou/xinli/images/jz-150923btn_hoverbg01.jpg*/)/*tpa=http://akg.byqadu.cn/xl/xl-bj-bd2-pc/images/jz-150923btn_hoverbg01.jpg*/ no-repeat center}
+.zipWrap{width:720px; padding:46px 0 0 33px; position:absolute; top:0; left:322px;}
+.zipWrap li dt{ width:170px; height:178px; margin-bottom:10px;}
+.zipWrap li dt a{ width:170px; height:178px; display:block; background:url("../images/jz-150521docx_bg02.jpg"/*tpa=http://www.lbxueyuan.com/bj_sogou/xinli/images/jz-150521docx_bg02.jpg*/)/*tpa=http://akg.byqadu.cn/xl/xl-bj-bd2-pc/images/jz-150521docx_bg02.jpg*/ no-repeat center;}
+.zipWrap li dt a:hover{ width:170px; height:178px; background:url("../images/jz-150521docx_hoverbg02.jpg"/*tpa=http://www.lbxueyuan.com/bj_sogou/xinli/images/jz-150521docx_hoverbg02.jpg*/)/*tpa=http://akg.byqadu.cn/xl/xl-bj-bd2-pc/images/jz-150521docx_hoverbg02.jpg*/ no-repeat center}
+.zipWrap li dd span a{ display:block; width:170px; height:30px; background:url("../images/jz-150923btn_bg02.jpg"/*tpa=http://www.lbxueyuan.com/bj_sogou/xinli/images/jz-150923btn_bg02.jpg*/)/*tpa=http://akg.byqadu.cn/xl/xl-bj-bd2-pc/images/jz-150923btn_bg02.jpg*/ no-repeat center}
+.zipWrap li dd span a:hover{ display:block; width:170px; height:30px; background:url("../images/jz-150923btn_hoverbg02.jpg"/*tpa=http://www.lbxueyuan.com/bj_sogou/xinli/images/jz-150923btn_hoverbg02.jpg*/)/*tpa=http://akg.byqadu.cn/xl/xl-bj-bd2-pc/images/jz-150923btn_hoverbg02.jpg*/ no-repeat center}
+.jiao{ width:183px; height:41px; background:#ffc807; color:#2c302a; line-height:41px; text-align:center; font-family:"微软雅黑"; font-size:18px; display:block; border-radius:30px; position:absolute}
+.jiao:hover{ text-decoration:none; background:#fff; color:#2c302a}
+.Notice2{ position:absolute; left:622px;top:128px; }
+.Notice2 li{ line-height:27px; text-align:left}
+.Notice2 li a{ font-family:"微软雅黑"; text-decoration:underline; font-size:13px; color:#121212;}
+.Notice2 li a:hover{ color:#ec5d0e}
+
+/*500强*/
+.renli_hr{height:280px; width:440px; text-align:center; margin:70px auto 0; background:url("../images/renli_04.png"/*tpa=http://www.lbxueyuan.com/bj_sogou/xinli/images/renli_04.png*/)/*tpa=http://akg.byqadu.cn/xl/xl-bj-bd2-pc/images/renli_04.png*/ no-repeat center; padding-top:290px; padding-left:560px;}
+.renli_hr li a{ display:block;  float:left; margin:0 10px 0 0; width:110px; height:36px; line-height:36px; color:#fff; background:#31374a; border-radius:2px; margin-bottom:100px;}
+.renli_hr li a:hover{ background:#d5545f;}

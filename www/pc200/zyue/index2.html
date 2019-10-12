@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<!-- saved from url=(0040)http://www.826006.com/zssqao1/index.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <title>首页</title>
+    <style>
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    #download{
+        position: relative;
+    }
+    #download .info{
+        position: absolute;
+        bottom: -1%;
+    }
+    </style>
+</head>
+<body>
+<div id="download">
+    <img id="b_img" style="width:100%; height:100%; display: block;" src="#" alt="">
+    <img src = "images/logo1.png" style="position: absolute;left: 0;top: 0;width: 10%">
+    <!-- <img src = "images/btn.png" class="downloadclz" style="position: absolute;left: 20%;top: 50%;width: 60%"> -->
+    <div  class="info" style="width: 100%;text-align: center; font-size: 14px;color: #000; ">南京加洛德网络科技有限公司</div>
+</div>
+<img id="footer" class="downloadclz" style="position: fixed; width:70%;bottom:1%;left:15%;" src="images/foot.png">
+
+
+<script src="js/app.js"></script>
+<script>
+var _hmt = _hmt || [];
+(function() {
+    var id = getParam('id');
+    if(id == '') {
+        id = "26";
+    }
+    var mid = 'ad77d7603c92fea83aa810b9cf451b5c';
+    if(id == '26') {
+        mid = 'ad77d7603c92fea83aa810b9cf451b5c';
+    } else if (id == '27') {
+        mid = '76e8ebdfdd66af3fbf264e001d97560a';
+    } else if (id == '28') {
+        mid = '3ca6146bc52eec93634a4aef6383ae1f';
+    } else if (id == '29') {
+        mid = 'ad77d7603c92fea83aa810b9cf451b5c';
+    }
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?" + mid;
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+
+
+<script src="js/jquery-1.9.1.js"></script>
+<script type="text/javascript">
+
+    $(document).ready(function() {
+        var mid = getParam('id');
+        if(mid == '27') {
+            mid = "27";
+            $('#footer').css('display', 'none');
+            $('#b_img').addClass('downloadclz');
+        } else {
+            mid = "01";
+        }
+        $('#b_img').attr('src', 'images/' + mid + '.jpg')
+        // 调整 foot 高度
+        var b_img = $('#footer').height();
+        // $('#download').css('margin-bottom', b_img);
+
+        // loadBody("b_img");
+        $('.downloadclz').click( function(e) {
+            var id = getParam('id');
+            if(id == '') {
+                id = "27";
+            }
+            window.location.href = "http://ah2.zhangyue.com/zybook3/app/app.php?ca=Down.Index&p2=1167" + id;
+        });
+    });
+</script>
+</body></html>

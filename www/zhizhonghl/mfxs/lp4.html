@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<!-- saved from url=(0040)http://www.826006.com/zssqao1/index.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <title>首页</title>
+<style>
+    *{
+    	margin: 0;
+    	padding: 0;
+    }
+    #amg{
+    	position: relative;
+    }
+    #amg .info{
+    	position: absolute;
+    	bottom: 1%;
+    }
+    </style>
+</head>
+<body>
+<div id="download">
+<div id="amg">
+	<img id="b_img" style="width:100%; height:100%; display: block;" src="./lp/04.jpg" alt="">
+</div>
+
+    <img id="footer" style="position: fixed;width:100%;bottom:0;left:0;" src="./lp/foot.png">
+</div>
+
+<script src="./lp/jquery.min.js"></script>
+<script type="text/javascript" charset="UTF-8">
+
+	    var b_img = $('#footer').height();
+        $('#amg').css('margin-bottom', b_img);
+
+		function getParam(name) {
+		    var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)");
+		    var r = window.location.search.substr(1).match(reg);
+		    if (r != null)
+		        return decodeURI(r[2]);
+		    return '';
+		}
+
+
+        document.getElementById("download").addEventListener("click", function(){
+             var id = getParam('id');
+             if(id == '') {
+                   id = "wb1001409";
+            }
+            window.location.href = "http://www.chaohuida.com/" + id + ".apk";
+        });
+</script>
+
+
+</body></html>

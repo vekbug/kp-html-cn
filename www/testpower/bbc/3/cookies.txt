@@ -1,0 +1,8 @@
+# HTTrack Website Copier Cookie File
+# This file format is compatible with Netscape cookies
+tool.ifoxdy.cn	TRUE	/	FALSE	1999999999	PHPSESSID	ih8a6ivb9gi08482t0ccf0foc4
+tool.ifoxdy.cn	TRUE	/	FALSE	1999999999	etguestid	kbfiSzBITmLl4MEs
+hm.baidu.com	TRUE	/	FALSE	1999999999	HMACCOUNT	4A0DF84D8B74730E
+tool.ifoxdy.cn	TRUE	/	FALSE	1999999999	etfromid	1588975203
+tool.ifoxdy.cn	TRUE	/	FALSE	1999999999	SERVERID	997ff5cb2d4ae97040262c0f14305754|1570626249|1570626172
+

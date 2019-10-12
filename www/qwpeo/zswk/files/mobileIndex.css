@@ -1,0 +1,172 @@
+#wrap{
+    position: relative;
+    width: 100%;
+}
+#main,#main img{
+    pointer-events: none;
+}
+#floatDown{
+    width: 100%;
+    position: fixed;
+    bottom:0;
+    z-index: 888;
+    overflow: hidden;
+    overflow-y: scroll;
+    height: auto;
+    -webkit-overflow-scrolling: touch;
+    display: none;
+}
+#floatDown a{
+    z-index: 889;
+    position: absolute;
+    top: 4.5vw;
+    right: 5vw;
+}
+#floatDown a img{
+    width: 27vw;
+}
+#mobbut{
+    width: 100%;
+    position: absolute;
+    top: 80vw;
+    text-align: center;
+}
+#mobbut img{
+    width: 35%;
+    /*margin-left: 6.6%;*/
+}
+#mobbut .register{
+    margin-right: 2%;
+}
+#mobbut .download{
+    margin-left: 2%;
+}
+
+/*表单样式*/
+.container{
+    display: none;
+    font-family: '华文细黑';
+}
+.panel-body{
+    border: white;
+}
+.panel-heading{
+    border: white;
+}
+.panel-default{
+    text-align: center;
+    border: white;
+}
+
+#reg-yzm div{
+    /*border: 1px solid;*/
+    float: left;
+}
+
+#reg-submit{
+    /*width: 35vw;*/
+}
+.fen{
+    width: 1px;
+    height: 7vw;
+    margin-top: 1.5%;
+    background-color: rgb(115, 115, 115);
+}
+.form-control{
+    height: 10vw;
+}
+.form-group{
+    margin-top: 7vw;
+}
+#submit{
+    width: 60vw;
+}
+@media (min-width: 300px) {
+    #yzm{
+        width: 28vw;
+    }
+    .btn{
+        height: 10vw;
+        width: 28.5vw;
+        text-align: center;
+        line-height: 6.5vw;
+    }
+}
+@media (min-width: 360px) {
+    #yzm{
+        width: 29.5vw;
+    }
+    .btn{
+        height: 10vw;
+        width: 29.5vw;
+        text-align: center;
+        line-height: 6.5vw;
+    }
+}
+@media (min-width: 370px) {
+    #yzm{
+        width: 30vw;
+    }
+    .btn{
+        height: 10vw;
+        width: 30.5vw;
+        text-align: center;
+        line-height: 6.5vw;
+    }
+}
+@media (min-width: 400px) {
+    #yzm{
+        width: 31vw;
+    }
+    .btn{
+        height: 10vw;
+        width: 31.5vw;
+        text-align: center;
+        line-height: 6.5vw;
+    }
+}
+/*.error
+{
+    color:#a94442;
+    border-color:#a94442;
+    !*background-color:#f2dede*!
+}*/
+input.error { border: 1px solid red; }
+label.error {
+    /*background:url("./demo/images/unchecked.gif") no-repeat 0px 0px;*/
+    position: absolute;
+    left: 1vw;
+    padding-left: 16px;
+    padding-bottom: 2px;
+    font-weight: bold;
+    color: red;
+    margin-top: 1vw;
+}
+/*input.error { border: 1px solid red; }*/
+label.formok{
+    color:limegreen;
+    border-color:limegreen;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

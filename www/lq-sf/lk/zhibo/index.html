@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<!-- saved from url=(0040)http://www.826006.com/zssqao1/index.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <title>首页</title>
+    <style>
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    #download{
+        position: relative;
+    }
+    #download .info{
+        position: absolute;
+        bottom: 2.4%;
+    }
+    </style>
+</head>
+<body>
+<div id="download">
+    <img id="b_img1" style="width:100%; height:100%; display: block; margin-top:200px;" src="#" alt="">
+    <img id="b_img2" style="width:100%; height:100%; display: block;" src="#" alt="">
+    <img src = "http://cdn.kpam.com.cn/images/logo_duominuo.png" style="position: absolute;left: 0;top: 0;width: 10%">
+    <img src = "images/top.jpg" class="downloadclz" style="position: fixed;top: 0%;width: 100%">
+    <img src = "images/buttom.jpg" class="downloadclz" style="position: fixed;bottom: 0%;width: 100%">
+    <div  class="info" style="width: 100%;text-align: center; font-size: 14px;color: #000; ">山东多米诺网络科技有限公司</div>
+</div>
+<!-- <img class="downloadclz" id="footer" style="position: fixed;width:100%;bottom:0;left:0;" src="./images/foot.png"> -->
+
+<script src="http://cdn.kpam.com.cn/js/jquery.min.js"></script>
+<script src="http://cdn.kpam.com.cn/js/app.js"></script>
+<script type="text/javascript">
+
+    $(document).ready(function() {
+
+        var mid1 = getParam('mid1');
+        if(mid1 == '') {
+            mid1 = "01";
+        }
+        $('#b_img1').attr('src', 'images/' + mid1 + '.gif')
+        var mid2 = getParam('mid2');
+        if(mid2 == '') {
+            mid2 = "02";
+        }
+        $('#b_img2').attr('src', 'images/' + mid2 + '.jpg')		
+        // 调整 foot 高度
+        // var b_img = $('#footer').height();
+        // $('#download').css('margin-bottom', b_img);
+        // loadBody("b_img");
+        $('.downloadclz').click( function(e) {
+            var id = getParam('id');
+            if(id == '') {
+                id = "2";
+            }
+            window.location.href = "https://static.liaoke.tv/chatapk/channel/liaoke_bd" + id + ".apk";
+        });
+    });
+</script>
+</body></html>

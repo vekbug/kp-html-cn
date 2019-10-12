@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<!-- saved from url=(0040)http://www.826006.com/zssqao1/index.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <title>首页</title>
+    <style>
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    #download{
+        position: relative;
+    }
+    #download .info{
+        position: absolute;
+        bottom: 1%;
+    }
+    </style>
+</head>
+<body>
+<div id="download">
+    <img id="b_img" style="width:100%; height:80%; display: block;" src="#" alt="">
+    <img src = "images/btn.jpg" class="downloadclz" style="width:100%; height:20%; display: block;">
+    <div  class="info" style="width: 100%;text-align: center; font-size: 14px;color: #000; ">山东多米诺网络科技有限公司</div>
+</div>
+<!-- <img class="downloadclz" id="footer" style="position: fixed;width:100%; top:0;left:0;" src="./images/foot.png"> -->
+
+<script src="js/jquery.min.js"></script>
+<script src="js/app.js"></script>
+<script type="text/javascript">
+    $(document).ready(function() {
+        var mid = getParam('id');
+        if(mid == '') {
+            mid = "xiangce";
+        }
+        $('#b_img').attr('src', 'images/' + mid + '.jpg')
+        var mpk = "HH9baC";
+        if (mid == "xiangce") {
+            mpk = "HH9baC";
+        } else if(mid == "donghua") {
+            mpk = "buu4Xj";
+        } else if(mid == "douyin") {
+            mpk = "me81za";
+        } else if(mid == "hunli") {
+            mpk = "i0X9Xr";
+        } else if(mid == "shengri") {
+            mpk = "DCKvaa";
+        } else if(mid == "weike") {
+            mpk = "5H1jme";
+        } else if(mid == "xiaoshipin") {
+            mpk = "uGruSD";
+        }
+        // 调整 foot 高度
+        // var b_img = $('#footer').height();
+        // $('#download').css('margin-bottom', b_img);
+
+        //loadBody("b_img");
+        $('.downloadclz').click( function(e) {
+            window.location.href = "https://at.umeng.com/onelink/" + mpk;
+        });
+    });
+</script>
+</body></html>

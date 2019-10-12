@@ -1,0 +1,17 @@
+{
+  "scripts/app/comment.js": "scripts/app/comment-042e049bb2.js",
+  "scripts/app/invite-app.js": "scripts/app/invite-app-77b16be6bc.js",
+  "scripts/app/post.js": "scripts/app/post-3e8cd7ded0.js",
+  "scripts/app/share-app.js": "scripts/app/share-app-f0b5a0b744.js",
+  "scripts/app/v1.js": "scripts/app/v1-c02ac8931e.js",
+  "scripts/app/v2.js": "scripts/app/v2-62277921d7.js",
+  "scripts/app/v3.js": "scripts/app/v3-df072b3502.js",
+  "scripts/app/v4.js": "scripts/app/v4-7a3444af6a.js",
+  "scripts/app/v5.js": "scripts/app/v5-4dd457d7ca.js",
+  "scripts/app/v6.js": "scripts/app/v6-99b943d1cb.js",
+  "scripts/app/v7.js": "scripts/app/v7-5afab422cd.js",
+  "scripts/app/v8.js": "scripts/app/v8-e9d468a67e.js",
+  "scripts/appinfo.js": "scripts/appinfo-eeb19e4cdf.js",
+  "scripts/track.js": "scripts/track-6a75c6403d.js",
+  "scripts/util.js": "scripts/util-e4bc02328b.js"
+}

@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<!-- saved from url=(0040)http://www.826006.com/zssqao1/index.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <title>首页</title>
+    <style>
+    *{
+    	margin: 0;
+    	padding: 0;
+    }
+    #download{
+    	position: relative;
+    }
+    #download .info{
+    	position: absolute;
+    	bottom: 3%;
+    }
+    </style>
+</head>
+<body>
+<div id="download" class="downloadclz">
+    <img id="b_img" style="width:100%; height:100%; display: block;" alt="">
+    <!-- <img src = "./demo/logo.png" style="position: absolute;left: 0;top: 0;width: 20%"> -->
+    <!-- <img src = "./images/btn.png" class="downloadclz" style="position: absolute;left: 20%;top: 50%;width: 60%"> -->
+    <div  class="info" style="width: 100%;text-align: center; font-size: 14px;color: #000; ">沪ICP备13021614号  上海智用文化传播有限公司 公司地址:上海市普陀区谈家渡路28号盛泉大厦  021-32505372*802</div>
+</div>
+
+<!-- <img id="footer" class="downloadclz" style="position: fixed;width:100%;bottom:0;left:0;" src="./demo/foot.png"> -->
+
+<script src="./js/jquery.min.js"></script>
+<script type="text/javascript">
+
+    $(document).ready(function() {
+
+        // 调整 foot 高度
+        var b_img = $('#footer').height();
+        $('#download').css('margin-bottom', b_img);
+
+        var a = $("#b_img").height();
+        var b = $(window).height();
+        if(b > a) {
+            //  $("#b_img").height(b);
+        }
+        
+        var imgid = getParam('mid');
+
+        if (imgid != '') {
+            $("#b_img").attr("src", "./images/" + imgid + ".png");
+        }
+
+        $('.downloadclz').click( function(e) {
+            var id = getParam('pid');
+            if(id == '') {
+                id = "01";
+            }
+
+            var aid = '';
+            if(id == '01') {
+                aid = '1fqWPb';
+            } else if(id == '02') {
+                aid = 'vi05Hn';
+            } else if(id == '03') {
+                aid = 'naumqq';
+            } else if(id == '04') {
+                aid = 'Wv8n8v';
+
+            } else if(id == '05') {
+                aid = 'T5XTTn';
+
+            } else if(id == '06') {
+                aid = 'b8DKni';
+
+            } else if(id == '07') {
+                aid = 'bSP9Hv';
+            } else if(id == '08') {
+                aid = 'DmWf0z';
+
+            } else if(id == '09') {
+                aid = 'KTraCi';
+
+            } else if(id == '10') {
+
+                aid = 'HPzmSv';
+            } else if(id == '11') {
+                aid = 'LPzi0b';
+
+            } else if(id == '12') {
+
+                aid = 'm4fKPn';
+            } else if(id == '13') {
+                aid = '4HPrai';
+
+            } else if(id == '14') {
+                aid = 'GXX9bi';
+
+            } else if(id == '15') {
+
+                aid = '4Lb85f';
+            } else if(id == '16') {
+                aid = 'jWPP1f';
+
+            } else if(id == '17') {
+                aid = 'y4LT5z';
+
+            } else if(id == '18') {
+                aid = 'iyyeqm';
+
+            } else if(id == '19') {
+                aid = 'D01PTv';
+
+            } else if(id == '20') {
+                aid = 'nuuyyi';
+            }
+            var idnum = parseInt(id);
+            if(idnum < 10) {
+                window.location.href = "https://apk-1251952132.file.myqcloud.com/526/and-SGKP-" + id + "_MainApp_v6.5.69.3_c231_release_proguard_190410_and-f5.apk";
+            } else {
+                window.location.href = "https://apk-1251952132.file.myqcloud.com/526/and-SGKP-" + id + "_MainApp_v6.5.69.3_c231_release_proguard_190410_and-f5.apk";
+            }
+            
+        });
+    });
+
+        function getParam(name) {
+            var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)");
+            var r = window.location.search.substr(1).match(reg);
+            if (r != null)
+                return decodeURI(r[2]);
+            return '';
+        }
+</script>
+</body></html>

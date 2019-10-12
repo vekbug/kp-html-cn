@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<!-- saved from url=(0040)http://www.826006.com/zssqao1/index.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <title>首页</title>
+    <style>
+    *{
+    	margin: 0;
+    	padding: 0;
+    }
+    #download{
+    	position: relative;
+    }
+    #download .info{
+    	position: absolute;
+    	bottom: 3%;
+    }
+    </style>
+</head>
+<body>
+<div id="download">
+    <img id="b_img" style="width:100%; height:70%; display: block;" src="images/01.jpg" alt="">
+    <img id="b_img" class="downloadclz" style="width:100%; height:30%; display: block;" src="images/02.jpg" alt="">
+    <!-- <div  class="info" style="width: 100%;text-align: center; font-size: 14px;color: #000; ">北京移端科技有限公司</div> -->
+</div>
+
+<script src="js/jquery.min.js"></script>
+<script src="js/app.js"></script>
+<script type="text/javascript">
+
+    $(document).ready(function() {
+        loadBody("download");
+        $('.downloadclz').click( function(e) {
+
+            var id = getParam('id');
+            if(id == '') {
+                id = "175";
+            }
+            if(isIos()) {
+                var flag = "DmWfym?cid=9147&keywordid={keywordid}&creative={creative} ";
+                if(id == '175') {
+                    flag = "DmWfym?cid=9147&keywordid={keywordid}&creative={creative}";
+                } else if(id == '060') {
+                    flag = "aGzmSn";
+                } else if(id == '177') {
+                    flag = "WfOf0n";
+                } else if(id == '178') {
+                    flag = "Hjymau";
+                } else if(id == '179') {
+                    flag = "yCaWva";
+                } else if(id == '180') {
+                    flag = "uWj4Pn";
+                }
+                window.location.href = "https://at.umeng.com/" + flag;
+            } else {
+                window.location.href = "http://oss.cx580.com/apk/chexingyi_10" + id + ".apk";
+            }
+        });
+    });
+</script>
+</body></html>

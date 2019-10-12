@@ -1,0 +1,2041 @@
+* {
+	margin: 0;
+	padding: 0;
+	font-family: "microsoft yahei";
+}
+
+a:focus,
+a:hover {
+	color: #fff;
+	text-decoration: none;
+}
+
+body {
+	background: #ddd;
+}
+
+.clearfix:after {
+	content: ".";
+	display: block;
+	height: 0;
+	clear: both;
+	visibility: hidden
+}
+
+.clearfix {
+	*+height: 1%;
+}
+
+.clear {
+	clear: both;
+}
+
+.header {
+	background: #f4f4f4;
+	height: 80px;
+	position: fixed;
+	top: 0;
+	width: 100%;
+	left: 0;
+	z-index: 1;
+}
+
+.header-left {
+	width: 20%;
+	float: left;
+}
+
+.logo {
+	width: 51px;
+	line-height: 80px;
+}
+
+.header-right {
+	width: 80%;
+	float: right;
+}
+
+.nav {
+	font-size: 16px;
+	color: #515151;
+}
+
+.nav>ul>li {
+	list-style: none;
+	float: right;
+	line-height: 80px;
+}
+
+.nav>ul>li>a {
+	color: #515151;
+	display: block;
+	cursor: pointer;
+	padding: 0 18px;
+}
+
+.nav>ul>li.active {
+	background: #f55d30;
+	transform: skew(-14deg);
+}
+
+.nav>ul>li.active>a {
+	transform: skew(14deg);
+	color: #fff;
+}
+
+.nav>ul>li:hover {
+	background: #f55d30;
+	transform: skew(-14deg);
+}
+
+.nav>ul>li:hover>a {
+	transform: skew(14deg);
+	color: #fff;
+}
+
+.banner {
+	background: url("../images/banner.jpg"/*tpa=http://aci.lexuew.com.cn/images/banner.jpg*/) no-repeat center;
+	height: 585px;
+	margin-top: 80px;
+}
+
+.banner-title {
+	font-size: 64px;
+	color: #fff;
+	line-height: 1;
+	font-weight: bold;
+	margin-top: 20px;
+}
+
+.banner-ml {
+	margin-left: 50px;
+}
+
+.banner-stitle {
+	margin-top: 50px;
+	font-size: 30px;
+	line-height: 60px;
+	color: #fff;
+}
+
+.banner-con {
+	background: url("../images/banner-con.png"/*tpa=http://aci.lexuew.com.cn/images/banner-con.png*/) no-repeat center 0;
+	width: 909px;
+	height: 336px;
+	margin: 55px auto 0;
+	overflow: hidden;
+}
+
+.banner-left {
+	width: 589px;
+	float: left;
+}
+
+.banner-list {
+	width: 589px;
+	height: 90px;
+	margin: 0 auto;
+}
+
+.banner-list>li {
+	font-size: 28px;
+	list-style: none;
+	color: #fff;
+	line-height: 90px;
+	float: left;
+	margin-left: 100px;
+}
+
+.banner-list>li:first-child {
+	margin-left: 70px;
+}
+
+.banner-phone {
+	width: 342px;
+	background: url("../images/banner-phone.png"/*tpa=http://aci.lexuew.com.cn/images/banner-phone.png*/) no-repeat 0 center;
+	font-size: 24px;
+	color: #fff;
+	line-height: 26px;
+	padding-left: 35px;
+	margin: 56px auto 0;
+}
+
+.banner-phone>strong {
+	font-size: 26px;
+	color: #f55d30;
+	font-weight: normal;
+}
+
+.banner-p {
+	font-size: 30px;
+	color: #fff;
+	line-height: 1;
+	margin: 66px auto 0;
+}
+
+.dotting {
+	display: inline-block;
+	min-width: 4px;
+	min-height: 4px;
+	border-radius: 100%;
+	box-shadow: 4px 0 currentColor, 12px 0 currentColor, 20px 0 currentColor, 28px 0 currentColor, 36px 0 currentColor, 44px 0 currentColor;
+	/* for IE9+, ..., 3个点 */
+	animation: dot 4s infinite step-start both;
+	/* for IE10+, ... */
+	*zoom: expression(this.innerHTML='......');
+	/*  for IE7. 若无需兼容IE7, 此行删除 */
+}
+
+.dotting:before {
+	content: '......';
+}
+
+
+/* for IE8. 若无需兼容IE8, 此行以及下一行删除*/
+
+.dotting::before {
+	content: '';
+}
+
+
+/* for IE9+ 覆盖 IE8 */
+
+:root .dotting {
+	margin-right: 8px;
+}
+
+
+/* for IE9+,FF,CH,OP,SF 占据空间*/
+
+@keyframes dot {
+	12.5% {
+		box-shadow: none;
+	}
+	/* 0个点 */
+	25% {
+		box-shadow: 4px 0 currentColor;
+	}
+	/* 1个点 */
+	37.5% {
+		box-shadow: 4px 0 currentColor, 12px 0 currentColor;
+	}
+	/* 2个点 */
+	50% {
+		box-shadow: 4px 0 currentColor, 12px 0 currentColor, 20px 0 currentColor;
+	}
+	/* 3个点 */
+	62.5% {
+		box-shadow: 4px 0 currentColor, 12px 0 currentColor, 20px 0 currentColor, 28px 0 currentColor;
+	}
+	/* 4个点 */
+	75% {
+		box-shadow: 4px 0 currentColor, 12px 0 currentColor, 20px 0 currentColor, 28px 0 currentColor, 36px 0 currentColor;
+	}
+	/* 5个点 */
+}
+
+.banner-right {
+	width: 320px;
+	float: right;
+}
+
+.banner-right-l {
+	width: 126px;
+	float: left;
+	margin-left: 30px;
+	overflow: hidden;
+}
+
+.banner-right-h3 {
+	width: 26px;
+	float: left;
+	font-size: 26px;
+	color: #2d2b41;
+	font-weight: bold;
+	line-height: 30px;
+	margin: 15px 0 0 0;
+}
+
+.banner-right-p {
+	width: 92px;
+	float: right;
+	font-size: 18px;
+	line-height: 30px;
+	color: #f4f4f4;
+	margin: 16px 0 0 0;
+}
+
+.banner-right-r {
+	width: 108px;
+	float: left;
+	margin-left: 24px;
+}
+
+.banner-right-r>.banner-right-p {
+	width: 74px;
+}
+
+.banner-form {
+	width: 260px;
+	margin: 46px auto 0;
+}
+
+.banner-input {
+	width: 260px;
+	height: 45px;
+	border: rgba(255, 255, 255, 0.2) 1px solid;
+	overflow: hidden;
+	margin-top: 28px;
+}
+
+.banner-input>label {
+	width: 66px;
+	float: left;
+	font-size: 18px;
+	color: #fff;
+	line-height: 43px;
+	font-weight: normal;
+	display: block;
+	margin: 0;
+	text-align: right;
+}
+
+.banner-input>input {
+	background: transparent;
+	width: 164px;
+	height: 43px;
+	border: none;
+	line-height: 43px;
+	float: left;
+	outline: none;
+	font-size: 18px;
+	color: #fff;
+}
+
+.user-icon {
+	background: url("../images/banner-icon.png"/*tpa=http://aci.lexuew.com.cn/images/banner-icon.png*/) no-repeat 0 0;
+	width: 20px;
+	height: 20px;
+	display: block;
+	float: left;
+	margin: 12px 0 0 0;
+}
+
+.phone-icon {
+	background: url("../images/banner-icon.png"/*tpa=http://aci.lexuew.com.cn/images/banner-icon.png*/) no-repeat 0 -20px;
+	width: 20px;
+	height: 20px;
+	display: block;
+	float: left;
+	margin: 12px 0 0 0;
+}
+
+.banner-btn {
+	background: #f55d30;
+	width: 180px;
+	height: 40px;
+	border: none;
+	border-radius: 40px;
+	display: block;
+	font-size: 18px;
+	color: #fff;
+	margin: 28px auto 0;
+	outline: none;
+}
+
+.btn-banner:hover {}
+
+
+/**/
+
+.policy {
+	background: url("../images/policy-bg.jpg"/*tpa=http://aci.lexuew.com.cn/images/policy-bg.jpg*/) no-repeat center;
+	height: 561px;
+	padding-top: 67px;
+}
+
+.policy-con {
+	width: 1000px;
+	margin: 64px auto 0;
+}
+
+.policy-left {
+	width: 320px;
+	float: left;
+	box-shadow: 0 0 20px 5px rgba(0, 0, 0, 0.05);
+}
+
+.policy-right {
+	width: 680px;
+	float: left;
+}
+
+.policy-title {
+	font-size: 44px;
+	color: #292942;
+	line-height: 66px;
+	text-align: center;
+	font-weight: bold;
+	margin: 0;
+}
+
+.policy-title>strong {
+	color: #f55d30;
+}
+
+.policy-p1 {
+	background: url("../images/policy-line.png"/*tpa=http://aci.lexuew.com.cn/images/policy-line.png*/) no-repeat 0 bottom;
+	height: 86px;
+	font-size: 20px;
+	color: #fff;
+	line-height: 40px;
+	text-align: center;
+	margin: 60px 0 0 0;
+}
+
+.policy-p2 {
+	font-size: 22px;
+	color: #fff;
+	line-height: 40px;
+	text-align: center;
+	margin: 0 0 0 0;
+}
+
+.policy-p2>strong {
+	font-weight: normal;
+	color: #f55d30;
+}
+
+.policy-btns {
+	width: 440px;
+	margin: 24px auto 0;
+	overflow: hidden;
+}
+
+.policy-btn-l {
+	background: #f55d30;
+	width: 220px;
+	height: 49px;
+	border: none;
+	border-radius: 2px 0 0 2px;
+	font-size: 18px;
+	color: #fff;
+	float: left;
+	outline: none;
+}
+
+.policy-btn-r {
+	background: transparent;
+	width: 220px;
+	height: 49px;
+	border: #f55d30 1px solid;
+	border-radius: 0 2px 2px 0;
+	font-size: 18px;
+	color: #f55d30;
+	float: left;
+	outline: none;
+}
+
+.exam {
+	background: url("../images/exam-bg.jpg"/*tpa=http://aci.lexuew.com.cn/images/exam-bg.jpg*/) no-repeat center;
+	height: 1010px;
+}
+
+.exam-con {
+	width: 1000px;
+	margin: 0 auto;
+	padding-top: 68px;
+	overflow: hidden;
+}
+
+.exam-con>ul>li {
+	list-style: none;
+	background: url("../images/exam-list.png"/*tpa=http://aci.lexuew.com.cn/images/exam-list.png*/) no-repeat 0 0;
+	width: 500px;
+	height: 280px;
+	float: left;
+	margin-top: 14px;
+}
+
+.exam-con>ul>li:nth-child(1),
+.exam-con>ul>li:nth-child(2) {
+	margin-top: 0;
+}
+
+.exam-con>ul>li:nth-child(2) {
+	background-position: 0 -280px;
+}
+
+.exam-con>ul>li:nth-child(3),
+.exam-con>ul>li:nth-child(4) {
+	background: url("../images/exam-list3.png"/*tpa=http://aci.lexuew.com.cn/images/exam-list3.png*/) no-repeat 0 0;
+	height: 270px;
+}
+
+.exam-con>ul>li:nth-child(4) {
+	background-position: 0 -270px;
+}
+
+.exam-con>ul>li:nth-child(5),
+.exam-con>ul>li:nth-child(6) {
+	background: url("../images/exam-list2.png"/*tpa=http://aci.lexuew.com.cn/images/exam-list2.png*/) no-repeat 0 0;
+	height: 276px;
+}
+
+.exam-con>ul>li:nth-child(6) {
+	background-position: 0 -276px;
+}
+
+.exam-title {
+	width: 100px;
+	float: left;
+}
+
+.exam-icon {
+	background: url("../images/exam-icon.png"/*tpa=http://aci.lexuew.com.cn/images/exam-icon.png*/) no-repeat 0 0;
+	width: 40px;
+	height: 44px;
+	display: block;
+	margin: 70px auto 0;
+}
+
+.exam-icon-a {
+	background-position: 0 -44px;
+}
+
+.exam-icon-b {
+	background-position: 0 -88px;
+}
+
+.exam-icon-c {
+	background-position: 0 -132px;
+}
+
+.exam-icon-d {
+	background-position: 0 -176px;
+}
+
+.exam-icon-e {
+	background-position: 0 -220px;
+}
+
+.exam-h2 {
+	font-size: 24px;
+	color: #fff;
+	line-height: 30px;
+	text-align: center;
+}
+
+.exam-con>ul>li:nth-child(even)>.exam-title {
+	float: right;
+}
+
+.exam-words {
+	width: 395px;
+	float: left;
+}
+
+.exam-h3 {
+	font-size: 24px;
+	color: #000;
+	line-height: 36px;
+	text-align: center;
+	margin: 34px 0 0 0;
+}
+
+.exam-p {
+	font-size: 16px;
+	color: #676776;
+	line-height: 30px;
+	text-align: center;
+	margin: 6px 0 0 0;
+}
+
+.exam-p a {
+	color: #f55d30;
+	cursor: pointer;
+}
+
+.exam-bottom {
+	background: #f4f1ef;
+	width: 332px;
+	height: 70px;
+	margin: 14px auto 0;
+	padding: 20px 21px 0 25px;
+	box-shadow: 0 3px 4px rgba(38, 38, 38, 0.06) inset;
+}
+
+.exam-bottom p {
+	font-size: 18px;
+	color: #f55d30;
+	line-height: 30px;
+	text-decoration: underline;
+	font-style: italic;
+	float: left;
+}
+
+.exam-btn {
+	background: transparent;
+	width: 120px;
+	height: 30px;
+	border: #f55d30 1px solid;
+	border-radius: 30px;
+	font-size: 16px;
+	color: #f55d30;
+	display: block;
+	float: right;
+	outline: none;
+}
+
+.exam-btn:hover {
+	background: #f55d30;
+	color: #fff;
+}
+
+.k2 {
+	background: url("../images/K2_bj.jpg"/*tpa=http://aci.lexuew.com.cn/images/K2_bj.jpg*/) no-repeat;
+	width: 100%;
+	height: 798px;
+}
+
+.k2_tatle,
+.k2_com,
+.k2_btn {
+	margin: auto;
+}
+
+.k2_tatle {
+	width: 623px;
+	padding-top: 104px;
+	margin-bottom: 84px;
+}
+
+.k2_com {
+	width: 1000px;
+	height: 330px;
+}
+
+.k2_zs {
+	float: left;
+	margin-right: 20px;
+}
+
+.k2_p {
+	float: right;
+	width: 360px;
+	margin: auto;
+	padding-top: 40px;
+}
+
+.k2_anniu {
+	width: 585px;
+	margin: 0 auto;
+	padding: 80px 0 0 0;
+	overflow: hidden;
+}
+
+.k2_anniu li {
+	list-style: none;
+	width: 236px;
+	height: 58px;
+	float: left;
+	border-radius: 50%;
+}
+
+.k2_anniu li a {
+	background: url("../images/k2_btn2.png"/*tpa=http://aci.lexuew.com.cn/images/k2_btn2.png*/) top center no-repeat;
+	width: 236px;
+	height: 58px;
+	display: block;
+}
+
+.k2_anniu li:last-child {
+	float: right;
+}
+
+.k2_anniu li a:hover {
+	background: url("../images/k2_btn3.png"/*tpa=http://aci.lexuew.com.cn/images/k2_btn3.png*/) top center no-repeat;
+	-webkit-transition: background-color 2s, color 2s;
+	position: relative;
+	z-index: 3;
+	cursor: pointer;
+}
+
+.k9 {
+	background: url("../images/k9_bj.jpg"/*tpa=http://aci.lexuew.com.cn/images/k9_bj.jpg*/) no-repeat center;
+	width: 100%;
+	height: 529px;
+}
+
+.k9_tatle,
+.k9_com,
+.k9_btn {
+	margin: auto;
+}
+
+.k9_com {
+	width: 624px;
+}
+
+.k9_tatle {
+	width: 623px;
+	padding-top: 104px;
+	margin-bottom: 34px;
+}
+
+.k9_p {
+	width: 600px;
+	height: 50px;
+	font-size: 18px;
+	color: #bcbcbc;
+	line-height: 24px;
+	margin: auto;
+	text-align: center;
+	margin-bottom: 130px;
+}
+
+.apply {
+	background: #f3f3f4 url("../images/apply-bg.jpg"/*tpa=http://aci.lexuew.com.cn/images/apply-bg.jpg*/) no-repeat center bottom;
+	height: 1410px;
+}
+
+.test {
+	margin-bottom: 98px;
+}
+
+.test-title {
+	margin-top: 96px;
+	font-size: 52px;
+	color: #262641;
+	font-weight: bold;
+	text-shadow: 5px 5px 5px #dddcdd;
+}
+
+.test-description {
+	font-size: 30px;
+	color: #343459;
+	line-height: 1;
+	margin: 32px 0 0 0;
+}
+
+.test-description>strong {
+	color: #f55d30;
+	font-weight: normal;
+}
+
+.test-line {
+	background: url("../images/test-line.png"/*tpa=http://aci.lexuew.com.cn/images/test-line.png*/) no-repeat 0 center;
+}
+
+.test-line:first-child {
+	background: none;
+}
+
+.test-common1,
+.test-common2,
+.test-common3 {
+	width: 100%;
+	margin: 0 auto;
+}
+
+.all-test {
+	margin: 60px auto 0;
+	width: 86%;
+	overflow: hidden;
+}
+
+.test-circle {
+	background: #4b4b75;
+	border-radius: 100%;
+	width: 85px;
+	height: 85px;
+	margin: 0 auto;
+	padding-top: 21px;
+}
+
+.test-icon1,
+.test-icon2,
+.test-icon3 {
+	background: url("../images/test-icon.png"/*tpa=http://aci.lexuew.com.cn/images/test-icon.png*/) no-repeat 0 0;
+	width: 44px;
+	height: 44px;
+	display: block;
+	margin: 0 auto;
+}
+
+.test-icon2 {
+	background-position: 0 -44px;
+}
+
+.test-icon3 {
+	background-position: 0 -88px;
+}
+
+.test-h3 {
+	margin-top: 26px;
+	font-size: 22px;
+	color: #3a3a59;
+	font-weight: bold;
+}
+
+.test-p {
+	margin-top: 16px;
+	font-size: 18px;
+	color: #535380;
+	line-height: 32px;
+}
+
+.btn-test {
+	background: transparent;
+	width: 150px;
+	height: 35px;
+	line-height: 33px;
+	display: block;
+	border: #8d8da0 1px solid;
+	border-radius: 3px;
+	margin: 40px auto 0;
+	font-size: 16px;
+	color: #4b4b75;
+	cursor: pointer;
+	text-align: left;
+	padding-left: 35px;
+}
+
+.btn-test:hover {
+	background: #f55d30;
+	color: #fff;
+	border: #f55d30 1px solid;
+}
+
+.all-regist {
+	background: url("../images/regist-bg.png"/*tpa=http://aci.lexuew.com.cn/images/regist-bg.png*/) no-repeat center;
+	width: 1002px;
+	height: 556px;
+	margin: 84px auto 0;
+	overflow: hidden;
+}
+
+.regist-left {
+	width: 478px;
+	float: left;
+	margin-left: 7px;
+}
+
+.regist-right {
+	width: 478px;
+	float: right;
+	margin-right: 7px;
+}
+
+.regist-title {
+	width: 100%;
+	height: 53px;
+	background: url("../images/regist-title.png"/*tpa=http://aci.lexuew.com.cn/images/regist-title.png*/) no-repeat 0 0;
+	margin-top: 40px;
+}
+
+.regist-h3 {
+	width: 390px;
+	font-size: 26px;
+	color: #282843;
+	line-height: 53px;
+	font-weight: bold;
+	margin: 0 auto;
+	overflow: hidden;
+}
+
+.regist-h3>i {
+	background: url("../images/regist-icon.png"/*tpa=http://aci.lexuew.com.cn/images/regist-icon.png*/) no-repeat 0 0;
+	width: 32px;
+	height: 32px;
+	display: block;
+	float: left;
+	margin: 11px 0 0 0;
+}
+
+.regist-h3>span {
+	float: right;
+}
+
+.rList {
+	margin: 24px 0 0 46px;
+}
+
+.rList>li {
+	list-style: none;
+	font-size: 18px;
+	color: #808080;
+	line-height: 48px;
+}
+
+.rList>li:first-child {
+	font-size: 22px;
+	color: #4c4c4c;
+}
+
+.regist-btn {
+	background: #292942;
+	width: 180px;
+	height: 40px;
+	display: block;
+	border: none;
+	border-radius: 3px;
+	margin: 40px auto 0;
+	font-size: 18px;
+	color: #fff;
+	cursor: pointer;
+	box-shadow: 2px 2px 0 #d0d0d7;
+}
+
+.regist-h3-r {
+	width: 348px;
+	color: #fc815e;
+}
+
+.regist-h3-r>span {
+	float: left;
+}
+
+.regist-h3-r>i {
+	background-position: 0 -32px;
+	float: right;
+}
+
+.rrList {
+	width: 348px;
+	margin: 50px auto 0;
+}
+
+.rrList>li {
+	list-style: none;
+	float: left;
+	margin-right: 54px;
+	margin-bottom: 40px;
+}
+
+.rrList>li:nth-child(3),
+.rrList>li:nth-child(6),
+.rrList>li:nth-child(9),
+.rrList>li:nth-child(12) {
+	margin-right: 0;
+}
+
+.rrList>li>a {
+	font-size: 20px;
+	color: #666;
+	line-height: 1;
+	cursor: pointer;
+}
+
+.rrList>li>a:hover {
+	color: #fc815e;
+}
+
+.reason {
+	background: url("../images/reason-bg.jpg"/*tpa=http://aci.lexuew.com.cn/images/reason-bg.jpg*/) no-repeat center;
+	height: 880px;
+}
+
+.reason-h2 {
+	font-size: 50px;
+	color: #fff;
+	font-weight: bold;
+	margin: 100px 0 0 0;
+	line-height: 1;
+}
+
+.reason-p {
+	font-size: 18px;
+	color: #272741;
+	font-family: arial;
+	margin: 24px 0 0 0;
+	line-height: 1;
+}
+
+.reason-con {
+	background: url("../images/reason-con.png"/*tpa=http://aci.lexuew.com.cn/images/reason-con.png*/) no-repeat center;
+	height: 362px;
+	margin-top: 60px;
+}
+
+.reason-con>ul {
+	width: 1000px;
+	margin: 0 auto;
+	overflow: hidden;
+}
+
+.reason-con>ul>li {
+	list-style: none;
+	width: 180px;
+	float: left;
+	margin-right: 24px;
+	padding-top: 26px;
+}
+
+.reason-con>ul>li:last-child {
+	margin-right: 0;
+}
+
+.reason-con>ul>li>h3 {
+	font-size: 18px;
+	color: rgba(255, 255, 255, 0.7);
+	width: 179px;
+	height: 39px;
+	line-height: 39px;
+	margin: 0;
+	padding-left: 30px;
+	margin-left: 1px;
+}
+
+.reason-h3-q {
+	background: url("../images/reason-h3-q.png"/*tpa=http://aci.lexuew.com.cn/images/reason-h3-q.png*/) no-repeat 0 0;
+}
+
+.reason-h3-x {
+	background: url("../images/reason-h3-x.png"/*tpa=http://aci.lexuew.com.cn/images/reason-h3-x.png*/) no-repeat 0 0;
+}
+
+.reason-h3-t {
+	background: url("../images/reason-h3-t.png"/*tpa=http://aci.lexuew.com.cn/images/reason-h3-t.png*/) no-repeat 0 0;
+}
+
+.reason-h3-y {
+	background: url("../images/reason-h3-y.png"/*tpa=http://aci.lexuew.com.cn/images/reason-h3-y.png*/) no-repeat 0 0;
+}
+
+.reason-h3-r {
+	background: url("../images/reason-h3-r.png"/*tpa=http://aci.lexuew.com.cn/images/reason-h3-r.png*/) no-repeat 0 0;
+}
+
+.reason-h4 {
+	font-size: 30px;
+	color: #fff;
+	font-weight: bold;
+	text-align: center;
+	margin: 40px 0 0 0;
+}
+
+.reason-h4>strong {
+	color: #f55d30;
+}
+
+.reason-btn {
+	background: transparent;
+	width: 380px;
+	height: 56px;
+	border: #f55d30 1px solid;
+	border-radius: 56px;
+	font-size: 20px;
+	color: #f55d30;
+	display: block;
+	margin: 70px auto 0;
+}
+
+.reason-btn:hover {
+	background: #f55d30;
+	color: #fff;
+}
+
+.psy {
+	background: #fc815e;
+}
+
+.psy-title {
+	background: url("../images/psy.png"/*tpa=http://aci.lexuew.com.cn/images/psy.png*/) no-repeat 0 0;
+	height: 102px;
+	padding-left: 64px;
+	padding-top: 4px;
+	font-size: 36px;
+	color: #fff;
+	font-weight: bold;
+	margin-top: 44px;
+}
+
+.btn-psy {
+	background: #292942;
+	width: 324px;
+	height: 50px;
+	line-height: 50px;
+	display: block;
+	border: none;
+	border-radius: 3px;
+	margin: 68px auto 65px;
+	font-size: 18px;
+	color: #fff;
+	box-shadow: 0px 2px #dd7151;
+}
+
+.ask {
+	background: url("../images/ask-bg.png"/*tpa=http://aci.lexuew.com.cn/images/ask-bg.png*/) no-repeat center;
+	height: 769px;
+}
+
+.ask-con {
+	margin: 132px auto 0;
+	background: url("../images/ask-con.png"/*tpa=http://aci.lexuew.com.cn/images/ask-con.png*/) no-repeat 0 0;
+	height: 535px;
+	width: 88%;
+	position: relative;
+}
+
+.ask-left {
+	width: 418px;
+	float: left;
+}
+
+.ask-title {
+	margin: 0;
+	padding-top: 124px;
+	font-size: 66px;
+	color: #6b6b77;
+}
+
+.ask-stitle {
+	font-size: 52px;
+	color: #fff;
+	font-weight: bold;
+	margin: 16px 0 0 0;
+}
+
+.ask-btn {
+	width: 255px;
+	height: 50px;
+	line-height: 50px;
+	text-align: center;
+	font-size: 36px;
+	color: #f55d30;
+	font-weight: bold;
+	border: #f55d30 1px solid;
+	margin: 20px auto 0;
+}
+
+.ask-p {
+	width: 143px;
+	height: 143px;
+	margin: 52px 0 0 269px;
+	font-size: 16px;
+	color: #fff;
+	padding-top: 48px;
+	cursor: pointer;
+}
+
+.mouse {
+	background: url("../images/mouse.png"/*tpa=http://aci.lexuew.com.cn/images/mouse.png*/) repeat-x 0 0;
+	width: 39px;
+	height: 40px;
+	display: block;
+	position: absolute;
+	bottom: 0;
+	left: 430px;
+	cursor: pointer;
+}
+
+.ask-right {
+	width: 428px;
+	margin: 8px 0 0 151px;
+	float: left;
+}
+
+.ask-right>ul>li {
+	list-style: none;
+	border: #c7c7cd 1px dashed;
+	border-left: none;
+	background: url("../images/arrow.png"/*tpa=http://aci.lexuew.com.cn/images/arrow.png*/) no-repeat 404px center;
+	font-size: 18px;
+	color: #292942;
+	line-height: 48px;
+	margin-bottom: 30px;
+	cursor: pointer;
+}
+
+.ask-right>ul>li:hover {
+	background: url("../images/arrow-hover.png"/*tpa=http://aci.lexuew.com.cn/images/arrow-hover.png*/) no-repeat 404px center;
+	color: #f55d30;
+	border-color: #f55d30;
+}
+
+.ask-right>ul>li:hover>.ask-icon {
+	background: url("../images/ask-icon.png"/*tpa=http://aci.lexuew.com.cn/images/ask-icon.png*/) no-repeat 0 -52px;
+}
+
+.ask-icon {
+	background: url("../images/ask-icon.png"/*tpa=http://aci.lexuew.com.cn/images/ask-icon.png*/) no-repeat 0 0;
+	width: 48px;
+	height: 48px;
+	display: block;
+	float: left;
+	text-align: center;
+	font-size: 32px;
+	color: #fff;
+	font-style: normal;
+	margin-left: -24px;
+	margin-right: 16px;
+}
+
+.pioneer {
+	background: url("../images/pioneer-bg.jpg"/*tpa=http://aci.lexuew.com.cn/images/pioneer-bg.jpg*/) no-repeat center;
+	height: 527px;
+}
+
+.pioneer-title {
+	font-size: 60px;
+	color: #30304a;
+	font-weight: bold;
+	text-shadow: 5px 5px 5px #dddcdd;
+	margin-top: 100px;
+}
+
+.pioneer-stitle {
+	font-size: 18px;
+	color: #8b8494;
+}
+
+.pioneer-con {
+	margin: 86px auto 0;
+	background: #d1cfd2;
+	width: 990px;
+	height: 200px;
+	border-radius: 200px;
+	padding: 5px 0;
+	position: relative;
+}
+
+.pioneer-con:hover .pioneer-inner {
+	background: #2a2a43;
+}
+
+.pioneer-con:hover .pioneer-h4 {
+	color: #fff;
+}
+
+.pioneer-con:hover .pioneer-p {
+	color: #a1a1a8;
+}
+
+.pioneer-con:hover .pioneer-btn {
+	background: url("../images/btn-pioneer-hover.png"/*tpa=http://aci.lexuew.com.cn/images/btn-pioneer-hover.png*/) no-repeat 56px 49px;
+}
+
+.pioneer-con:hover .pioneer-h4 {
+	border-bottom: #787883 1px dashed;
+}
+
+.pioneer-con:hover .pioneer-p {
+	border-top: #565666 1px dashed;
+}
+
+.pioneer-inner {
+	background: #fff;
+	width: 990px;
+	height: 190px;
+	border-radius: 190px;
+}
+
+.pioneer-pic {
+	position: absolute;
+	top: -43px;
+}
+
+.pioneer-word {
+	float: left;
+	margin: 0 0 0 310px;
+	width: 460px;
+}
+
+.pioneer-h4 {
+	font-size: 24px;
+	color: #30304a;
+	margin: 40px 0 0 0;
+	padding-bottom: 25px;
+	border-bottom: #adadb4 1px dashed;
+}
+
+.pioneer-p {
+	border-top: #d8d8db 1px dashed;
+	padding-top: 10px;
+	font-size: 16px;
+	color: #676776;
+	line-height: 26px;
+}
+
+.pioneer-btn {
+	width: 160px;
+	margin-top: 30px;
+	height: 158px;
+	float: right;
+	padding-right: 32px;
+	background: url("../images/btn-pioneer-bg.png"/*tpa=http://aci.lexuew.com.cn/images/btn-pioneer-bg.png*/) no-repeat 56px 49px;
+}
+
+.btn-pioneer {
+	background: url("../images/btn-pioneer.png"/*tpa=http://aci.lexuew.com.cn/images/btn-pioneer.png*/) no-repeat center;
+	margin: 2px 0 0 2px;
+	width: 128px;
+	height: 128px;
+	display: block;
+	cursor: pointer;
+}
+
+.pioneer2 {
+	background: url("../images/pioneer-bg2.jpg"/*tpa=http://aci.lexuew.com.cn/images/pioneer-bg2.jpg*/) no-repeat center;
+	height: 733px;
+}
+
+.pioneer-con2 {
+	margin: 40px auto 0;
+	background: #d1cfd2;
+	width: 990px;
+	height: 200px;
+	border-radius: 200px;
+	padding: 5px 0;
+	position: relative;
+}
+
+.pioneer-con2:hover .pioneer-inner2 {
+	background: #2a2a43;
+}
+
+.pioneer-con2:hover .pioneer-h42 {
+	color: #fff;
+}
+
+.pioneer-con2:hover .pioneer-p2 {
+	color: #a1a1a8;
+}
+
+.pioneer-con2:hover .pioneer-btn2 {
+	background: url("../images/btn-pioneer-hover.png"/*tpa=http://aci.lexuew.com.cn/images/btn-pioneer-hover.png*/) no-repeat 56px 49px;
+}
+
+.pioneer-con2:hover .pioneer-h42 {
+	border-bottom: #787883 1px dashed;
+}
+
+.pioneer-con2:hover .pioneer-p2 {
+	border-top: #565666 1px dashed;
+}
+
+.pioneer-inner2 {
+	background: #fff;
+	width: 990px;
+	height: 190px;
+	border-radius: 190px;
+}
+
+.pioneer-word2 {
+	float: right;
+	margin: 0 310px 0 0;
+	width: 460px;
+}
+
+.pioneer-h42 {
+	font-size: 24px;
+	color: #30304a;
+	margin: 40px 0 0 0;
+	padding-bottom: 25px;
+	border-bottom: #adadb4 1px dashed;
+}
+
+.pioneer-p2 {
+	border-top: #d8d8db 1px dashed;
+	padding-top: 10px;
+	font-size: 16px;
+	color: #676776;
+	line-height: 26px;
+}
+
+.pioneer-btn2 {
+	background: url("../images/btn-pioneer-bg2.png"/*tpa=http://aci.lexuew.com.cn/images/btn-pioneer-bg2.png*/) no-repeat -2px 49px;
+	width: 160px;
+	margin-top: 30px;
+	height: 158px;
+	float: left;
+	padding-left: 32px;
+}
+
+.btn-pioneer2 {
+	background: url("../images/btn-pioneer.png"/*tpa=http://aci.lexuew.com.cn/images/btn-pioneer.png*/) no-repeat center;
+	margin: 2px 0 0 -2px;
+	width: 128px;
+	height: 128px;
+	display: block;
+	cursor: pointer;
+}
+
+.pioneer-pic2 {
+	position: absolute;
+	top: -43px;
+	right: 0;
+}
+
+.pioneer-arrow {
+	margin-top: 28px;
+}
+
+.course {
+	background: url("../images/course-bg.jpg"/*tpa=http://aci.lexuew.com.cn/images/course-bg.jpg*/) no-repeat center;
+	height: 714px;
+}
+
+.course-title {
+	font-size: 52px;
+	color: #fff;
+	font-weight: bold;
+	line-height: 60px;
+	margin-top: 52px;
+}
+
+.course-stitle {
+	font-size: 18px;
+	color: #fff;
+	line-height: 26px;
+}
+
+.course-con {
+	width: 1000px;
+	margin: 39px auto 0;
+	position: relative;
+}
+
+.live {
+	width: 310px;
+	height: 406px;
+	background: #fff;
+	margin-top: 24px;
+	position: absolute;
+	left: 0;
+	z-index: 1;
+}
+
+.face {
+	width: 421px;
+	height: 430px;
+	float: left;
+	background: url("../images/face-bg.png"/*tpa=http://aci.lexuew.com.cn/images/face-bg.png*/) no-repeat 0 0;
+	position: absolute;
+	left: 296px;
+	z-index: 2;
+}
+
+.recorded {
+	width: 310px;
+	height: 406px;
+	float: left;
+	background: #fff;
+	margin-top: 24px;
+	position: absolute;
+	right: 0;
+	z-index: 1;
+}
+
+.course-con .active .common-title {
+	background: #2a2a44;
+	color: #fff;
+}
+
+.course-con .active .btn-common {
+	background: #f55d30 url("../images/test-btn-icon.png"/*tpa=http://aci.lexuew.com.cn/images/test-btn-icon.png*/) no-repeat 160px -24px;
+	color: #fff;
+	border: #f55d30 1px solid;
+}
+
+.common-title {
+	margin: 0;
+	background: #e9e7ea;
+	padding: 20px 0;
+	font-size: 18px;
+	color: #2a2a44;
+	font-weight: bold;
+	line-height: 30px;
+}
+.face-margin {
+	margin: 0 14px;
+}
+
+.common-body {}
+
+.common-body>p {
+	font-size: 16px;
+	color: #565656;
+	line-height: 30px;
+	margin-top: 30px;
+}
+.common-body>p>span {
+	font-size: 16px;
+	font-weight:bold;
+}
+.btn-common {
+	background: url("../images/test-btn-icon.png"/*tpa=http://aci.lexuew.com.cn/images/test-btn-icon.png*/) no-repeat 160px 12px;
+	font-size: 16px;
+	color: #2a2a44;
+	width: 178px;
+	height: 38px;
+	line-height: 38px;
+	display: block;
+	border: #8d8da0 1px solid;
+	box-shadow: 0px 2px #f1f0f0;
+	margin: 26px auto;
+	cursor: pointer;
+}
+
+.btn-common:hover {
+	color: #2a2a44;
+}
+
+.course-icon1 {
+	background: url("../images/course-icon1.png"/*tpa=http://aci.lexuew.com.cn/images/course-icon1.png*/) no-repeat 0 0;
+	width: 77px;
+	height: 77px;
+	display: block;
+	margin: 29px auto 0;
+}
+
+.course-icon2 {
+	background: url("../images/course-icon2.png"/*tpa=http://aci.lexuew.com.cn/images/course-icon2.png*/) no-repeat 0 0;
+	width: 122px;
+	height: 122px;
+	display: block;
+	margin: 29px auto 0;
+}
+
+.course-icon3 {
+	background: url("../images/course-icon3.png"/*tpa=http://aci.lexuew.com.cn/images/course-icon3.png*/) no-repeat 0 0;
+	width: 77px;
+	height: 77px;
+	display: block;
+	margin: 29px auto 0;
+}
+
+.exercises {
+	background: url("../images/exercises-bg.jpg"/*tpa=http://aci.lexuew.com.cn/images/exercises-bg.jpg*/) no-repeat center;
+	height: 1049px;
+}
+
+.exercises-con {
+	margin: 110px auto 0;
+	background: url("../images/exercises-title-top.png"/*tpa=http://aci.lexuew.com.cn/images/exercises-title-top.png*/) no-repeat 0 0;
+	position: relative;
+	padding-top: 63px;
+	width: 1022px;
+}
+
+.exercises-table {
+	padding-top: 63px;
+	background: #fff;
+}
+
+.exercises-table>tbody>tr>td {
+	vertical-align: middle;
+	text-align: center;
+	cursor: pointer;
+	padding: 0;
+	height: 188px;
+	position: relative;
+}
+
+.exercises-table>tbody>tr>td.special {
+	cursor: default;
+}
+
+.mask {
+	width: 100%;
+	height: 188px;
+	position: absolute;
+	background: rgba(42, 42, 69, 0.19);
+	display: none;
+	top: 0;
+	left: 0;
+	padding-top: 38px;
+}
+
+.mask-h4 {
+	background: #2a2a45;
+	padding: 10px 0;
+	font-size: 16px;
+	color: #fff;
+	margin-top: 20px;
+}
+
+.exercises-title {
+	background: url("../images/exercises-title.png"/*tpa=http://aci.lexuew.com.cn/images/exercises-title.png*/) no-repeat 0 0;
+	height: 378px;
+	width: 766px;
+	position: absolute;
+}
+
+.exercises-h2 {
+	font-size: 60px;
+	color: #fff;
+	font-weight: bold;
+	margin: 11px 0 0 244px;
+	border-bottom: #404057 1px solid;
+	padding-bottom: 32px;
+	width: 480px;
+}
+
+.exercises-h3 {
+	font-size: 40px;
+	color: #cfcfdc;
+	font-weight: bold;
+	margin: 32px 0 0 244px;
+}
+
+.exercises-h3>strong {
+	color: #f55d30;
+}
+
+.exercises-p {
+	font-size: 18px;
+	color: #878790;
+	margin: 20px 0 0 244px;
+}
+
+.exercises-p>strong {
+	font-family: impact;
+	font-size: 56px;
+	color: #f55d30;
+	font-weight: normal;
+}
+
+.exercises-p>strong>b {
+	font-size: 36px;
+	font-family: impact;
+	font-weight: normal;
+}
+
+.exercises-icon {
+	width: 120px;
+	margin: 0 auto;
+}
+
+.exercises-h4 {
+	font-size: 16px;
+	color: #4d4d4d;
+	text-align: center;
+}
+
+.exercises-phone {
+	width: 371px;
+	margin: 40px auto;
+}
+
+.expand {
+	background: url("../images/expand-bg.jpg"/*tpa=http://aci.lexuew.com.cn/images/expand-bg.jpg*/) no-repeat center;
+	height: 772px;
+}
+
+.expand-all {
+	width: 1000px;
+	position: relative;
+	margin: 0 auto;
+}
+
+.expand1 {
+	background: url("../images/expand1.png"/*tpa=http://aci.lexuew.com.cn/images/expand1.png*/) no-repeat 0 0;
+	width: 164px;
+	height: 170px;
+	position: absolute;
+	top: 87px;
+	left: 32px;
+}
+
+.expand1:hover {
+	background: url("../images/expand1.png"/*tpa=http://aci.lexuew.com.cn/images/expand1.png*/) no-repeat 0 -170px;
+}
+
+.expand2 {
+	background: url("../images/expand2.png"/*tpa=http://aci.lexuew.com.cn/images/expand2.png*/) no-repeat 0 0;
+	width: 173px;
+	height: 170px;
+	position: absolute;
+	top: 296px;
+	left: 0;
+}
+
+.expand2:hover {
+	background: url("../images/expand2.png"/*tpa=http://aci.lexuew.com.cn/images/expand2.png*/) no-repeat 0 -170px;
+}
+
+.expand3 {
+	background: url("../images/expand3.png"/*tpa=http://aci.lexuew.com.cn/images/expand3.png*/) no-repeat 0 0;
+	width: 164px;
+	height: 170px;
+	position: absolute;
+	top: 505px;
+	left: 32px;
+}
+
+.expand3:hover {
+	background: url("../images/expand3.png"/*tpa=http://aci.lexuew.com.cn/images/expand3.png*/) no-repeat 0 -170px;
+}
+
+.expand4 {
+	background: url("../images/expand4.png"/*tpa=http://aci.lexuew.com.cn/images/expand4.png*/) no-repeat 0 0;
+	width: 164px;
+	height: 170px;
+	position: absolute;
+	top: 87px;
+	right: 32px;
+}
+
+.expand4:hover {
+	background: url("../images/expand4.png"/*tpa=http://aci.lexuew.com.cn/images/expand4.png*/) no-repeat 0 -170px;
+}
+
+.expand5 {
+	background: url("../images/expand5.png"/*tpa=http://aci.lexuew.com.cn/images/expand5.png*/) no-repeat 0 0;
+	width: 173px;
+	height: 170px;
+	position: absolute;
+	top: 296px;
+	right: 0;
+}
+
+.expand5:hover {
+	background: url("../images/expand5.png"/*tpa=http://aci.lexuew.com.cn/images/expand5.png*/) no-repeat 0 -170px;
+}
+
+.expand6 {
+	background: url("../images/expand6.png"/*tpa=http://aci.lexuew.com.cn/images/expand6.png*/) no-repeat 0 0;
+	width: 164px;
+	height: 170px;
+	position: absolute;
+	top: 505px;
+	right: 32px;
+}
+
+.expand6:hover {
+	background: url("../images/expand6.png"/*tpa=http://aci.lexuew.com.cn/images/expand6.png*/) no-repeat 0 -170px;
+}
+
+.expand1:hover .expand-h2,
+.expand2:hover .expand-h2,
+.expand3:hover .expand-h2,
+.expand4:hover .expand-h2,
+.expand5:hover .expand-h2,
+.expand6:hover .expand-h2 {
+	color: #fff;
+}
+
+.expand-h2 {
+	margin: 57px 0;
+	font-size: 20px;
+	font-weight: bold;
+	color: #30304a;
+	line-height: 26px;
+}
+
+.expand-mar {
+	margin: 0;
+	line-height: 170px;
+}
+
+.expand-con {
+	display: none;
+}
+
+.expand-title {
+	font-size: 52px;
+	color: #fff;
+	font-weight: bold;
+	padding: 150px 0 0 0;
+	margin: 0;
+}
+
+.expand-stitle {
+	font-size: 52px;
+	color: #f55d30;
+	font-weight: bold;
+	margin: 0;
+}
+
+.expand-p1 {
+	margin: 15px 0 0 0;
+	font-size: 18px;
+	color: #adacb2;
+	line-height: 24px;
+}
+
+.expand-p {
+	margin-top: 0;
+	line-height: 106px;
+	height: 106px;
+	font-size: 22px;
+	color: #fff;
+	font-weight: bold;
+}
+
+.expand-p21 {
+	background: url("../images/expand1-con.png"/*tpa=http://aci.lexuew.com.cn/images/expand1-con.png*/) no-repeat center;
+}
+
+.expand-p22 {
+	background: url("../images/expand2-con.png"/*tpa=http://aci.lexuew.com.cn/images/expand2-con.png*/) no-repeat center;
+}
+
+.expand-p23 {
+	background: url("../images/expand3-con.png"/*tpa=http://aci.lexuew.com.cn/images/expand3-con.png*/) no-repeat center;
+}
+
+.expand-p24 {
+	background: url("../images/expand4-con.png"/*tpa=http://aci.lexuew.com.cn/images/expand4-con.png*/) no-repeat center;
+}
+
+.expand-p25 {
+	background: url("../images/expand5-con.png"/*tpa=http://aci.lexuew.com.cn/images/expand5-con.png*/) no-repeat center;
+}
+
+.expand-p26 {
+	background: url("../images/expand6-con.png"/*tpa=http://aci.lexuew.com.cn/images/expand6-con.png*/) no-repeat center;
+}
+
+.expand-p3 {
+	font-size: 16px;
+	color: #dedee0;
+	line-height: 26px;
+}
+
+.btn-expand {
+	width: 216px;
+	margin: 40px auto 0;
+	height: 58px;
+	line-height: 58px;
+	display: block;
+	background: transparent url("../images/btn-expand-arrow.png"/*tpa=http://aci.lexuew.com.cn/images/btn-expand-arrow.png*/) no-repeat 166px center;
+	border: #f55d30 1px solid;
+	border-radius: 60px;
+	font-size: 16px;
+	color: #f55d30;
+	cursor: pointer;
+	padding-left: 42px;
+}
+
+.btn-expand:hover {
+	color: #f55d30;
+}
+
+.expand-common {
+	cursor: pointer;
+}
+
+.need {
+	background: url("../images/need-bg.jpg"/*tpa=http://aci.lexuew.com.cn/images/need-bg.jpg*/) no-repeat center;
+	height: 837px;
+}
+
+.need-title {
+	margin: 50px 0 0 0;
+	font-size: 52px;
+	color: #30304a;
+	font-weight: bold;
+	text-shadow: 5px 5px 5px #cccdd2;
+}
+
+.need-title>strong {
+	margin-right: 34px;
+	color: #f55d30;
+}
+
+.need-stitle {
+	margin: 16px 0 0 0;
+	font-size: 18px;
+	color: #b9bbc3;
+	font-family: arial;
+}
+
+.need-con {
+	width: 88%;
+	margin: 57px auto 0;
+}
+
+.need-con2 {
+	width: 88%;
+	margin: 44px auto 0;
+}
+
+.need-main {
+	width: 215px;
+	margin: 0 auto;
+	background: #f3f3f4;
+	box-shadow: 0px 5px #cac9d0;
+	padding-bottom: 12px;
+}
+
+.need-h2 {
+	font-size: 18px;
+	color: #30304a;
+	font-weight: bold;
+	margin: 12px 0;
+}
+
+.need-icon {
+	background: url("../images/need-icon.png"/*tpa=http://aci.lexuew.com.cn/images/need-icon.png*/) no-repeat 0 0;
+	width: 11px;
+	height: 11px;
+	display: inline-block;
+	margin: 0 10px;
+}
+
+.need-body {
+	margin: 0 14px;
+}
+
+.need-body>p {
+	background: #ededef;
+	padding: 20px 0;
+	margin: 0;
+	line-height: 24px;
+	font-size: 16px;
+	color: #4e4e58;
+}
+
+.chance {
+	background: url("../images/chance-bg.jpg"/*tpa=http://aci.lexuew.com.cn/images/chance-bg.jpg*/) no-repeat center;
+	height: 800px;
+}
+
+.chance-title {
+	margin: 94px 0 0 0;
+	font-size: 60px;
+	color: #fff;
+	font-weight: bold;
+}
+
+.chance-stitle {
+	margin: 16px 0 0 0;
+	font-size: 18px;
+	color: #27253b;
+	font-family: arial;
+}
+
+.chance-pic {
+	margin: 48px 0 0 0;
+}
+
+.chance-h4 {
+	font-size: 30px;
+	color: #fff;
+	font-weight: bold;
+	margin: 38px 0;
+}
+
+.chance-h4>strong {
+	color: #f55d30;
+}
+
+.chance-main {
+	background: rgba(255, 255, 255, 0.06);
+	padding: 40px 50px;
+}
+
+.chance-body {
+	width: 911px;
+	margin: 0 auto;
+	overflow: hidden;
+}
+
+.chance-body>label {
+	font-size: 18px;
+	line-height: 50px;
+	color: #fff;
+	font-weight: normal;
+	float: left;
+}
+
+.username,
+.userphone {
+	background: transparent;
+	width: 244px;
+	height: 48px;
+	border: #5d5d6f 1px solid;
+	border-radius: 48px;
+	outline: none;
+	padding-left: 24px;
+	font-size: 18px;
+	color: #fff;
+	float: left;
+}
+
+.mar-left {
+	margin-left: 33px;
+}
+
+.btn-chance {
+	background: #f55d30;
+	font-size: 18px;
+	color: #fff;
+	width: 244px;
+	height: 48px;
+	line-height: 48px;
+	border: none;
+	border-radius: 48px;
+	display: block;
+	float: left;
+	margin-left: 38px;
+	cursor: pointer;
+}
+
+.chance-p {
+	margin: 34px 0;
+}
+
+.chance-phone {
+	background: url("../images/phone-icon.png"/*tpa=http://aci.lexuew.com.cn/images/phone-icon.png*/) no-repeat 0 center;
+	font-size: 18px;
+	color: #fff;
+	padding-left: 42px;
+}
+
+.ACI_banner {
+	background: url("../images/psy_ACI.jpg"/*tpa=http://aci.lexuew.com.cn/images/psy_ACI.jpg*/) top center no-repeat;
+	height: 500px;
+	width: 100%;
+	margin: 0 auto;
+}
+
+.ACI_banner .anniu {
+	width: 540px;
+	margin: 0 auto;
+	padding: 394px 0 0 0;
+	overflow: hidden;
+}
+
+.anniu li {
+	list-style: none;
+	width: 236px;
+	height: 58px;
+	float: left;
+	border-radius: 50%;
+}
+
+.anniu li a {
+	background: url("../images/psy_aci2.png"/*tpa=http://aci.lexuew.com.cn/images/psy_aci2.png*/) top center no-repeat;
+	width: 236px;
+	height: 58px;
+	display: block;
+}
+
+.anniu li:last-child {
+	float: right;
+}
+
+.anniu li a:hover {
+	background: url("../images/psy_aci3.png"/*tpa=http://aci.lexuew.com.cn/images/psy_aci3.png*/) top center no-repeat;
+	-webkit-transition: background-color 2s, color 2s;
+	position: relative;
+	z-index: 3;
+	cursor: pointer;
+}
+
+
+/**/
+
+.ad {
+	width: 327px;
+	height: 192px;
+	position: fixed;
+	bottom: -192px;
+	right: 0;
+	z-index: 2147483648;
+	cursor: pointer;
+}

@@ -1,0 +1,41 @@
+/*底部链接盒子开始*/
+.link_box{
+	background: #E37B8B;
+	padding: 0.5rem 0;
+	margin-top: 0.75rem;
+}
+.link_tl{
+	padding: 0;
+}
+.link_tl a{
+	display: block;
+	width: 33.333%;
+	text-align: center;
+	color: #FFFFFF;
+	position: relative;
+}
+.link_tl a:after{
+	content: " ";
+	height: 40%;
+	width: 1px;
+	position: absolute;
+	top: 30%;
+	right: 0;
+	background: #FFFFFF;
+}
+.link_tl a:last-of-type:after{
+	content: none;
+}
+.link_tl a .ui-icon{
+	font-size: 1rem;
+	margin-right: 0;
+}
+.link_tl a span:last-of-type{
+	text-decoration: underline;
+}
+.link_tx{
+	text-align: center;
+	font-size: 0.6rem;
+	color: #FFFFFF;
+	margin-top: 0.5rem;
+}

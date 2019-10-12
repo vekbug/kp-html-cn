@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<!-- saved from url=(0032)http://www.zhangshangtech.com/#2 -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0">
+    <meta name="description" itemprop="description" content="掌上网咖云电脑提供国内领先的解决手机、中低配置PC电脑无法畅玩大型游戏问题，手机、电脑和平板可以直接通过掌上网咖云电脑服务畅玩云游戏。现在立即下载掌上网咖免费云电脑，无需安装一键使用云游戏平台畅玩!">
+    <meta name="keywords" content="掌上网咖，云电脑，云游戏，掌上网咖云电脑，云游戏平台，免费云电脑">
+    <link rel="icon" href="http://reso.dalongyun.com/plamtop/page/common/logo.ico" type="images/x-ico">
+    <link type="text/css" href="./files/app.css" rel="stylesheet">
+    <link type="text/css" href="./files/mobileIndex.css" rel="stylesheet">
+    <title>云电脑-玩云游戏用掌上网咖-官网下载</title>
+<link rel="stylesheet" href="./files/layer.css" id="layuicss-layer"></head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2">
+                <div class="panel panel-default">
+                    <div class="panel-heading">账号注册</div>
+
+                    <div class="panel-body">
+                        <form class="form-horizontal" id="form1" method="POST" action="http://www.zhangshangtech.com/webRegister" novalidate="novalidate">
+                            <input type="hidden" name="_token" value="U8E0imiusDGzWNR3PpyLI50TwIg2W0SY8bFVVr8B">
+                            <input type="hidden" name="type" value="reg">
+                            <input type="hidden" name="channel" value="plamtop">
+                            <div class="form-group">
+
+                                <div class="col-md-6">
+                                    <input id="mobile" type="text" maxlength="11" class="form-control vis" oninput="value=value.replace(/[^\d]/g,&#39;&#39;)" placeholder="请输入手机号码" name="mobile" value="" required="" aria-required="true">
+
+                                                                    </div>
+                            </div>
+
+                            <div class="form-group">
+
+                                <div class="col-md-6">
+                                    <input id="password" type="password" class="form-control vis" maxlength="15" placeholder="请输入密码" value="" name="password" required="" aria-required="true">
+
+                                                                    </div>
+                            </div>
+
+                            <div class="form-group">
+
+                                <div class="col-md-6">
+                                    <input id="password-confirm" type="password" class="form-control vis" placeholder="确认密码" value="" name="password_confirmation" required="" aria-required="true">
+                                </div>
+                                                            </div>
+
+                            <div class="form-group" id="reg-yzm">
+                                <div class="col-md-6">
+                                    <input id="yzm" type="number" class="form-control" name="code" placeholder="验证码">
+                                </div>
+
+                                <div class="fen "></div>
+
+                                <div class="col-md-6 col-md-offset-4" id="yzmbut">
+
+                                    <a href="javascript:;" id="send-msg" class="btn btn-primary send-msg">获取验证码</a>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <div class="col-md-6 col-md-offset-4">
+                                    
+                                    <input type="submit" value="提交" id="submit" class="btn btn-primary">
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+    
+    <div id="wrap">
+        <div id="main">
+            <img width="100%" src="./files/MOB-index.jpg">
+        </div>
+        <div id="floatDown">
+            <img width="100%" src="./files/MOB-floatLogo.jpg">
+            <a class="clickDown" href="javascript:;"><img src="./files/MOB-floatDown.png"></a>
+        </div>
+        <div id="mobbut">
+            <img class="register" src="./files/MOB-register.png">
+            <img class="download clickDown" src="./files/MOB-download2.png">
+        </div>
+        <div  class="info" style="width: 100%;text-align: center; font-size: 14px;color: #FFF; position: absolute; bottom: 4.5%;">广州游城网络科技有限公司</div>
+    </div>
+
+
+<script type="text/javascript" src="./files/app.js"></script>
+<script type="text/javascript" src="./files/jquery-1.8.3.min.js"></script>
+    <script type="text/javascript" src="./files/layer.js"></script>
+    <script type="text/javascript" src="./files/jquery.validate.min.js"></script>
+    <script>
+        $(function(){
+            $(window).scroll(function(){
+                var scroll_top=$(window).scrollTop();
+                var height=$(window).height()/2;
+                if(scroll_top>=height){
+                    $("#floatDown").fadeIn();
+                }else{
+                    $("#floatDown").fadeOut();
+                }
+            })
+        });
+        $('.clickDown').click(function () {
+            if (/(iPhone|iPad|iPod|iOS)/i.test(navigator.userAgent)) {
+                location="http://wap.zhangshangtech.com/iosInstall";
+            } else if (/(Android)/i.test(navigator.userAgent)) {
+                location="http://dalongyun.oss-cn-hangzhou.aliyuncs.com/apk_dalongyun/zhangshangtech/zswk_zhangshangtech_android_GW.apk";
+            } else {
+                alert('请用手机打开该页面下载');
+            }
+        });
+        $('.register').click(function () {
+            layer.open({
+                type:1,
+                area:'85vw',
+                // offset:'37%',
+                title:false,
+                shadeClose:false,
+                scrollbar: false,
+                // skin: 'layer-test',//透明样式
+                // content:$('.register-layer'),
+                content:$('.container'),
+            });
+        });
+
+        //验证规则
+        var myValidate=$('#form1').validate({
+            rules:{
+                mobile:{
+                    required:true,
+                    mobile:true
+                },
+                password:{
+                    required:true,
+                    minlength:7,
+                    maxlength:15,
+                    pwdruleSend:true,
+                    pwdrule:true
+                },
+                password_confirmation:{
+                    required:true,
+                    equalTo:"#password"
+                }
+            },
+            //错误信息提示
+            messages:{
+                mobile:{
+                    required:'请输入手机号码',
+                    mobile:"请输入正确的手机号码",
+                    // remote:'此手机号已被注册，请直接登录！'
+                },
+                password:{
+                    required:'请输入密码',
+                    minlength:'请输入7-15位的密码',
+                    maxlength:'密码至多15个字符'
+                },
+                password_confirmation:{
+                    required:'请确认密码',
+                    equalTo:'密码输入不一致'
+                }
+            },
+
+            //提示样式
+            //设置提示标签
+            errorElement:'label',
+            //配置成功提示
+            success:function(div){
+                $("#yzm label.error").remove();//清除验证标签
+                $("#yzm").validate().resetForm(); //清除验证
+                /*div.addClass('formok').html('格式正确');*/
+                $("#yzm-error").html('');
+            },
+            validClass:'ok'
+        });
+
+        jQuery.validator.addMethod("mobile", function(value, element) {
+            var mobileReg = /^1[3456789][0-9]{9}$/;
+            return this.optional(element) || (mobileReg.test(value));
+        }, "手机号码格式不正确");
+        jQuery.validator.addMethod("pwdrule", function(value, element) {
+            var userblank = /^(?![0-9]+$)(?![a-z]+$)(?![A-Z]+$)(?![~!@#$%^&*()_=+<,>.?:]+$)[0-9A-Za-z~!@#$%^&*()_=+<,>.?:]{7,15}$/;
+            return this.optional(element) ||(userblank.test(value));
+        }, "请使用字母、数字、符号至少两种组合");
+        jQuery.validator.addMethod("pwdruleSend", function(value, element) {
+            var userblank = /^([0-9A-Za-z~!@#$%^&*()_=+<,>.?:]){7,15}$/;
+            return this.optional(element) ||(userblank.test(value));
+        }, "含有非法字符");
+
+        $('#submit').click(function () {
+            if(myValidate.form()){
+                if($('#yzm').val() != ''){
+                    $.post($('#form1').attr('action'),$('#form1').serialize(),function(data){
+                        // console.log(data);
+                        if(data.status=='200'){
+                            
+                            layer.msg(data.message);
+
+                            setTimeout(function () {
+                                layer.closeAll();
+                            },2000);
+                            setTimeout(function () {
+                                if (/(iPhone|iPad|iPod|iOS)/i.test(navigator.userAgent)) {
+                                    location="http://wap.zhangshangtech.com/iosInstall";
+                                } else if (/(Android)/i.test(navigator.userAgent)) {
+                                    location="http://dalongyun.oss-cn-hangzhou.aliyuncs.com/apk_dalongyun/zhangshangtech/zswk_zhangshangtech_android_GW.apk";
+                                } else {
+                                    alert('请用手机打开该页面下载');
+                                }
+                            },3000);
+
+                        }else if(data.status=='201'){
+                            
+                            layer.msg(data.message);
+                        }
+                    },'json');
+                }else{
+                    layer.msg('请输入验证码');
+                }
+            }
+            return false;
+        });
+
+        $('#send-msg').click(function () {
+            // console.log($('#form1').serialize());
+            if($('#mobile').val() != ''){
+                $.post("http://www.zhangshangtech.com/sendMsg",$('#form1').serialize(),function(data){
+                    // console.log(data);
+                    if(data.status=='200'){
+                        
+                        layer.msg(data.message);
+                        RemainTime();
+                    }else if(data.status=='201'){
+                        
+                        layer.msg(data.message);
+                    }
+                },'json');
+            }else{
+                layer.msg('请输入手机号');
+            }
+
+            return false;
+        });
+
+        //短信倒计时
+        var iTime = 60; //倒计时时间
+        var Account; //定时器
+        function RemainTime(){
+            $('#send-msg').css('pointer-events','none');//倒计时开始后不能再点击获取验证码
+            $('.send-msg').css('background-color','#b4b4b4');
+            $('.send-msg').css('border-color','#b4b4b4');
+            var iSecond,sSecond="",sTime="";
+            if (iTime >= 0){
+                iSecond = parseInt(iTime);
+                /*iSecond = parseInt(iTime%60);
+                iMinute = parseInt(iTime/60);*/
+                if (iSecond >= 0){
+                    sSecond = iSecond + " 秒";
+
+ /*                   if(iMinute>0){
+                        sSecond = iSecond + "秒";
+                    }else{
+                    }*/
+                }
+                sTime=sSecond;
+                if(iTime==0){
+                    clearTimeout(Account);
+                    sTime='重新获取';
+                    iTime = 59;
+                    $('#send-msg').css('pointer-events','auto');
+                    $('.send-msg').css('background-color','#2579a9');
+                    $('.send-msg').css('border-color','#1f648b');
+                }else{
+                    Account = setTimeout("RemainTime()",1000);
+                    iTime=iTime-1;
+                }
+            }else{
+                sTime='没有倒计时';
+            }
+            document.getElementById('send-msg').innerHTML = sTime;
+        }
+    </script>
+
+</body></html>

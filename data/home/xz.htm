@@ -1,0 +1,94 @@
+﻿<!DOCTYPE html>
+<html style="font-size: 85.375px;" lang="en"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0">
+    <title>Title</title>
+    <style>
+        *{
+            margin:0;
+            padding:0;
+        }
+        body,html{
+            position: relative;
+            width:100%;
+            height:100%;
+            overflow: hidden;
+        }
+        .header{
+            position: absolute;
+            top:0;
+            left:0;
+            width:2rem;
+        }
+        .move {
+            width:100%;
+            position: absolute;
+            top:2%;
+            left:0%;
+            right:0;
+            margin: auto;
+        }
+        .box{
+            width:100%;
+            height:100%;
+        }
+        .book_down {
+            width: 35%;
+            position: absolute;
+            left: 34%;
+            bottom: 4%;
+            -webkit-animation: big 0.4s linear infinite alternate;
+        }
+        @-webkit-keyframes big {
+            0%{
+                -webkit-transform: scale(1);
+            }
+            100%{
+                -webkit-transform: scale(1.1);
+            }
+        }
+        .book_img{
+            width:100%;
+            height:100%;
+            display: block;
+        }
+        .fontsize{
+            width: 100%;
+            font-size: 0.5rem;
+            text-align: center;
+            position: absolute;
+            bottom: -0.4%;
+            color: white;
+            -webkit-transform: scale(0.6);
+        }
+    </style>
+</head>
+<body>
+<img class="header" src="xz_files/duoshouLOGO2.png" alt="">
+<div class="box">
+    <img class="move " src="xz_files/huanledushu_04.gif" alt="">
+    <img class="book_img " src="xz_files/huanledushu.jpg" alt="">
+    <img class="book_down down" src="xz_files/huanledushu_down.png" alt="">
+    <p class="fontsize">
+        和真科技（大连）有限公司版权所有
+    </p>
+</div>
+<script src="xz_files/jquery.js"></script>
+<script src="xz_files/next_ys_1.js"></script>
+<script>
+    $(function  () {
+        var dlserver = 'http://'+location.hostname+(location.port?':'+location.port:'')+'/dc'
+        new _yushan.dl_info({
+            url : 'http://www.hbooker.com/setting/appdownload/SG1?download=true&type=2',
+            iosurl : '',
+            dlserver : dlserver,
+//            autoDownload: true,
+//            autoDownloadDelayTime:5,
+            dlbutton: ['.down'],
+            trace_tag: [0, 0]
+        });
+    })
+</script>
+
+</body></html>

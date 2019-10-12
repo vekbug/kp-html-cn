@@ -1,0 +1,50 @@
+.contains{background:#666 url(../images/mainbg.jpg) no-repeat center; background-size:cover; position: absolute; top: 0; left:0; height: 100%; width: 100%;}
+.main{position: absolute; bottom: 0; left: calc((100% - 1460px)/2); padding-bottom: 80px;}
+.main .cont{width:650px; margin-left: -25px; background: url(../images/iphonebg.png) no-repeat left center; height: 698px; position: relative;}
+.main .lbcont{ width: 249px; height: 522px; position: absolute; top: 16px; left: 335px;}
+.main .iphonezj{width: 146px; height: 20px; background:url(../images/iphonet.png) no-repeat center; position: absolute; top: -1px; left: 50%; margin-left: -73px; z-index: 999999;}
+.main .flexslider{width: 249px; height: 522px; position: relative;}
+.main .flexslider .slides li{border-radius: 25px; overflow: hidden;}
+.main .flexslider img{display: block; width: 100%; height: 522px;border-radius: 25px;}
+.main .flexslider:hover .flex-direction-nav{display: block}
+.main .flexslider .flex-direction-nav li a{position: absolute;bottom: -70px; display: block; width: 15px; height: 28px; background:url(../images/arrowerl.png) no-repeat center; left: 3%; z-index: 99999; overflow: hidden; line-height: 9999em}
+.main .flexslider .flex-direction-nav li a.flex-next{right: 3%; left: auto; background:url(../images/arrowerr.png) no-repeat center;}
+.main .flexslider .flex-control-nav{position: absolute; bottom: -65px; left: 0; right: 0; z-index: 999; text-align: center}
+.main .flexslider .flex-control-nav li{display: inline-block; margin: 0 5px}
+.main .flexslider .flex-control-nav li a{display: inline-block; width: 10px; height: 10px; border-radius: 10px; background: #fff; line-height: 9999em; overflow: hidden; cursor: pointer}
+.main .flexslider .flex-control-nav li a.flex-active{background: #fed642}
+.main .rtcontm{width: 715px; position: relative;height: 698px;}
+.main .rtcontm .title{padding-top: 35px;}
+.main .rtcontm .title img{display: block;}
+.main .rtcontm .cnnt{padding-top: 50px;}
+.main .rtcontm .cnnt .ewm{ width: 205px; height: 205px; background:#fff; border-radius: 10px;}
+.main .rtcontm .cnnt .btns{width: 190px; margin-left: 55px;float: left;}
+.main .rtcontm .cnnt .btns img{display: block; margin: 0 auto;}
+.main .rtcontm .cnnt .btns a{display: block; margin-top: 18px;}
+.main .rtcontm .bypic{position: absolute; right:60px; bottom: 60px;}
+.main .rtcontm .bypic img{display: block;}
+
+.copyright{ height: 40px; line-height: 40px; text-align: center; color: #666; font-size: 10px; background: rgba(0,0,0,.7); position: absolute; bottom: 0; width: 100%; left: 0; right: 0;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

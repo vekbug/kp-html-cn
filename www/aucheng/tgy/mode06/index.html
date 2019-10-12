@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>推个游—不玩了，能回收的游戏平台</title>
+    <script src="../plugins//flexbox/flexbox.min.js"></script>
+    <link rel="stylesheet" href="../css/web.min.css">
+</head>
+
+<body style="background:#af4848">
+    <div id="mode6">
+        <a href="" id="topDownload"><img src="../images/template6/top.jpg" alt=""></a>
+        <img src="../images/template6/01.jpg" alt="">
+        <img src="../images/template6/02.jpg" alt="">
+        <img src="../images/template6/03.jpg" alt="">
+        <img src="../images/template6/04.jpg" alt="">
+        <div class="button"><a href="" id="lijiBtn"><img src="../images/template6/button.png" alt=""></a></div>
+        <div style="width: 100%;text-align: center; font-size: 10px;color: #000; position: relative;; bottom: 2%">广州游城网络科技有限公司</div>
+    </div>
+    <script>
+        window.onload = function () {
+            var id = getParam('channel');
+            console.log(id);
+            if (id != null) {
+                document.getElementById('topDownload').href = 'http://img.tuigeyou.com/logo/' + id + '.apk';
+                document.getElementById('lijiBtn').href = 'http://img.tuigeyou.com/logo/' + id + '.apk';
+            }else{
+                document.getElementById('topDownload').href = 'http://img.tuigeyou.com/logo/10130710.apk';
+                document.getElementById('lijiBtn').href = 'http://img.tuigeyou.com/logo/10130710.apk';
+            }
+
+        }
+        
+        function getParam(paramName) {
+            paramValue = "", isFound = !1;
+            if (this.location.search.indexOf("?") == 0 && this.location.search.indexOf("=") > 1) {
+                arrSource = unescape(this.location.search).substring(1, this.location.search.length).split("&"), i = 0;
+                while (i < arrSource.length && !isFound) arrSource[i].indexOf("=") > 0 && arrSource[i].split("=")[0].toLowerCase() ==
+                    paramName.toLowerCase() && (paramValue = arrSource[i].split("=")[1], isFound = !0), i++
+            }
+            return paramValue == "" && (paramValue = null), paramValue
+        }
+
+        var _hmt = _hmt || [];
+        (function () {
+            var hm = document.createElement("script");
+            hm.src = "https://hm.baidu.com/hm.js?43ef127df381c408daa4b5c3ef33dee4";
+            var s = document.getElementsByTagName("script")[0];
+            s.parentNode.insertBefore(hm, s);
+        })();
+    </script>
+</body>
+
+</html>

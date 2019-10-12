@@ -1,0 +1,384 @@
+html{
+    font-size:14px;
+}
+.fl{
+    float: left;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+}
+img{
+    vertical-align: middle;
+}
+/*按钮的样式*/
+.inBox .btnBox{
+    width:85%;
+    font-size: 14px;
+    height: 32px;
+    border: 2px solid #3ca6f7;
+    border-radius: 16px;
+    color: #3ca6f7;
+    background-color: transparent;
+}
+.first{
+    width: 100%;
+}
+
+.titleF{
+    display:-moz-box;
+    display:-webkit-box;
+    display:-ms-flexbox;
+    display:-webkit-flex;
+    display: flex;
+}
+.messTitle{
+    flex-grow:1;
+    text-align: center;
+    height: 30px;
+    line-height: 30px;
+    background-color: rgb(86,99,105);
+    color: #fff;
+    border-right: 1px solid #fff;
+}
+.box4{
+    border: none;
+}
+
+.one{
+    width: 100%;
+    background-image: url("../images/1.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+.one .inBox{
+    width: 100%;
+    /*height: 330px;*/
+}
+.two{
+    width: 100%;
+    background-image: url("../images/bg-2.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    text-align: center;
+
+ }
+.two .inBox{
+    width: 100%;
+    position: relative;
+}
+.two .twoWrap{
+    width: 100%;
+    position: absolute;
+    top:50%;
+    left: 50%;
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    -moz-transform: translateX(-50%) translateY(-50%);
+    -ms-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+}
+.two .twoWrap .twoF{
+    font-size: 14px;
+    color: #fff;
+    padding-bottom: 12px;
+}
+.two .twoWrap .twoS{
+    font-size: 18px;
+    color: #fff;
+}
+.two .twoS span{
+    color: #fe5f55;
+}
+.three{
+    width: 100%;
+    background-image: url("../images/climpek.png");
+}
+.three .inBox{
+    position: relative;
+    width: 100%;
+    height: 300px;
+}
+.three .inBox div{
+    text-align: center;
+    display: inline-block;
+}
+.three .inBox .threeTop{
+    width: 320px;
+    position: absolute;
+    top:22px;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
+}
+.threeTop .topText{
+    width: 100%;
+    text-align: center;
+    line-height: 18px;
+    position: absolute;
+    top:53px;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
+}
+.threeTop .topText p{
+    font-size: 14px;
+    color: #333;
+}
+.threeTop .topText p span{
+    color: #ff8a00;
+}
+.three .inBox img{
+    width: 100%;
+    vertical-align: middle;
+}
+
+/*第三部分的中间*/
+.threeCenter{
+    width: 100%;
+    line-height: 18px;
+    position: absolute;
+    top:146px;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
+}
+.threeCenter p{
+    font-size: 12px;
+    color: #000;
+}
+.threeCenter p span{
+    font-weight: bold;
+}
+
+.three .inBox .dateStop{
+    width: 100%;
+    font-size: 16px;
+    color: red;
+    position: absolute;
+    left: 50%;
+    bottom:44px;
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
+}
+/*第四部分*/
+.four{
+    width: 100%;
+    background-image: url("../images/bg-4.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+.four .inBox{
+    position: relative;
+    width: 100%;
+    /*height: 440px;*/
+}
+.fourWrap{
+    width: 100%;
+    text-align: center;
+    font-size: 14px;
+    position: absolute;
+    left: 50%;
+    top:90px;
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
+}
+.fourWrap .fourRow{
+    padding-bottom: 20px;
+}
+.fourWrap .fourRow p{
+    font-size: 14px;
+    color: #fff;
+}
+.fourWrap .fourRow .titleR{
+    padding-bottom: 15px;
+}
+.fourWrap .fourRow .titleR span{
+    color: #f46666;
+}
+.fourWrap .fourRow .conW{
+    line-height: 22px;
+}
+.fourWrap .fourRow .conW span{
+    font-weight: bold;
+}
+.four .inBox .btnBox,.five .inBox .btnBox,.six .inBox .btnBox{
+    position: absolute;
+    left: 50%;
+    bottom:20px;
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
+}
+/*第五部分*/
+.five{
+    width: 100%;
+    background-image: url("../images/5.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+.five .inBox{
+    position: relative;
+    width: 100%;
+    /*height: 391px;*/
+}
+/*第六部分*/
+.six{
+    width: 100%;
+    background-image: url("../images/bg-6.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+.six .inBox{
+    position: relative;
+    width: 100%;
+}
+.sixWrap{
+    width: 93%;
+    position: absolute;
+    left: 50%;
+    top:68px;
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
+}
+.sixWrap .sixRow img{
+    width: 50px;
+}
+.sixWrap .sixRow{
+    display:-moz-box;
+    display:-webkit-box;
+    display:-ms-flexbox;
+    display:-webkit-flex;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 25px;
+}
+.sixWrap .sixRow .sixL,.sixWrap .sixRow .sixR{
+    text-align: center;
+    width: 46%;
+}
+.sixWrap .sixRow .sixTitle{
+    color: #fff;
+    font-size: 12px;
+    padding: 10px 0 9px;
+}
+.sixWrap .sixRow .sixCon p{
+    line-height: 12px;
+    font-size: 11px;
+    color: rgba(255,255,255,.6);
+}
+/*.seven{
+    width: 100%;
+    background-image: url("../images/7.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+.seven .inBox{
+    width: 100%;
+    !*height: 271px;*!
+}*/
+.eight{
+    width: 100%;
+    background-image: url("../images/bg-8.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+.eight .inBox{
+    position: relative;
+    margin: 0 auto;
+    width: 85%;
+    /*height: 480px;*/
+}
+.eightWrap{
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 41px;
+}
+.eightWrap .conT{
+    font-size: 24px;
+    color: #333;
+}
+.eightWrap .conS{
+    font-size: 12px;
+    padding: 10px 0 20px;
+}
+.eightWrap .conS span{
+    font-size: 18px;
+    color: #009cff;
+}
+.eightCon{
+    font-size: 14px;
+    color: #000;
+    line-height: 18px;
+}
+.eightWrap .conB{
+    font-size: 16px;
+    color: #f46666;
+    padding-top: 15px;
+}
+
+.eight .inBox .popUp1{
+    width: 100%;
+    position: absolute;
+    left: 50%;
+    bottom:20px;
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
+}
+.eight .inBox .popUp1 input[type='text']{
+    width: calc(100% - 16px);
+    height: 32px;
+    border-radius: 16px;
+    background-color: #ffffff;
+    border:2px solid #b28672;
+    padding-left: 16px;
+    font-size: 14px;
+}
+.eight .inBox .popUp1 input[type='button']{
+    width: 100%;
+    height: 32px;
+    border-radius: 16px;
+    border: none;
+    background-color: #f46666;
+    color: #fff;
+}
+.row{
+    margin-bottom: 10px;
+}
+.row1{
+    margin-top: 20px;
+}
+input::-webkit-input-placeholder{
+    color:#999999;
+    font-size: 14px;
+}
+input::-moz-placeholder{   /* Mozilla Firefox 19+ */
+    color:#999999;
+    font-size: 14px;
+}
+input:-moz-placeholder{    /* Mozilla Firefox 4 to 18 */
+    color:#999999;
+    font-size: 14px;
+}
+input:-ms-input-placeholder{  /* Internet Explorer 10-11 */
+    color:#999999;
+    font-size: 14px;
+}

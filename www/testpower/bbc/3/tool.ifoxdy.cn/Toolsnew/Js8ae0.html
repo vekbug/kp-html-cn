@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>提示页面</title>
+<meta id="wxKeywords" name="Keywords" content="<keywords />">
+<meta id="wxDescription" name="Description" content="<description />" />
+<meta name="apple-touch-fullscreen" content="YES" />
+<meta name="format-detection" content="telephone=no" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+<meta http-equiv="Expires" content="-1" />
+<meta http-equiv="pragram" content="no-cache" />
+<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;" />
+<!--ETUI CSS 开始-->
+<link rel="stylesheet" href="https://tool.ifoxdy.cn/Template/Wechat/Yidake/Assets/etui/css/etui.css">
+<!--ETUI CSS 结束-->
+<!--通用CSS样式 开始-->
+<link rel="stylesheet" href="https://tool.ifoxdy.cn/Template/Wechat/Yidake/Assets/Css/common.css">
+<!--通用CSS样式 结束-->
+<style type="text/css">
+body {
+	font-family: "Microsoft YaHei", "微软雅黑", Helvetica, "黑体", Arial, Tahoma;
+}
+
+/* 提示开始 */
+.error_box {
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	top: 0px;
+	/*background: #c9f19c;
+	background: linear-gradient(to top, #d8dcce, #d1f1ad); IE 10+
+	background: -moz-linear-gradient(to top, #d8dcce, #d1f1ad); Firefox
+	background: -webkit-linear-gradient(to top, #d8dcce, #d1f1ad);
+	webkit
+	background: -ms-linear-gradient(to top, #d8dcce, #d1f1ad); IE 10+*/
+	left: 0px;
+	z-index: 1;
+}
+
+.error_tip {
+	position: fixed;
+	left: 0%;
+	padding: 0 4px;
+	margin-top: -100px;
+	top: 33%;
+	padding: 6px 0;
+	width: 100%;
+	z-index: 99;
+	text-align: center;
+}
+
+.error_tip .error_tip_box img{
+	display:block;
+	width:50%;
+	margin:0 auto;
+}
+.error_tip .error_tip_box .tip span{
+	text-align:center;
+	margin:20px 0;
+	color:#666;
+	display:block;
+}
+.error_tip .error_tip_box .tip a{
+	color:#fff;
+	padding:8px 30px;
+	border-radius:3px;
+	margin:0 auto;
+	background:#23B8BC;
+}
+
+.et_content_title {
+	font-size: 30px;
+	color: #ff5d00;
+	font-weight: bold;
+	padding-bottom: 14px;
+}
+
+.et_content_description a, .et_content_description {
+	font-size: 18px;
+	color: #ff5d00;
+	display: block;
+}
+
+.et_content_description a {
+	color: #444;
+	font-size: 16px;
+}
+
+.et_content_description a strong {
+	font-weight: bold;
+	color: #23B8BC;
+	padding: 0 2px;
+}
+
+.et_content_description span {
+	display: block;
+}
+
+.error_tip .error_tip_box .error_tip_pic img {
+	width: 100px;
+	height: 100px;
+	vertical-align: middle;
+}
+
+.success_content_title, .st_content_description, .st_content_description a, .success_click, .success_click {
+	color: #3a9a39 !important;
+}
+
+.errow_news {
+	padding-bottom: 4px;
+}
+/* 提示结束 */
+
+/* css3动画开始 */
+.tip_pic_move {
+	animation: tipPicMove 1.5s linear infinite alternate;
+	-moz-animation: tipPicMove 1.5s linear infinite alternate;
+	-webkit-animation: tipPicMove 1.5s linear infinite alternate;
+	-ms-animation: tipPicMove 1.5s linear infinite alternate;
+}
+
+@
+keyframes tipPicMove { 0%{
+	transform: scale(1);
+	opacity: 0.4;
+}
+
+100%{
+transform
+
+
+:scale
+
+
+(1
+.2
+
+
+);
+opacity
+
+
+:
+
+
+1;
+}
+}
+@
+-webkit-keyframes tipPicMove { 0%{
+	-webkit-transform: scale(1);
+	opacity: 0.4;
+}
+
+100%{
+-webkit-transform
+
+
+:scale
+
+
+(1
+.2
+
+
+);
+opacity
+
+
+:
+
+
+1;
+}
+}
+@
+-moz-keyframes tipPicMove { 0%{
+	-moz-transform: scale(1);
+	opacity: 0.4;
+}
+
+100%{
+-moz-transform
+
+
+:scale
+
+
+(1
+.2
+
+
+);
+opacity
+
+
+:
+
+
+1;
+}
+}
+@
+-ms-keyframes tipPicMove { 0%{
+	-ms-transform: scale(1);
+	opacity: 0.4;
+}
+100%{
+-ms-transform
+
+
+:scale
+
+
+(1
+.2
+
+
+);
+opacity
+
+
+:
+
+
+1;
+}
+}
+/* css3动画结束 */
+</style>
+</head>
+<body>
+	<!-- 底部背景颜色开始 -->
+	<div class="error_box"></div>
+	<!-- 底部背景颜色结束 -->
+
+	<!-- 成功提示开始 -->
+		<!-- 成功提示结束 -->
+
+	<!-- 错误提示开始 -->
+	<div class="error_tip">
+		<div class="error_tip_box">
+			<img src="https://tool.ifoxdy.cn/Template/Wechat/Yidake/Assets/Images/empty.png" />
+            <div class="tip">
+                <span style="text-align: center">页面不存在</span>
+                <span><a href="/Index/index.html?v=kbfiSzBITmLl4MEs">如您不想等待,请<strong>猛戳</strong>我</a></span>
+            </div>
+		</div>
+	</div>
+	<script type="text/javascript">
+			window.setTimeout(function(){
+				window.location.href="/Index/index.html?v=kbfiSzBITmLl4MEs";
+			},3000);
+	</script>	<!-- 错误提示结束 -->
+
+</body>
+</html>

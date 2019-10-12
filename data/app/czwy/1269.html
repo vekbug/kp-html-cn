@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html style="font-size: 105px;" lang="en"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0">
+    <title></title>
+    <style>
+        *{
+            margin:0;
+            padding:0;
+        }
+        body,html{
+            width:100%;
+            height:100%;
+            position: relative;
+        }
+        .header{
+            position: absolute;
+            top:0;
+            left:0;
+            width:1.5rem;
+            z-index: 999;
+        }
+        .box{
+            width:100%;
+            height:100%;
+            position: relative;
+            overflow-x: hidden;
+            -webkit-overflow-scrolling:touch;
+        }
+
+        .img_box{
+            width:100%;
+            height:100%;
+            overflow: auto;
+            -webkit-overflow-scrolling:touch;
+            position: relative;
+        }
+        .btn {
+            width:48%;
+            height:8%;
+            position: absolute;
+            left:0;
+            right:0;
+            margin:auto;
+            top:31.3%;
+        }
+        .img_bg {
+            width:100%;
+        }
+        .car_img{
+            width:100%;
+            display: block;
+        }
+        .car_img_down{
+            width:100%;
+            position: absolute;
+            bottom: 0;
+            left:0;
+            right:0;
+        }
+        .fontsize{
+            width: 100%;
+            text-align: center;
+            font-size: 12px;
+            position: absolute;
+            bottom: 0%;
+            color: black;
+            z-index: 9999;
+            -webkit-transform: scale(0.5);
+        }
+        .down_img {
+            width:100%;
+            height: 100%;
+            display: block;
+        }
+    </style>
+</head>
+<body>
+
+<div class="box">
+
+    <div class="img_box">
+        <div class="img_bg">
+            <div style="position: relative;">
+                <div class="btn down"></div>
+                <img style="position: absolute;left: 0;top: 0;width: 7%;z-index: 9999;" src="#" alt="">
+                <img class="car_img " src="lp1_files/1.jpg" alt="">
+            </div>
+            <div style="position: relative">
+            </div>
+        </div>
+
+    </div>
+
+</div>
+<div class="car_img_down">
+
+    <img class="down_img down" src="lp1_files/d.jpg" alt="">
+    <img class="down_img down" src="lp1_files/2.jpg" alt="">
+</div>
+<script src="lp1_files/jquery.js"></script>
+<!--<script src="http://cdn.bootcss.com/jquery_lazyload/1.9.6/jquery.lazyload.min.js"></script>-->
+<script src="lp1_files/next_ys_1.js"></script>
+<script>
+    $(function  () {
+        var dlserver = '#'
+        new _yushan.dl_info({
+            url : 'https://release.xmiles.cn/android/yunying/1269/starbaba.apk',
+            iosurl : '#',
+            dlserver : dlserver,
+//            autoDownload: true,
+//            autoDownloadDelayTime:5,
+            dlbutton: ['.down'],
+            trace_tag: [0, 0]
+        });
+    })
+
+</script>
+
+</body></html>

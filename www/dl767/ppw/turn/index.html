@@ -1,0 +1,102 @@
+<!DOCTYPE HTML> 
+<html>
+<head>
+<title>批批网服装批发</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0'/> 
+<link href='css/style.css' rel='stylesheet'/>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    #download{
+        position: relative;
+    }
+    #download .info{
+        position: absolute;
+        bottom: 3%;
+    }
+
+/* Swipe 2 required styles */
+
+.swipe {
+  overflow: hidden;
+  visibility: hidden;
+  position: relative;
+}
+.swipe-wrap {
+  overflow: hidden;
+  position: relative;
+}
+.swipe-wrap > div {
+  float:left;
+  width:100%;
+  position: relative;
+}
+.cus-swipe-wrp{
+    overflow: hidden
+}
+/* END required styles */
+
+</style>
+
+</head>
+<body>
+<div>
+ <td style="position:relative;">
+        <img src = "http://cdn.kpam.com.cn/images/logo_duominuo.png" style="position: absolute; z-index:1;left: 0;top: 0;width: 10%"/>
+</td>
+    <!-- <img id="b_img" style="width:100%;" src="images/qt-01.jpg" alt=""> -->
+    <div class="cus-swipe-wrp">
+        <div id='mySwipe'>
+            <div class='swipe-wrap'>
+                    <div><img id="b_img_1" style="width:100%;" src="images/a1.jpg" alt=""/></div>
+                    <div><img id="b_img_2" style="width:100%;" src="images/a2.jpg" alt=""/></div>
+                    <div><img id="b_img_3" style="width:100%;" src="images/a3.jpg" alt=""/></div>
+                    <div><img id="b_img_4" style="width:100%;" src="images/a4.jpg" alt=""/></div>
+            </div>
+        </div>
+    </div>
+    <!-- <img id="b_img" style="width:100%;" src="images/qt-03.jpg" alt=""> -->
+    <img class="downloadclz" id="footer" style="position: fixed;bottom:5%;left:15%;width: 70%;" src="images/foot.png">
+	<div  class="info" style="width: 100%;text-align: center; font-size: 8px;color: #000; ">山东多米诺网络科技有限公司</div>
+</div>
+<script src="js/jquery.min.js"></script>
+<script src="js/app.js"></script>
+<script src='js/swipe.js'></script>
+<script>
+
+// pure JS
+var elem = document.getElementById('mySwipe');
+window.mySwipe = Swipe(elem, {
+  auto: 3000,
+  continuous: true,
+});
+
+$(document).ready(function() {
+
+    $('.downloadclz').click( function(e) {
+            var id = getParam('id');
+            if(id == '') {
+                id = "06";
+            }
+            if(isIos()) {
+                if(id == '06') {
+                    window.location.href = "http://recieve.pilaipiwang.com/r/Ua";
+                } else if (id == '07') {
+                    window.location.href = "http://recieve.pilaipiwang.com/r/Ka";
+                } else if (id == '08') {
+                    window.location.href = "http://recieve.pilaipiwang.com/r/2a";
+                } else if (id == '09') {
+                    window.location.href = "http://recieve.pilaipiwang.com/r/Xa";
+                }
+            } else {
+                window.location.href = "https://download.ppwang.com/Android_package/pp_sem" + id + "_signed.apk";
+            }
+            
+    });
+});
+
+</script>
+</body>

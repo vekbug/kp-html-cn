@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>首页</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: rgb(255, 233, 195);
+            font-size: 16px;
+        }
+
+        .image {
+            width: 100%;
+            display: inline-block;
+        }
+
+        .content {
+            font-size: 19px;
+            line-height: 1.5;
+            margin: 0 25px;
+        }
+
+        .guanzhu {
+            width: 100%;
+            height: 50px;
+            background-color: #fff;
+            position: relative;
+        }
+
+        .box {
+            margin-top: 10px;
+            display: inline-block;
+        }
+
+        .box img {
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            overflow: hidden;
+            margin-left: 50px;
+            vertical-align: middle;
+        }
+
+        .line {
+            width: 100%;
+            height: 30px;
+        }
+
+        .box button {
+            width: 100px;
+            height: 30px;
+            background-color: rgb(255, 4, 4);
+            color: rgba(255, 255, 255, 1);
+            font-size: 16px;
+            border-radius: 2.667rem;
+            text-align: center;
+            overflow: hidden;
+            cursor: pointer;
+            float: right;
+            position: absolute;
+            right: 20px;
+            top: 10px;
+        }
+    </style>
+
+    <script>
+        (function (w, d, t, s, q, m, n) { if (w.utq) return; q = w.utq = function () { q.process ? q.process(arguments) : q.queue.push(arguments); }; q.queue = []; m = d.getElementsByTagName(t)[0]; n = d.createElement(t); n.src = s; n.async = true; m.parentNode.insertBefore(n, m); })(window, document, 'script', 'https://image.uc.cn/s/uae/g/0s/ad/utracking.js'); utq('set', 'convertMode', true); utq('set', 'trackurl', 'huichuan.sm.cn/lp');
+    </script>
+</head>
+
+<body>
+    <div id="app">
+        <div>
+            <img class="image" id="head_img" src="#" />
+            <div>
+                <p class="content" id="content"></p>
+            </div>
+            <div class="line"></div>
+            <img class="image" id="guide_image1_0" />
+            <div class="guanzhu">
+                <div class="box">
+                    <img class="head" id="weixin_img" />
+                    <span id="weixin" class="weixin"></span>
+                    <button class="btn" ut-data-click ut-data-convertid="376666" ut-data-eventtype="Other"
+                        data-clipboard-action="copy" data-clipboard-target="#weixin">+关注</button>
+                </div>
+            </div>
+            <img class="image" id="guide_image1_1" />
+            <img class="image" id="guide_image2" />
+        </div>
+    </div>
+</body>
+<script src="http://cdn.kpam.com.cn/js/jquery.min.js"></script>
+<script src="http://cdn.kpam.com.cn/js/app.js"></script>
+<script src="http://cdn.kpam.com.cn/js/jquery.md5.js"></script>
+<script src="http://cdn.kpam.com.cn/js/clipboard.min.js"></script>
+<script type="text/javascript">
+
+    const apikey = 'jk3s3012a20423i30jk223492034k23o';
+    function sign(id, time) {
+        let str = 'id=' + id + '&timestamp=' + time + apikey;
+        return $.md5(str)
+    }
+    // 复制微信代码
+    const clipboard = new Clipboard('.btn');
+    clipboard.on("success", function () {
+        console.log("success");
+        location.href = "weixin://";
+    });
+    clipboard.on("error", function () {
+        console.log("error");
+    });
+
+    function getData() {
+        let id = getParam('id');
+        if (id == null || id == "") {
+            id = "21573";
+        }
+        let time = new Date()
+            .getTime()
+            .toString()
+            .substr(0, 10);
+        let signStr = sign(id, time);
+        $.ajax({
+            url: 'http://tui.kpam.com.cn/uc/info' + "?id=" + id + "&timestamp=" + time + "&sign=" + signStr,
+            success: function (resp) {
+                let ld = resp.data;
+                $("#head_img").attr("src", ld.head_img);
+                $("#weixin_img").attr("src", ld.head_img);
+                $("#guide_image1_0").attr("src", ld.guide_image1[0]);
+                $("#guide_image1_1").attr("src", ld.guide_image1[1]);
+                $("#guide_image2").attr("src", ld.guide_image2[0]);
+                $("#content").html(ld.content);
+                $("#weixin").html(ld.weixin);
+            }
+        })
+    }
+    $(document).ready(function () {
+        getData();
+    });
+</script>
+
+</html>

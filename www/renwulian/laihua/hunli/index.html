@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<!-- saved from url=(0045)http://laihua.zhiniaotec.net/hunli/index.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <title>首页</title>
+    <style>
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    #download{
+        position: relative;
+    }
+    #download .info{
+        position: absolute;
+        bottom: 3%;
+    }
+    </style>
+</head>
+<body>
+<div id="download" class="downloadclz">
+    <img style="width:100%; height:80%; display: block;" src="./index_files/01.jpg" alt="">
+    <!-- <img src="./index_files/black_zhiniao.png" style="position: absolute;left: 0;top: 0;width: 10%"> -->
+    <img src = "http://cdn.kpam.com.cn/images/logo_duominuo.png" style="position: absolute;left: 0;top: 0;width: 10%">
+    <div class="info" style="width: 100%;text-align: center; font-size: 14px;color: #000; ">山东多米诺网络科技有限公司</div>
+    <!-- <img class="downloadclz" style="width:100%; height:20%; display: block;" src="./index_files/btn.jpg" alt=""> -->
+</div>
+
+<script src="./index_files/hm.js"></script><script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?2a8d223717f0a6997d1b531f1687ebd2";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+<script src="./index_files/jquery.min.js"></script>
+<script src="./index_files/app.js"></script>
+<script type="text/javascript">
+
+    $(document).ready(function() {
+
+        var mid = getParam('mid');
+        if(mid == '') {
+            mid = "01";
+        }
+        // $('#b_img').attr('src', 'images/' + mid + '.jpg')
+        // 调整 foot 高度
+        // var b_img = $('#footer').height();
+        // $('#download').css('margin-bottom', b_img);
+
+        // loadBody("download");
+        $('.downloadclz').click( function(e) {
+            var id = getParam('id');
+            if(id == '') {
+                id = "45420";
+            }
+            window.location.href = "https://at.umeng.com/onelink/i0X9Xr";
+        });
+    });
+</script>
+</body></html>

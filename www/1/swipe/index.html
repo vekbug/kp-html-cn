@@ -1,0 +1,87 @@
+<!DOCTYPE HTML> 
+<html>
+<head>
+<title>凯叔讲故事</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0'/> 
+<link href='css/style.css' rel='stylesheet'/>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    #download{
+        position: relative;
+    }
+    #download .info{
+        position: absolute;
+        bottom: 3%;
+    }
+
+/* Swipe 2 required styles */
+
+.swipe {
+  overflow: hidden;
+  visibility: hidden;
+  position: relative;
+}
+.swipe-wrap {
+  overflow: hidden;
+  position: relative;
+}
+.swipe-wrap > div {
+  float:left;
+  width:100%;
+  position: relative;
+}
+.cus-swipe-wrp{
+    overflow: hidden
+}
+/* END required styles */
+
+</style>
+
+</head>
+<body>
+<div class="downloadclz">
+    <!-- <img id="b_img" style="width:100%;" src="images/qt-01.jpg" alt=""> -->
+    <!-- <td style="position:relative;">
+        <img src = "http://cdn.kpam.com.cn/images/logo_jialuode.png" style="position: absolute; z-index:1;left: 0;top: 0;width: 10%">
+    </td> -->
+    <div class="cus-swipe-wrp">
+        <div id='mySwipe'>
+            <div class='swipe-wrap'>
+                    <div><img id="b_img_1" style="width:100%;" src="images/a1.jpg" alt=""/></div>
+                    <div><img id="b_img_2" style="width:100%;" src="images/a2.jpg" alt=""/></div>
+                    <div><img id="b_img_3" style="width:100%;" src="images/a3.jpg" alt=""/></div>
+                    <div><img id="b_img_4" style="width:100%;" src="images/a4.jpg" alt=""/></div>
+            </div>
+        </div>
+    </div>
+    <!-- <img id="b_img" style="width:100%;" src="images/qt-03.jpg" alt=""> -->
+    <img class="downloadclz" id="footer" style="position: fixed;bottom:0;left:0;width: 100%;" src="images/foot.png">
+</div>
+<script src="js/jquery.min.js"></script>
+<script src="js/app.js"></script>
+<script src='js/swipe.js'></script>
+<script>
+
+// pure JS
+var elem = document.getElementById('mySwipe');
+window.mySwipe = Swipe(elem, {
+  auto: 3000,
+  continuous: true,
+});
+
+$(document).ready(function() {
+
+    $('.downloadclz').click( function(e) {
+            var id = getParam('id');
+            if(id == '') {
+                id = "11";
+            }
+            window.location.href = "https://img1.ppwang.com/install/Android_package/pp_qudao" + id + "_signed.apk";
+    });
+});
+
+</script>
