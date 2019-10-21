@@ -1,7 +1,10 @@
 <!DOCTYPE html>
 <!-- saved from url=(0040)http://www.826006.com/zssqao1/index.html -->
-<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
     <title>首页</title>
 
     <meta id="wxKeywords" name="Keywords" content="<keywords />">
@@ -14,85 +17,90 @@
     <meta http-equiv="pragram" content="no-cache" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
 
+    <!--ETUI CSS 开始-->
+    <link rel="stylesheet" href="https://act1.bangbangce.cn/Template/Wechat/Yidake/Assets/etui/css/etui.css">
+    <!--ETUI CSS 结束-->
+    <!--通用CSS样式 开始-->
+    <link rel="stylesheet" href="https://act1.bangbangce.cn/Template/Wechat/Yidake/Assets/Css/style.css">
+    <!--通用CSS样式 结束-->
+    <!--本页CSS样式开始-->
+    <link rel="stylesheet" href="https://act1.bangbangce.cn/Template/Wechat/Yidake/Assets/Css/emotion/index.css">
+
     <style>
-    *{
-        margin: 0;
-        padding: 0;
-        /* border:0; */
-    }
-    div{margin:0;padding:0;font-size: 0;}
+        * {
+            margin: 0;
+            padding: 0;
+            /* border:0; */
+        }
     </style>
 
-        <!--ETUI CSS 结束-->
-        <!--通用CSS样式 开始-->
-        <link rel="stylesheet" href="css/style.css">
-        <!--通用CSS样式 结束-->
-        <!--本页CSS样式开始-->
-        <link rel="stylesheet" href="css/index.css">
-            <!--本页CSS样式结束-->
-
 </head>
+
 <body>
-<div id="download" class="downloadclz">
-    <img id="b_img" style="width:100%; height:100%; display: block;" src="images/01.jpg" alt="">
-</div>
-<!-- <img class="downloadclz" id="copy_btn" style="position: fixed;width:100%;bottom:0;left:0; height: 50px;" src="./images/foot.png"> -->
-
-                <!-- 复制成功提示 -->
-<div id='aaa' class="popu tip-popu hide">
-    <div class="modWin b_fff">
-        <div class="title c_333 bold fs15 box center" style="font-size: 14px;">温馨提示</div>
-        <div class="tip-txt box c_666 fs13 mb10 center" style="font-size: 14px;">微信号已复制<br>请前往微信添加领取您的个人运势报告</div>
-        <div class="ui-cell-noborder p0 contral-bar" style="font-size: 14px;">
-            <div class="cancle center" style="font-size: 14px; display: inline-block; padding-left: 0"  >取消</div>
-            <a href="weixin://" style="width: 48%" class="sub main_c center inblock">前往</a>
-        </div>                    
+    <div id="download" class="downloadclz">
+        <img id="b_img" style="width:100%; height:100%; display: block;" src="images/01.jpg" alt="">
     </div>
-</div>
-<!-- 底部微信号栏开始 -->
-<div class="ui-cell-noborder p0 code_box" style="position: fixed; display: inline-block; ">
-    <div class="wx_code ui-cell-noborder c_fff ui-cell-cn" style="width: 45%; display: inline-block;font-size: 12px; margin-left: 3px;">
-        <img class="img_10 mr5" style="width:1.5rem; display: inline;" src="images/icon_wx.png" alt="">
-        <span class="ui-shrink0">微信号：</span>
-        <span id="target">cebazi3967</span>
+
+    <!-- 复制成功提示 -->
+    <div id='aaa' class="popu tip-popu hide">
+        <div class="modWin b_fff">
+            <div class="title c_333 bold fs15 box center" style="font-size: 14px;">温馨提示</div>
+            <div class="tip-txt box c_666 fs13 mb10 center" style="font-size: 14px;">微信号已复制<br>请前往微信添加领取您的个人运势报告</div>
+            <div class="ui-cell-noborder p0 contral-bar" style="font-size: 14px;">
+                <div class="cancle center" style="font-size: 14px; display: inline-block; padding-left: 0">取消</div>
+                <a href="weixin://" style="width: 48%" class="sub main_c center inblock">前往</a>
+            </div>
+        </div>
     </div>
-    <div class="c_fff center box ui-cell-primary" style="width: 45%;display: inline-block; font-size: 12px; padding-top: 15px; margin-bottom: 1px;" id="copy_btn" data-clipboard-action="copy" data-clipboard-target="#target">点击加微信</div>
-</div>
-<!-- 底部微信号栏结束 -->
 
-<script src="http://cdn.kpam.com.cn/js/jquery.min.js"></script>
-<script src="http://cdn.kpam.com.cn/js/app.js"></script>
-<script src="js/sea.js"></script>
-<script src="js/clipboard.min.js"></script> 
+    <!-- 底部微信号栏开始 -->
+    <div class="ui-cell-noborder p0 code_box">
+        <div class="wx_code ui-cell-noborder c_fff ui-cell-cn">
+            <img class="img_10 mr5" style="width:1.5rem"
+                src="https://act1.bangbangce.cn/Template/Wechat/Yidake/Assets/Images/Act_infer/icon_wx.png" alt="">
+            <span class="ui-shrink0">微信号：</span>
+            <span id="target">cebazi3967</span>
+        </div>
+        <div class="c_fff center box ui-cell-primary" id="copy_btn" data-clipboard-action="copy"
+            data-clipboard-target="#target">点击加微信</div>
+    </div>
+    <!-- 底部微信号栏结束 -->
+
+    <script src="http://cdn.kpam.com.cn/js/jquery.min.js"></script>
+    <script src="http://cdn.kpam.com.cn/js/app.js"></script>
+    <script src="js/sea.js"></script>
+    <script src="js/clipboard.min.js"></script>
 
 
-<script type="text/javascript">
+    <script type="text/javascript">
 
-    //浏览器窗口大小变化时
-    window.onload = function() {
-        if(isPC()) {
-            $('#aaa').empty();
-            $('#aaa').html('<div class="modWin b_fff" style="width: 350px;height:350px;"><img class="img_100" src="./images/ecode.png" alt=""></div>');
+        //浏览器窗口大小变化时
+        window.onload = function () {
+            if (isPC()) {
+                $('#aaa').empty();
+                $('#aaa').html('<div class="modWin b_fff" style="width: 350px;height:350px;"><img class="img_100" src="./images/ecode.png" alt=""></div>');
+            }
         }
-    }
 
-    seajs.use('init', function (init) {
-        // init();
-        var clipboard = new Clipboard('#copy_btn');    
-        clipboard.on('success', function(e) {   
-            console.log(e) 
-            e.clearSelection();    
-        });  
+        seajs.use('init', function (init) {
+            // init();
+            var clipboard = new Clipboard('#copy_btn');
+            clipboard.on('success', function (e) {
+                console.log(e)
+                e.clearSelection();
+            });
 
-        $("#copy_btn").on('click', function () {
-            $('.tip-popu').fadeIn()
-        })
-        $('.tip-popu').on('click', function () {
-            $('.tip-popu').fadeOut()
-        })
-        $('.tip-popu').on('click', '.cancle', function () {
-            $('.tip-popu').fadeOut()
-        })
-    });
-</script>
-</body></html>
+            $("#copy_btn").on('click', function () {
+                $('.tip-popu').fadeIn()
+            })
+            $('.tip-popu').on('click', function () {
+                $('.tip-popu').fadeOut()
+            })
+            $('.tip-popu').on('click', '.cancle', function () {
+                $('.tip-popu').fadeOut()
+            })
+        });
+    </script>
+</body>
+
+</html>
