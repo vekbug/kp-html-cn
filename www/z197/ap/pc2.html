@@ -1,0 +1,143 @@
+﻿<script type="text/javascript">
+    if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+        window.location = "m.html#bb551d74-8846-6aef-d762-9dc4830d8a18"; //可以换成http地址
+    }
+</script>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>爱碰 - 与附近的人私密视频聊天</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        .qrcode_button {
+            margin-top: 0px;
+            border: 1px solid black;
+            cursor: pointer;
+        }
+
+        .qrcode {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(255, 255, 255, 0.6);
+            z-index: 9999;
+            display: none;
+        }
+
+        .qrcode img {
+            position: absolute;
+            top: 25%;
+            left: 38%;
+            width: 314px;
+            height: 370px;
+            display: block;
+        }
+    </style>
+    <script src="https://code.jquery.com/jquery-3.2.1.js"
+            integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
+</head>
+
+<body>
+<div class="content">
+    <header class="top">
+        <div class="nav">
+            <img src="images/logo.png" alt="">
+            <p><a class="border_bottom" href="https://www.aipeng.com">首页</a></p>
+        </div>
+    </header>
+
+    <div class="banner">
+        <div class="mask"></div>
+        <div class="banner_main">
+            <div class="logo2">
+                <img src="images/logo2.png" alt="">
+            </div>
+            <div class="number">
+                <p id="number"></p>
+                <p></p>
+            </div>
+            <div class="download">
+                <div class="apple">
+                    <button class="qrcode_button" value="#qrcode1"
+                            style="width:280px;height:80px;border:0; background:url(images/apple.png) no-repeat left top">
+                    </button>
+                    <div class="qrcode" id="qrcode1">
+                        <img id="image" width="100%" height="100%" src="images/qrcode.png">
+                    </div>
+                </div>
+                <div class="android">
+                    <button class="qrcode_button" value="#qrcode2"
+                            style="width:280px;height:80px;border:0; background:url(images/android.png) no-repeat left top">
+                    </button>
+                    <div class="qrcode" id="qrcode2">
+                        <img id="image" width="100%" height="100%" src="images/qrcode.png">
+                    </div>
+                </div>
+            </div>
+            <div class="phone">
+                <img src="images/phone_di.png" alt="">
+                <img src="images/arrow.png" class="arrow" alt="">
+                <video class="shipin" controls autoplay loop>
+                    <source src="mv.mp4" type="video/mp4">
+                </video>
+                <img src="images/shadow.png" class="shadow" alt="">
+            </div>
+        </div>
+    </div>
+    <script>
+        $(function () {
+            $(".qrcode_button").click(function () {
+                $($(this).val()).fadeIn("slow");
+            });
+
+            $(".qrcode").click(function () {
+                $('#' + $(this)[0].id).fadeOut("slow");
+            })
+
+        });
+    </script>
+    <div class="information"></div>
+    <footer class="footer">
+        <div class="company_info">
+            <div class="left">
+                <div class="footer_logo">
+                    <img src="images/logo3.png" alt="">
+                </div>
+            </div>
+            <div class="line ml30"></div>
+            <div class="contact">
+                <p></p>
+                <p class="location"></p>
+            </div>
+            <div class="line"></div>
+            <div class="friendshipLink">
+                <p class="friend"></p>
+                <a href=""><img class='weixin' src="images/weixin.png" alt=""></a>
+                <a href=""><img src="images/weibo.png" alt=""></a>
+            </div>
+            <div class="line2"></div>
+            <div class="copyright">
+                <p>
+                    <font color="#FFFFFF">
+                        <br> 版权所有：&copy2019 &nbsp;&nbsp;&nbsp;安徽勤源网络科技有限公司 &nbsp;&nbsp;&nbsp;
+                        <a target="_blank" href="lianxi.html"><font color="#FFFFFF"> 联系我们</font></a>&nbsp;&nbsp;&nbsp;
+                        &nbsp;&nbsp;&nbsp;&nbsp;<a target="_blank" href="about.html"><font
+                            color="#FFFFFF">关于我们</font></a>
+                    </font>
+            </div>
+            </p>
+        </div>
+    </footer>
+</div>
+<div style='display:none'>
+    <script type="text/javascript" src="https://s23.cnzz.com/z_stat.php?id=1277380817&web_id=1277380817"></script>
+</div>
+</body>
+</html>
