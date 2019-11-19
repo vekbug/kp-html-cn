@@ -47,10 +47,11 @@ var _hmt = _hmt || [];
             $('.downloadclz').click(function (e) {
                 var id = getParam('id');
                 if (id == '') {
-                    id = "01";
+                    id = "1";
                 }
-                 window.location.href = "https://xxb-android-app-release.oss-cn-beijing.aliyuncs.com/sogousem_" + id + "_kp_sign.apk"; 
-
+                 if (id > 9) {window.location.href = "https://xxb-android-app-release.oss-cn-beijing.aliyuncs.com/sogousem_" + id + "_kp_sign.apk"; }
+				else {window.location.href = "https://xxb-android-app-release.oss-cn-beijing.aliyuncs.com/sogousem_0" + id + "_kp_sign.apk"; }
+				
             });
         });
     </script>
