@@ -12,7 +12,7 @@
     appKey: "vkvfsm",
     kfh: 0,
     init: function () {
-        FastClick.attach(document.body);
+        //FastClick.attach(document.body);
         var _this = this;
         _this.kfh = _this.getURLParameter('kfh') || 0;
         _this.getDownUrl();
@@ -22,6 +22,7 @@
         _this.before_down();
         _this.stopBack();
         $(document).on('click', '.js_down', function () {
+            alert(1)
             _this.down();
         });
         $('#js_closeBtn2').click(function () {
@@ -43,9 +44,9 @@
             // $('title').html('花友社交-性感美女直播间');
             $('.appLogo').attr('src', 'images/logo2.png');
         }
-        _this.m = new OpenInstall({
-            appKey: this.appKey
-        }, { "channel": _this.qd });
+        // _this.m = new OpenInstall({
+        //     appKey: this.appKey
+        // }, { "channel": _this.qd });
     },
     setWindow: function () {
         var winH = $(window).height(),
