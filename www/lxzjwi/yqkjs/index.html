@@ -1,58 +1,113 @@
+
 <!DOCTYPE html>
-<!-- saved from url=(0040)http://www.826006.com/zssqao1/index.html -->
-<html lang="en">
-
+<html xmlns:gs="http://www.gensee.com/ec">
 <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-
-    <title>首页</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-        }
-
-        #download {
-            position: relative;
-            margin-bottom: 150px;
-        }
-    </style>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable = no">
+    <meta http-equiv="Access-Control-Allow-Origin" content="*">
+	<title>教师资格证 教师考编通关必备</title>
+	<link rel="stylesheet" href="css/swiper.min.css">
+	<link rel="stylesheet" href="css/main.css">
+	<script src="js/jquery-2.1.4.min.js"></script>
+	<script src="js/main.js"></script>
+	<script src="js/swiper.min.js"></script>
+	
 </head>
-
 <body>
-    <div id="download" class="downloadclz">
-        <img id="b_img" style="width:100%; height:100%; display: block;" src="images/01.jpg" alt="">
-        <img src="http://cdn.kpam.com.cn/images/logo_tongxuehui.png"
-            style="position: absolute;left: 0;top: 0;width: 10%">
-        <div style="width: 100%;text-align: center; font-size: 10px;color: #000; position: absolute; bottom: 2%">
-            北京童学慧教育咨询有限公司</div>
+    
+	<div class="swiper-container">
+            
+        <div class="swiper-wrapper">
+            <div class="swiper-slide" style="background:#becdff;">
+                <img src = "http://cdn.kpam.com.cn/images/logo_tongxuehui.png" style="position: absolute;left: 0;top: 0;width: 10%">
+            	<img class="images" src="images/1.png" alt="image">
+            	<div class="button"><img src="images/button.png" alt=""></div>
+            	<img class="up" src="images/up.png" alt="up">
+            </div>
+            
+            <div class="swiper-slide" style="background:#f8aec8;">
+            	<img class="images" src="images/2.png" alt="image">
+            	<img class="up" src="images/up.png" alt="up">
+            </div>
+            <div class="swiper-slide" style="background:#9dd4f8;">
+            	<img class="images" src="images/3.png" alt="image">
+            	<img class="up" src="images/up.png" alt="up">
+            </div>
+            <div class="swiper-slide" style="background:#fcd47e;">
+            	<img class="images" src="images/4.png" alt="image">
+            	<img class="up" src="images/up.png" alt="up">
+            </div>
+			
+            <div class="swiper-slide" style="background:#8fe0c1;">
+            	<img class="images" src="images/5.png" alt="image">
+            	<div class="button end"><img src="images/click.png" alt=""></div>
+            </div>
+            <div style="width: 100%;text-align: center; font-size: 10px;color: #000; position: absolute; bottom: 2%">北京童学慧教育咨询有限公司</div>
+        </div>
+        
+        <div class="swiper-pagination"></div>
     </div>
-    <img class="downloadclz" id="footer" style="position: fixed;width:60%;bottom:5%;left:20%;" src="./images/foot.png">
+	<script>
+		var swiper = new Swiper('.swiper-container', {
+	        pagination: '.swiper-pagination',
+	        direction : 'vertical',
+	        paginationClickable: true
+	    });
+	    setInterval(function(){
+	    	$(".up").fadeIn('slow');
+	    	$(".up").animate({top:"82%"});
+			$(".up").fadeOut('slow');
+			$(".up").css("top","83%");
+	    },2000);
+	    setInterval(function(){
+			$(".button img, .end img").css("width","105%");
+			$(".button img, .end img").css("margin-left","-2.5%");
+			setTimeout(function(){
+				$(".button img, .end img").css("width","100%");
+				$(".button img, .end img").css("margin-left",0);
+		    },800);
+	    },1600);
+	    $('.button').click(function() {
 
-    <script src="http://cdn.kpam.com.cn/js/jquery.min.js"></script>
-    <script src="http://cdn.kpam.com.cn/js/app.js"></script>
-    <script type="text/javascript">
+				var id = $_GET['id'];
+        if(id == '' || id == undefined) {
+           id = "30000056";
+				}
+				// alert(id);
+				window.location.href = "http://cdn.17kjs.com/apk/yiqikaojiaoshi_" + id + ".apk";
+			// 	$_GET['source']
 
-        setInterval(function () {
-            $("#footer").css("width", "65%");
-            $("#footer").css("margin-left", "-2.5%");
-            setTimeout(function () {
-                $("#footer").css("width", "0%");
-                $("#footer").css("margin-left", 0);
-            }, 800);
-        }, 1600);
-
-        $(document).ready(function () {
-            $('.downloadclz').click(function (e) {
-                var id = getParam('id');
-                if (id == '' || id == undefined) {
-                    id = "30000056";
-                }
-                window.location.href = "http://cdn.17kjs.com/apk/yiqikaojiaoshi_" + id + ".apk";
-
-            });
-        });
-    </script>
+			// 	alert(1)
+			// var index,rurl;
+			// if(isWx || isiOS){
+			// 	alert(2)
+			// 	index = 'IOS';
+			// 	rurl = "http://a.app.qq.com/o/simple.jsp?pkgname=com.tsingzone.questionbank";
+			// } else if(isAndroid) {
+			// 	alert(3)
+			// 	index = 'Android';
+			// 	if($_GET['source']) {
+			// 		alert(5)
+			// 		rurl = "http://cdn.17kjs.com/apk/yiqikaojiaoshi_" + $_GET['source'] + ".apk";
+			// 	} else {
+			// 		alert(6)
+			// 		rurl = "http://cdn.17kjs.com/apk/yiqikaojiaoshi_10000013.apk";
+			// 	}
+			// } else {
+			// 	return;
+			// }
+			
+			// $.ajax({
+			// 	url : 'statistics.php',
+			// 	type : 'post',
+			// 	dataType : 'json',
+	    //     	async: false,
+			// 	data : {position : index, url : rurl, type : 'btn'},
+			// 	success : function(data) {
+			// 		window.location.href = data.url;
+			// 	}
+			// });
+		});
+	</script>
 </body>
-
 </html>
