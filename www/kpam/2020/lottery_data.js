@@ -29,15 +29,25 @@ var lottery_initial_datas = [
         "namezh": "魏伦红",
         "wish": "南阿弥陀佛好运属于我，一等大奖必中"
     },
+    // {
+    //     "nameen": "avatar7",
+    //     "namezh": "李维昊",
+    //     "wish": "祝福2020年大家多拿提成，多签新客户"
+    // },
+    // {
+    //     "nameen": "avatar8",
+    //     "namezh": "赵乐晨",
+    //     "wish": "祝公司：来年硕果累累 每日节节高升"
+    // },
     {
         "nameen": "avatar7",
-        "namezh": "李维昊",
-        "wish": "祝福2020年大家多拿提成，多签新客户"
+        "namezh": "冀忆轩",
+        "wish": "岁岁常欢愉，年年皆胜意"
     },
     {
         "nameen": "avatar8",
-        "namezh": "赵乐晨",
-        "wish": "祝公司：来年硕果累累 每日节节高升"
+        "namezh": "白易蒙",
+        "wish": "2020  2亿完成"
     },
     {
         "nameen": "avatar9",
@@ -78,16 +88,6 @@ var lottery_initial_datas = [
         "nameen": "avatar16",
         "namezh": "赵芳芳",
         "wish": "2020祝福大家平安喜乐，更上一层楼"
-    },
-    {
-        "nameen": "avatar17",
-        "namezh": "冀忆轩",
-        "wish": "岁岁常欢愉，年年皆胜意"
-    },
-    {
-        "nameen": "avatar18",
-        "namezh": "白易蒙",
-        "wish": "2020  2亿完成"
     }
 ];
 
