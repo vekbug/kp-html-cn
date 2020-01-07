@@ -16,6 +16,52 @@
         #download {
             position: relative;
         }
+
+        @-webkit-keyframes pulse {
+            from {
+                opacity: 1;
+                -webkit-transform: scale3d(1, 1, 1);
+                transform: scale3d(1, 1, 1);
+            }
+
+            50% {
+                -webkit-transform: scale3d(1.05, 1.05, 1.05);
+                transform: scale3d(1.05, 1.05, 1.05);
+            }
+
+            to {
+                opacity: 1;
+                -webkit-transform: scale3d(1, 1, 1);
+                transform: scale3d(1, 1, 1);
+            }
+        }
+
+        @keyframes pulse {
+            from {
+                opacity: 1;
+                -webkit-transform: scale3d(1, 1, 1);
+                transform: scale3d(1, 1, 1);
+            }
+
+            50% {
+                -webkit-transform: scale3d(1.05, 1.05, 1.05);
+                transform: scale3d(1.05, 1.05, 1.05);
+            }
+
+            to {
+                opacity: 1;
+                -webkit-transform: scale3d(1, 1, 1);
+                transform: scale3d(1, 1, 1);
+            }
+        }
+
+        .pulse {
+            -webkit-animation-name: pulse;
+            animation-name: pulse;
+            animation-duration: 0.75s;
+            animation-delay: 0.75s;
+            animation-iteration-count: infinite;
+        }
     </style>
 </head>
 
