@@ -88,6 +88,31 @@ var lottery_initial_datas = [
         "nameen": "avatar16",
         "namezh": "赵芳芳",
         "wish": "2020祝福大家平安喜乐，更上一层楼"
+    },
+    {
+        "nameen": "avatar17",
+        "namezh": "许恩楼",
+        "wish": "祝大家新年快乐！"
+    },
+    {
+        "nameen": "avatar18",
+        "namezh": "郑建邦",
+        "wish": "祝大家新年快乐！"
+    },
+    {
+        "nameen": "avatar19",
+        "namezh": "侯建新",
+        "wish": "祝大家新年快乐！"
+    },
+    {
+        "nameen": "avatar20",
+        "namezh": "李志朋",
+        "wish": "祝大家新年快乐！"
+    },
+    {
+        "nameen": "avatar21",
+        "namezh": "彭康康",
+        "wish": "祝大家新年快乐！"
     }
 ];
 
